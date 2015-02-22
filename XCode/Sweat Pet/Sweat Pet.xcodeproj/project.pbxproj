@@ -12,6 +12,8 @@
 		B08E073919D7F9370070E82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08E073719D7F9370070E82F /* Main.storyboard */; };
 		B08E073B19D7F9370070E82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08E073A19D7F9370070E82F /* Images.xcassets */; };
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
+		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
+		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		B08E074019D7F9370070E82F /* Sweat PetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sweat PetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08E074519D7F9370070E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08E074619D7F9370070E82F /* Sweat_PetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweat_PetTests.swift; sourceTree = "<group>"; };
+		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +62,7 @@
 		B08E072519D7F9370070E82F = {
 			isa = PBXGroup;
 			children = (
+				EBB15BD91A9A42FF004583CD /* SpriteKit.framework */,
 				B08E073019D7F9370070E82F /* Sweat Pet */,
 				B08E074319D7F9370070E82F /* Sweat PetTests */,
 				B08E072F19D7F9370070E82F /* Products */,
@@ -78,6 +84,7 @@
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				B08E073519D7F9370070E82F /* ViewController.swift */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
+				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
 				B08E073A19D7F9370070E82F /* Images.xcassets */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
 			);
@@ -208,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */,
 				B08E073619D7F9370070E82F /* ViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
 			);
@@ -397,6 +405,7 @@
 				B08E074C19D7F9370070E82F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B08E074D19D7F9370070E82F /* Build configuration list for PBXNativeTarget "Sweat PetTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				B08E074F19D7F9370070E82F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

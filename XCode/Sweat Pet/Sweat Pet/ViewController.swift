@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dipe()
+    }
+    
+    @IBOutlet weak var PetViewOutlet: SKView!
+    
+    func dipe () {
+        let scene = GameScene(size: view.bounds.size)
+        scene.scaleMode = .ResizeFill
+        PetViewOutlet.presentScene(scene)
     }
 
     override func didReceiveMemoryWarning() {
