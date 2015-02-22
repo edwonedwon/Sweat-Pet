@@ -31,7 +31,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func bicycleButtonAction(sender: AnyObject) {
-        println("dipe")
+        GameScene().switchImage()
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
 }
