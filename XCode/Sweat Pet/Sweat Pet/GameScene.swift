@@ -15,14 +15,19 @@ class GameScene : SKScene {
         // 4
         addChild(pet)
         
-        runAction(SKAction.repeatActionForever(
-            SKAction.sequence([
-                SKAction.runBlock(bounce),
-                SKAction.waitForDuration(2.0)
-                ])
-            ))
+        self.physicsWorld.gravity = CGVectorMake(0.0, -2)
+        pet.physicsBody = SKPhysicsBody(circleOfRadius: pet.size.height)
+        pet.physicsBody?.dynamic = true
+        
+//        runAction(SKAction.repeatActionForever(
+//            SKAction.sequence([
+//                SKAction.runBlock(bounce),
+//                SKAction.waitForDuration(2.0)
+//                ])
+//            ))
         
     }
+    
     
     func switchImage () {
         println("switch image")
