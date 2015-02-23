@@ -1,4 +1,3 @@
-//
 //  AppDelegate.swift
 //  Sweat Pet
 //
