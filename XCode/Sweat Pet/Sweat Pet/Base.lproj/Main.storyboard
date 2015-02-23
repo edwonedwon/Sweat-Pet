@@ -8,7 +8,8 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,7 +41,7 @@
                                     <constraint firstAttribute="width" constant="70" id="ePF-4b-jXd"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-Mr-AMz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-Mr-AMz" userLabel="bicycleButton">
                                 <rect key="frame" x="243" y="516" width="115" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="NfT-gP-0ye"/>
@@ -51,6 +52,7 @@
                                 </state>
                                 <connections>
                                     <action selector="bicycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VFT-Xy-p6B"/>
+                                    <segue destination="553-eX-HH1" kind="show" id="ou6-Ni-CM4"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myi-3o-DkR" userLabel="PetView" customClass="SKView">
@@ -121,13 +123,164 @@
                             <constraint firstAttribute="centerY" secondItem="EiL-jz-4jK" secondAttribute="centerY" id="ydv-Kh-nJb"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="PetViewOutlet" destination="myi-3o-DkR" id="e0R-zM-SYv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="531"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pI0-Va-fGE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PS3-ix-TRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="flipHorizontal" id="553-eX-HH1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kr-ZG-57d"/>
+                        <viewControllerLayoutGuide type="bottom" id="UeL-Rs-xhL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GYX-04-xrT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bottom bar" translatesAutoresizingMaskIntoConstraints="NO" id="A5d-gd-QEm">
+                                <rect key="frame" x="61" y="-16" width="639" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Nbp-gL-iFB"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="60" y="0.0" width="639" height="100"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="ntj-aW-zd4">
+                                <rect key="frame" x="-72" y="0.0" width="67" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Uua-YE-Nu3"/>
+                                    <constraint firstAttribute="width" constant="67" id="vLY-Ri-zrd"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-96" y="16" width="67" height="63"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="rxZ-rt-aEz">
+                                <rect key="frame" x="-35" y="0.0" width="70" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="9Dk-cw-gIr"/>
+                                    <constraint firstAttribute="height" constant="63" id="pYm-gG-hbX"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-65" y="16" width="70" height="63"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-Y6-GMO" userLabel="bicycleButton">
+                                <rect key="frame" x="-78" y="0.0" width="115" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="MBn-BI-4BI"/>
+                                    <constraint firstAttribute="height" constant="63" id="khx-Gv-6fE"/>
+                                </constraints>
+                                <state key="normal" image="bicycle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="12" y="16" width="115" height="63"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bicycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2AY-lN-KTF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green bg" translatesAutoresizingMaskIntoConstraints="NO" id="scR-W6-VsR">
+                                <rect key="frame" x="-20" y="-268" width="640" height="1136"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUc-cD-gbX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="HoQ-a3-nOF"/>
+                                    <constraint firstAttribute="height" constant="30" id="aaY-aa-EOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HoQ-a3-nOF"/>
+                                        <exclude reference="aaY-aa-EOg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HoQ-a3-nOF"/>
+                                        <include reference="aaY-aa-EOg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iuN-i0-w64"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="scR-W6-VsR" firstAttribute="top" secondItem="GYX-04-xrT" secondAttribute="top" constant="-168" id="7Sh-mU-446">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="PUc-cD-gbX" firstAttribute="top" secondItem="GYX-04-xrT" secondAttribute="top" constant="11" id="F1b-fR-tyJ"/>
+                            <constraint firstItem="PUc-cD-gbX" firstAttribute="leading" secondItem="GYX-04-xrT" secondAttribute="leading" constant="11" id="FUf-bn-qEN"/>
+                            <constraint firstItem="A5d-gd-QEm" firstAttribute="centerY" secondItem="rxZ-rt-aEz" secondAttribute="centerY" constant="2.5" id="U4M-Db-oUv"/>
+                            <constraint firstItem="A5d-gd-QEm" firstAttribute="centerY" secondItem="ntj-aW-zd4" secondAttribute="centerY" constant="2.5" id="YAQ-OY-aPH"/>
+                            <constraint firstAttribute="centerX" secondItem="scR-W6-VsR" secondAttribute="centerX" id="Yyg-PU-yPG"/>
+                            <constraint firstItem="KAf-Y6-GMO" firstAttribute="centerY" secondItem="A5d-gd-QEm" secondAttribute="centerY" constant="-2.5" id="lIr-1Z-ZIA"/>
+                            <constraint firstItem="scR-W6-VsR" firstAttribute="leading" secondItem="GYX-04-xrT" secondAttribute="leading" constant="80" id="o8k-kJ-GmV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="scR-W6-VsR" secondAttribute="trailing" constant="80" id="tXA-d8-RWT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="scR-W6-VsR" secondAttribute="bottom" constant="-168" id="tci-Pn-BLN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="scR-W6-VsR" secondAttribute="centerY" id="yPd-S7-3SV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PUc-cD-gbX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="F1b-fR-tyJ"/>
+                                <exclude reference="FUf-bn-qEN"/>
+                                <exclude reference="7Sh-mU-446"/>
+                                <exclude reference="o8k-kJ-GmV"/>
+                                <exclude reference="tXA-d8-RWT"/>
+                                <exclude reference="tci-Pn-BLN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PUc-cD-gbX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="F1b-fR-tyJ"/>
+                                <include reference="FUf-bn-qEN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="7Sh-mU-446"/>
+                                <include reference="o8k-kJ-GmV"/>
+                                <include reference="tXA-d8-RWT"/>
+                                <include reference="tci-Pn-BLN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="773" y="531"/>
         </scene>
     </scenes>
     <resources>
