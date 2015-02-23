@@ -3,7 +3,7 @@ import SpriteKit
 
 class GameScene : SKScene {
     
-    let pet = SKSpriteNode(imageNamed: "pet")
+    var pet = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
     
@@ -11,6 +11,9 @@ class GameScene : SKScene {
     let damp = CGFloat(0.8                                                                  )
     var velocity = CGVector(dx: 0, dy: 0)
     var touching = false
+    
+    let textureAtlas = SKTextureAtlas(named: "petanim.atlas")
+    var spriteArray = Array<SKTexture>()
     
     override func didMoveToView(view: SKView) {
         // 2
@@ -23,6 +26,12 @@ class GameScene : SKScene {
         petTargetLocation = CGVector(dx: pet.position.x, dy: pet.position.y)
         // 4
         addChild(pet)
+        
+        spriteArray.append(textureAtlas.textureNamed("pet_1"))
+        spriteArray.append(textureAtlas.textureNamed("pet_2"))
+        spriteArray.append(textureAtlas.textureNamed("pet_3"))
+        spriteArray.append(textureAtlas.textureNamed("pet_4"))
+        pet.texture = spriteArray[1]
         
 //        self.physicsWorld.gravity = CGVectorMake(0.0, -2)
 //        pet.physicsBody = SKPhysicsBody(circleOfRadius: pet.size.height)
@@ -73,11 +82,12 @@ class GameScene : SKScene {
         for touch: AnyObject in touches {
             touching = true
             let location = (touch as! UITouch).locationInNode(self)
-//            if (self.nodeAtPoint(location).name == "pet") // if touched pet
-//            {
-                pet.position.x = location.x
-                pet.position.y = location.y
-//            }
+            pet.position.x = location.x
+            pet.position.y = location.y
+            if (self.nodeAtPoint(location).name == "pet") // if touched pet
+            {
+                pet.texture = spriteArray[1]
+            }
         }
     }
 
@@ -98,7 +108,7 @@ class GameScene : SKScene {
     }
     
     func switchImage () {
-//        println("switch image")
+//        pet.texture = spriteArray[1]
     }
     
     func bounce() {
