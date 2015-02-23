@@ -4,6 +4,13 @@ import SpriteKit
 class GameScene : SKScene {
     
     let pet = SKSpriteNode(imageNamed: "pet")
+    var petTargetLocation = CGVector(dx: 0, dy: 0)
+    var touchLocation = CGVector()
+    
+    let spring = CGFloat(0.15)
+    let damp = CGFloat(0.8                                                                  )
+    var velocity = CGVector(dx: 0, dy: 0)
+    var touching = false
     
     override func didMoveToView(view: SKView) {
         // 2
@@ -13,7 +20,7 @@ class GameScene : SKScene {
         pet.size = CGSize(width: 387 * 0.6, height: 384 * 0.6)
 //        pet.userInteractionEnabled = true; // this is weird, need to research
         pet.name = "pet"
-        
+        petTargetLocation = CGVector(dx: pet.position.x, dy: pet.position.y)
         // 4
         addChild(pet)
         
@@ -31,33 +38,63 @@ class GameScene : SKScene {
     }
     
     override func update(currentTime: NSTimeInterval) {
-//        println(pet.name)
+
     }
     
+//    func clamp (number: CGFloat, min: CGFloat, max: CGFloat) -> CGFloat {
+//        if (number < min) {
+//            return min
+//        }
+//        if (number > max) {
+//            return max
+//        }
+//        return number
+//    }
+    
     override func didSimulatePhysics() {
-//        pet.position.x += 1;
+        if (touching == false) {
+            var dif  = CGVector(
+                dx: pet.position.x - petTargetLocation.dx,
+                dy: pet.position.y - petTargetLocation.dy
+            )
+            velocity.dx -= dif.dx * spring
+            velocity.dy -= dif.dy * spring
+
+            velocity.dx *= damp
+            velocity.dy *= damp
+     
+            // apply velocity
+            pet.position.x += velocity.dx
+            pet.position.y += velocity.dy
+        }
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         for touch: AnyObject in touches {
+            touching = true
             let location = (touch as! UITouch).locationInNode(self)
-            // if touched pet
-            if (self.nodeAtPoint(location).name == "pet") {
+//            if (self.nodeAtPoint(location).name == "pet") // if touched pet
+//            {
                 pet.position.x = location.x
                 pet.position.y = location.y
-//                bounce()
-            }
+//            }
         }
     }
 
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         for touch: AnyObject in touches {
+            touching = true
             let location = (touch as! UITouch).locationInNode(self)
-            if (self.nodeAtPoint(location).name == "pet") {
+//            if (self.nodeAtPoint(location).name == "pet") // if touching pet
+//            {
                 pet.position.x = location.x
                 pet.position.y = location.y
-            }
+//            }
         }
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        touching = false
     }
     
     func switchImage () {
