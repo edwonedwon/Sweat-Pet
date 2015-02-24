@@ -78,6 +78,7 @@ class GameScene : SKScene {
         petMouthSpriteArray.append(petMouthTextureAtlas.textureNamed("mouth_1"))
         petNoseSpriteArray.append(petNoseTextureAtlas.textureNamed("nose_1"))
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_1"))
+        petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_2"))
         petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_1"))
     }
     
@@ -134,11 +135,32 @@ class GameScene : SKScene {
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
             pet.position.y = location.y
+            
+            blink()
+
             if (self.nodeAtPoint(location).name == "pet") // if touched pet
             {
 //                pet.texture = petBodySpriteArray[0]
             }
         }
+    }
+    
+    
+    func blink()
+    {
+        petPupilL.texture = petPupilSpriteArray[1]
+        petPupilL.size = CGSize(width: pupilSize, height: 2)
+        petPupilR.texture = petPupilSpriteArray[1]
+        petPupilR.size = CGSize(width: pupilSize, height: 2)
+        
+    }
+    
+    func unBlink()
+    {
+        petPupilL.texture = petPupilSpriteArray[0]
+        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
+        petPupilR.texture = petPupilSpriteArray[0]
+        petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
     }
 
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -149,13 +171,14 @@ class GameScene : SKScene {
             pet.position.y = location.y
             if (self.nodeAtPoint(location).name == "pet") // if touching pet
             {
-                
+            
             }
         }
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         touching = false
+        unBlink()
     }
     
     func bounce() {
