@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
     </dependencies>
     <scenes>
-        <!--Running-->
+        <!--RUN-->
         <scene sceneID="MqI-XM-47t">
             <objects>
                 <viewController id="1DJ-ON-yIf" sceneMemberID="viewController">
@@ -15,9 +15,19 @@
                     <view key="view" contentMode="scaleToFill" id="IDP-O0-bqr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cCW-4f-8lo">
+                                <rect key="frame" x="-46" y="28" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cCW-4f-8lo"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Running" image="runner" id="Id5-KE-52t"/>
+                    <tabBarItem key="tabBarItem" title="RUN" image="runner" id="Id5-KE-52t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ny-be-WpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,7 +47,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXP-Mb-yC4" userLabel="PetView" customClass="SKView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <color key="backgroundColor" red="0.44298435646511192" green="1" blue="0.40858181168440277" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.79431029040404044" green="0.79431029040404044" blue="0.79431029040404044" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
