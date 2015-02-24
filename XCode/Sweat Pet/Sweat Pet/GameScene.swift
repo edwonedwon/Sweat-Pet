@@ -4,6 +4,7 @@ import SpriteKit
 class GameScene : SKScene {
     
     var pet = SKSpriteNode()
+    var petMouth = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
     
@@ -14,6 +15,16 @@ class GameScene : SKScene {
     
     let petTextureAtlas = SKTextureAtlas(named: "petanim.atlas")
     var petSpriteArray = Array<SKTexture>()
+    let petBodyTextureAtlas = SKTextureAtlas(named: "pet_body.atlas")
+    var petBodySpriteArray = Array<SKTexture>()
+    let petMouthTextureAtlas = SKTextureAtlas(named: "pet_mouth.atlas")
+    var petMouthSpriteArray = Array<SKTexture>()
+    let petNoseTextureAtlas = SKTextureAtlas(named: "pet_nose.atlas")
+    var petNoseSpriteArray = Array<SKTexture>()
+    let petPupilTextureAtlas = SKTextureAtlas(named: "pet_pupil.atlas")
+    var petPupilSpriteArray = Array<SKTexture>()
+    let petWhiteOfEyeTextureAtlas = SKTextureAtlas(named: "pet_white_of_eye.atlas")
+    var petWhiteOfEyeSpriteArray = Array<SKTexture>()
     
     override func didMoveToView(view: SKView) {
 
@@ -21,8 +32,23 @@ class GameScene : SKScene {
 
         setupPet()
         setupPetSprites()
-        pet.texture = petSpriteArray[1]
+        setupPetPartsSprites()
+        pet.texture = petBodySpriteArray[0]
+        pet.addChild(petMouth)
+        petMouth.texture = petMouthSpriteArray[0]
+        petMouth.position = CGPoint(x: 0, y: 0)
+        petMouth.size = CGSize(width: 50, height: 40)
+       
         
+    }
+    
+    func setupPetPartsSprites ()
+    {
+        petBodySpriteArray.append(petBodyTextureAtlas.textureNamed("body_1"))
+        petMouthSpriteArray.append(petMouthTextureAtlas.textureNamed("mouth_1"))
+        petNoseSpriteArray.append(petNoseTextureAtlas.textureNamed("nose_1"))
+        petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_1"))
+        petWhiteOfEyeSpriteArray.append(petWhiteOfEyeTextureAtlas.textureNamed("white_of_eye_1"))
     }
     
     func setupPet()
@@ -73,7 +99,7 @@ class GameScene : SKScene {
             pet.position.y = location.y
             if (self.nodeAtPoint(location).name == "pet") // if touched pet
             {
-                pet.texture = spriteArray[1]
+//                pet.texture = petBodySpriteArray[0]
             }
         }
     }

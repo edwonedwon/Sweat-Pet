@@ -17,11 +17,11 @@
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
 		EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1977E1A9CD7F900401B70 /* HealthManager.swift */; };
-		EBD7BEDD1A9CECB6008065AF /* pet body.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BED81A9CECB6008065AF /* pet body.atlas */; };
-		EBD7BEDE1A9CECB6008065AF /* pet mouth.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BED91A9CECB6008065AF /* pet mouth.atlas */; };
-		EBD7BEDF1A9CECB6008065AF /* pet nose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEDA1A9CECB6008065AF /* pet nose.atlas */; };
-		EBD7BEE01A9CECB6008065AF /* pet pupil.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEDB1A9CECB6008065AF /* pet pupil.atlas */; };
-		EBD7BEE11A9CECB6008065AF /* pet white of eye.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEDC1A9CECB6008065AF /* pet white of eye.atlas */; };
+		EBD7BEF31A9CEFD0008065AF /* pet_body.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */; };
+		EBD7BEF41A9CEFD0008065AF /* pet_mouth.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */; };
+		EBD7BEF51A9CEFD0008065AF /* pet_nose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF01A9CEFD0008065AF /* pet_nose.atlas */; };
+		EBD7BEF61A9CEFD0008065AF /* pet_pupil.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF11A9CEFD0008065AF /* pet_pupil.atlas */; };
+		EBD7BEF71A9CEFD0008065AF /* pet_white_of_eye.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */; };
 		EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +50,11 @@
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		EBC1977E1A9CD7F900401B70 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
-		EBD7BED81A9CECB6008065AF /* pet body.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "pet body.atlas"; sourceTree = "<group>"; };
-		EBD7BED91A9CECB6008065AF /* pet mouth.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "pet mouth.atlas"; sourceTree = "<group>"; };
-		EBD7BEDA1A9CECB6008065AF /* pet nose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "pet nose.atlas"; sourceTree = "<group>"; };
-		EBD7BEDB1A9CECB6008065AF /* pet pupil.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "pet pupil.atlas"; sourceTree = "<group>"; };
-		EBD7BEDC1A9CECB6008065AF /* pet white of eye.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "pet white of eye.atlas"; sourceTree = "<group>"; };
+		EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_body.atlas; sourceTree = "<group>"; };
+		EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_mouth.atlas; sourceTree = "<group>"; };
+		EBD7BEF01A9CEFD0008065AF /* pet_nose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_nose.atlas; sourceTree = "<group>"; };
+		EBD7BEF11A9CEFD0008065AF /* pet_pupil.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_pupil.atlas; sourceTree = "<group>"; };
+		EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_white_of_eye.atlas; sourceTree = "<group>"; };
 		EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 		B08E073019D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7BED71A9CEC9C008065AF /* Pet Parts */,
+				EBD7BEED1A9CEFD0008065AF /* Pet_Parts */,
 				EB6817761A9B0938005C3A38 /* petanim.atlas */,
 				EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
@@ -140,16 +140,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EBD7BED71A9CEC9C008065AF /* Pet Parts */ = {
+		EBD7BEED1A9CEFD0008065AF /* Pet_Parts */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7BED81A9CECB6008065AF /* pet body.atlas */,
-				EBD7BED91A9CECB6008065AF /* pet mouth.atlas */,
-				EBD7BEDA1A9CECB6008065AF /* pet nose.atlas */,
-				EBD7BEDB1A9CECB6008065AF /* pet pupil.atlas */,
-				EBD7BEDC1A9CECB6008065AF /* pet white of eye.atlas */,
+				EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */,
+				EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */,
+				EBD7BEF01A9CEFD0008065AF /* pet_nose.atlas */,
+				EBD7BEF11A9CEFD0008065AF /* pet_pupil.atlas */,
+				EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */,
 			);
-			name = "Pet Parts";
+			path = Pet_Parts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,14 +232,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD7BEDD1A9CECB6008065AF /* pet body.atlas in Resources */,
+				EBD7BEF71A9CEFD0008065AF /* pet_white_of_eye.atlas in Resources */,
 				B08E073919D7F9370070E82F /* Main.storyboard in Resources */,
-				EBD7BEDE1A9CECB6008065AF /* pet mouth.atlas in Resources */,
-				EBD7BEE11A9CECB6008065AF /* pet white of eye.atlas in Resources */,
-				EBD7BEDF1A9CECB6008065AF /* pet nose.atlas in Resources */,
 				B08E073B19D7F9370070E82F /* Images.xcassets in Resources */,
 				EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */,
-				EBD7BEE01A9CECB6008065AF /* pet pupil.atlas in Resources */,
+				EBD7BEF31A9CEFD0008065AF /* pet_body.atlas in Resources */,
+				EBD7BEF51A9CEFD0008065AF /* pet_nose.atlas in Resources */,
+				EBD7BEF41A9CEFD0008065AF /* pet_mouth.atlas in Resources */,
+				EBD7BEF61A9CEFD0008065AF /* pet_pupil.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
