@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="O7m-Bs-hhW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IDP-O0-bqr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -22,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="643.5" y="1158"/>
         </scene>
-        <!--Cycling-->
+        <!--PET-->
         <scene sceneID="IMt-uK-WRf">
             <objects>
                 <viewController id="V8j-pU-BKJ" customClass="CyclingViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="AAd-VX-owe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TX5-1N-trt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7U-Ty-Whe" userLabel="PetView" customClass="SKView">
@@ -44,7 +46,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="9A8-SG-FfR" secondAttribute="bottom" constant="49" id="8AX-bs-Uh3"/>
+                            <constraint firstAttribute="bottom" secondItem="9A8-SG-FfR" secondAttribute="bottom" constant="49" id="8AX-bs-Uh3">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstItem="9A8-SG-FfR" firstAttribute="top" secondItem="TX5-1N-trt" secondAttribute="top" id="CFr-Du-vhY"/>
                             <constraint firstItem="9A8-SG-FfR" firstAttribute="leading" secondItem="TX5-1N-trt" secondAttribute="leading" id="JZK-MV-Wxw"/>
                             <constraint firstAttribute="trailing" secondItem="9A8-SG-FfR" secondAttribute="trailing" id="JdO-Pd-HdO"/>
@@ -74,7 +78,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cycling" image="bicycle" id="oie-Jx-1CC"/>
+                    <tabBarItem key="tabBarItem" title="PET" image="pet icon" id="oie-Jx-1CC"/>
                     <connections>
                         <outlet property="PetViewOutlet" destination="9A8-SG-FfR" id="OLk-hE-TtC"/>
                     </connections>
@@ -92,6 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="V8j-pU-BKJ" kind="relationship" relationship="viewControllers" id="Tf6-eZ-vol"/>
@@ -104,8 +109,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bicycle" width="178" height="97"/>
-        <image name="runner" width="100" height="103"/>
+        <image name="pet icon" width="35" height="35"/>
+        <image name="runner" width="34" height="35"/>
     </resources>
     <color key="tintColor" white="0.41349712171052633" alpha="1" colorSpace="calibratedWhite"/>
 </document>
