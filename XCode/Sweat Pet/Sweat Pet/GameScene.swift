@@ -33,32 +33,11 @@ class GameScene : SKScene {
         spriteArray.append(textureAtlas.textureNamed("pet_4"))
         pet.texture = spriteArray[1]
         
-//        self.physicsWorld.gravity = CGVectorMake(0.0, -2)
-//        pet.physicsBody = SKPhysicsBody(circleOfRadius: pet.size.height)
-//        pet.physicsBody?.dynamic = true
-        
-//        runAction(SKAction.repeatActionForever(
-//            SKAction.sequence([
-//                SKAction.runBlock(bounce),
-//                SKAction.waitForDuration(2.0)
-//                ])
-//            ))
-        
     }
     
     override func update(currentTime: NSTimeInterval) {
 
     }
-    
-//    func clamp (number: CGFloat, min: CGFloat, max: CGFloat) -> CGFloat {
-//        if (number < min) {
-//            return min
-//        }
-//        if (number > max) {
-//            return max
-//        }
-//        return number
-//    }
     
     override func didSimulatePhysics() {
         if (touching == false) {
@@ -105,10 +84,6 @@ class GameScene : SKScene {
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         touching = false
-    }
-    
-    func switchImage () {
-//        pet.texture = spriteArray[1]
     }
     
     func bounce() {
