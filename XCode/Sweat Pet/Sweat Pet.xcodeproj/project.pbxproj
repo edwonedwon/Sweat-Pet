@@ -16,6 +16,7 @@
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
+		EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1977E1A9CD7F900401B70 /* HealthManager.swift */; };
 		EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EBC1977E1A9CD7F900401B70 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				EB6817761A9B0938005C3A38 /* petanim.atlas */,
 				EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
+				EBC1977E1A9CD7F900401B70 /* HealthManager.swift */,
 				EB426A511A9CA28E0033B72C /* RunViewController.swift */,
 				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
@@ -230,6 +233,7 @@
 				EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */,
 				EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
+				EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
