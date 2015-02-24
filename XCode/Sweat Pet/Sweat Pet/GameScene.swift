@@ -12,6 +12,7 @@ class GameScene : SKScene {
     var petWhiteR = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
+    let touchOffsetY: CGFloat = 50.0
     
     var pupilSize = 15.0
     var whiteSize = 40
@@ -86,11 +87,11 @@ class GameScene : SKScene {
     
     func setupPet()
     {
-        pet.position = CGPoint(x: size.width * 0.5, y: size.height * 0.40)
+        pet.position = CGPoint(x: size.width * 0.5, y: size.height * 0.45)
         pet.size = CGSize(width: 387 * 0.6, height: 384 * 0.6)
         //        pet.userInteractionEnabled = true; // this is weird, need to research
         pet.name = "pet"
-        petTargetLocation = CGVector(dx: pet.position.x, dy: pet.position.y)
+        petTargetLocation = CGVector(dx: pet.position.x, dy: pet.position.y + 10)
         addChild(pet)
     }
     
@@ -136,7 +137,7 @@ class GameScene : SKScene {
             touching = true
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
-            pet.position.y = location.y
+            pet.position.y = location.y + touchOffsetY43
             
             blink()
 
@@ -191,7 +192,7 @@ class GameScene : SKScene {
             touching = true
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
-            pet.position.y = location.y
+            pet.position.y = location.y + touchOffsetY
             if (self.nodeAtPoint(location).name == "pet") // if touching pet
             {
             
