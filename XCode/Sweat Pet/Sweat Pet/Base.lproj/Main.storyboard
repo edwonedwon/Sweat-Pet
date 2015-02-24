@@ -35,57 +35,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7U-Ty-Whe" userLabel="PetView" customClass="SKView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.73849583496994342" green="1" blue="0.50872400025266429" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-SG-FfR" userLabel="PetView" customClass="SKView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="1" green="0.68306123914677919" blue="0.55509376484806983" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXP-Mb-yC4" userLabel="PetView" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.44298435646511192" green="1" blue="0.40858181168440277" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="9A8-SG-FfR" secondAttribute="bottom" constant="49" id="8AX-bs-Uh3">
-                                <variation key="widthClass=compact" constant="50"/>
-                            </constraint>
-                            <constraint firstItem="9A8-SG-FfR" firstAttribute="top" secondItem="TX5-1N-trt" secondAttribute="top" id="CFr-Du-vhY"/>
-                            <constraint firstItem="9A8-SG-FfR" firstAttribute="leading" secondItem="TX5-1N-trt" secondAttribute="leading" id="JZK-MV-Wxw"/>
-                            <constraint firstAttribute="trailing" secondItem="9A8-SG-FfR" secondAttribute="trailing" id="JdO-Pd-HdO"/>
+                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="top" secondItem="TX5-1N-trt" secondAttribute="top" id="9An-Om-Pj0"/>
+                            <constraint firstAttribute="trailing" secondItem="pXP-Mb-yC4" secondAttribute="trailing" id="SDx-0I-h4H"/>
+                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="leading" secondItem="TX5-1N-trt" secondAttribute="leading" id="TTc-fX-6Cq"/>
+                            <constraint firstAttribute="bottom" secondItem="pXP-Mb-yC4" secondAttribute="bottom" constant="49" id="UYQ-3P-aT4"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="y7U-Ty-Whe"/>
-                                <exclude reference="9A8-SG-FfR"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8AX-bs-Uh3"/>
-                                <exclude reference="CFr-Du-vhY"/>
-                                <exclude reference="JZK-MV-Wxw"/>
-                                <exclude reference="JdO-Pd-HdO"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <exclude reference="y7U-Ty-Whe"/>
-                                <include reference="9A8-SG-FfR"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8AX-bs-Uh3"/>
-                                <include reference="CFr-Du-vhY"/>
-                                <include reference="JZK-MV-Wxw"/>
-                                <include reference="JdO-Pd-HdO"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="PET" image="pet icon" id="oie-Jx-1CC"/>
                     <connections>
-                        <outlet property="PetViewOutlet" destination="9A8-SG-FfR" id="OLk-hE-TtC"/>
+                        <outlet property="PetViewOutlet" destination="pXP-Mb-yC4" id="a2t-Nu-qUe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwJ-fg-bed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643.5" y="489"/>
+            <point key="canvasLocation" x="643" y="489"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2V7-Gs-lqm">
