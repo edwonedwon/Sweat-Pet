@@ -14,9 +14,10 @@ class GameScene : SKScene {
     var touchLocation = CGVector()
     
     var pupilSize = 15.0
+    var whiteSize = 40
     var eyeHeight = 15.0
-    var eyeSpread = 75.0
-    var mouthHeight = -50.0
+    var eyeSpread = 65.0
+    var mouthHeight = -40.0
     var noseHeight = -2.0
     
     let spring = CGFloat(0.15)
@@ -60,13 +61,13 @@ class GameScene : SKScene {
         petNose.size = CGSize(width: 50,height: 30)
         petWhiteL.texture = petWhiteSpriteArray[0]
         petWhiteL.position = CGPoint(x: -eyeSpread, y: eyeHeight)
-        petWhiteL.size = CGSize(width: 40, height: 40)
+        petWhiteL.size = CGSize(width: whiteSize, height: whiteSize)
         petPupilL.texture = petPupilSpriteArray[0]
         petPupilL.position = CGPoint(x: 10, y: 0)
         petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
         petWhiteR.texture = petWhiteSpriteArray[0]
         petWhiteR.position = CGPoint(x: eyeSpread, y: eyeHeight)
-        petWhiteR.size = CGSize(width: 40, height: 40)
+        petWhiteR.size = CGSize(width: whiteSize, height: whiteSize)
         petPupilR.texture = petPupilSpriteArray[0]
         petPupilR.position = CGPoint(x: -10, y: 0)
         petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
@@ -80,6 +81,7 @@ class GameScene : SKScene {
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_1"))
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_2"))
         petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_1"))
+        petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_2"))
     }
     
     func setupPet()
@@ -148,19 +150,40 @@ class GameScene : SKScene {
     
     func blink()
     {
-        petPupilL.texture = petPupilSpriteArray[1]
-        petPupilL.size = CGSize(width: pupilSize, height: 2)
-        petPupilR.texture = petPupilSpriteArray[1]
-        petPupilR.size = CGSize(width: pupilSize, height: 2)
+//        petPupilL.texture = petPupilSpriteArray[1]
+//        petPupilL.size = CGSize(width: pupilSize, height: 2)
+        petPupilL.alpha = 0.0
+        petWhiteL.texture = petWhiteSpriteArray[1]
+        petWhiteL.color = UIColor(white: 0.2, alpha: 1.0)
+        petWhiteL.colorBlendFactor = 1.0
+        petWhiteL.size = CGSize(width: whiteSize, height: 5)
+        petPupilR.alpha = 0.0
+        petWhiteR.texture = petWhiteSpriteArray[1]
+        petWhiteR.color = UIColor(white: 0.2, alpha: 1.0)
+        petWhiteR.colorBlendFactor = 1.0
+        petWhiteR.size = CGSize(width: whiteSize, height: 5)
+//        petPupilR.texture = petPupilSpriteArray[1]
+//        petPupilR.size = CGSize(width: pupilSize, height: 2)
         
     }
     
     func unBlink()
     {
-        petPupilL.texture = petPupilSpriteArray[0]
-        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
-        petPupilR.texture = petPupilSpriteArray[0]
-        petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
+        petPupilL.alpha = 1.0
+        petWhiteL.texture = petWhiteSpriteArray[0]
+        petWhiteL.size = CGSize(width: whiteSize, height: whiteSize)
+        petWhiteL.color = UIColor(white: 1.0, alpha: 1.0)
+        petWhiteL.colorBlendFactor = 0.0
+        petPupilR.alpha = 1.0
+        petWhiteR.texture = petWhiteSpriteArray[0]
+        petWhiteR.size = CGSize(width: whiteSize, height: whiteSize)
+        petWhiteR.color = UIColor(white: 1.0, alpha: 1.0)
+        petWhiteR.colorBlendFactor = 0.0
+        
+//        petPupilL.texture = petPupilSpriteArray[0]
+//        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
+//        petPupilR.texture = petPupilSpriteArray[0]
+//        petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
     }
 
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
