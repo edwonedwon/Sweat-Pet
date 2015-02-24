@@ -83,6 +83,8 @@ class GameScene : SKScene {
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_2"))
         petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_1"))
         petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_2"))
+        petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_3"))
+
     }
     
     func setupPet()
@@ -137,7 +139,7 @@ class GameScene : SKScene {
             touching = true
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
-            pet.position.y = location.y + touchOffsetY43
+            pet.position.y = location.y + touchOffsetY
             
             blink()
 
@@ -154,15 +156,15 @@ class GameScene : SKScene {
 //        petPupilL.texture = petPupilSpriteArray[1]
 //        petPupilL.size = CGSize(width: pupilSize, height: 2)
         petPupilL.alpha = 0.0
-        petWhiteL.texture = petWhiteSpriteArray[1]
-        petWhiteL.color = UIColor(white: 0.2, alpha: 1.0)
-        petWhiteL.colorBlendFactor = 1.0
+        petWhiteL.texture = petWhiteSpriteArray[2]
+//        petWhiteL.color = UIColor(white: 0.2, alpha: 1.0)
+//        petWhiteL.colorBlendFactor = 1.0
         petWhiteL.size = CGSize(width: whiteSize, height: 5)
         petPupilR.alpha = 0.0
-        petWhiteR.texture = petWhiteSpriteArray[1]
-        petWhiteR.color = UIColor(white: 0.2, alpha: 1.0)
-        petWhiteR.colorBlendFactor = 1.0
-        petWhiteR.size = CGSize(width: whiteSize, height: 5)
+        petWhiteR.texture = petWhiteSpriteArray[2]
+//        petWhiteR.color = UIColor(white: 0.2, alpha: 1.0)
+//        petWhiteR.colorBlendFactor = 1.0
+        petWhiteR.size = CGSize(width: -whiteSize, height: 5)
 //        petPupilR.texture = petPupilSpriteArray[1]
 //        petPupilR.size = CGSize(width: pupilSize, height: 2)
         
@@ -173,13 +175,13 @@ class GameScene : SKScene {
         petPupilL.alpha = 1.0
         petWhiteL.texture = petWhiteSpriteArray[0]
         petWhiteL.size = CGSize(width: whiteSize, height: whiteSize)
-        petWhiteL.color = UIColor(white: 1.0, alpha: 1.0)
-        petWhiteL.colorBlendFactor = 0.0
+//        petWhiteL.color = UIColor(white: 1.0, alpha: 1.0)
+//        petWhiteL.colorBlendFactor = 0.0
         petPupilR.alpha = 1.0
         petWhiteR.texture = petWhiteSpriteArray[0]
         petWhiteR.size = CGSize(width: whiteSize, height: whiteSize)
-        petWhiteR.color = UIColor(white: 1.0, alpha: 1.0)
-        petWhiteR.colorBlendFactor = 0.0
+//        petWhiteR.color = UIColor(white: 1.0, alpha: 1.0)
+//        petWhiteR.colorBlendFactor = 0.0
         
 //        petPupilL.texture = petPupilSpriteArray[0]
 //        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
