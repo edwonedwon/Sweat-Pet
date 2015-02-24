@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E073319D7F9370070E82F /* AppDelegate.swift */; };
-		B08E073619D7F9370070E82F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E073519D7F9370070E82F /* ViewController.swift */; };
 		B08E073919D7F9370070E82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08E073719D7F9370070E82F /* Main.storyboard */; };
 		B08E073B19D7F9370070E82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08E073A19D7F9370070E82F /* Images.xcassets */; };
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
+		EBF6288C1A9C8D97000CCE12 /* CyclingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6288B1A9C8D97000CCE12 /* CyclingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 		B08E072E19D7F9370070E82F /* Sweat Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweat Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08E073219D7F9370070E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08E073319D7F9370070E82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B08E073519D7F9370070E82F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B08E073819D7F9370070E82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B08E073A19D7F9370070E82F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B08E074019D7F9370070E82F /* Sweat PetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sweat PetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +39,7 @@
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EBF6288B1A9C8D97000CCE12 /* CyclingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				EB6817761A9B0938005C3A38 /* petanim.atlas */,
-				B08E073319D7F9370070E82F /* AppDelegate.swift */,
-				B08E073519D7F9370070E82F /* ViewController.swift */,
+				EBF6288B1A9C8D97000CCE12 /* CyclingViewController.swift */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
 				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
+				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				B08E073A19D7F9370070E82F /* Images.xcassets */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
 			);
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */,
-				B08E073619D7F9370070E82F /* ViewController.swift in Sources */,
+				EBF6288C1A9C8D97000CCE12 /* CyclingViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
