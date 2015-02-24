@@ -12,27 +12,35 @@ class GameScene : SKScene {
     var velocity = CGVector(dx: 0, dy: 0)
     var touching = false
     
-    let textureAtlas = SKTextureAtlas(named: "petanim.atlas")
-    var spriteArray = Array<SKTexture>()
+    let petTextureAtlas = SKTextureAtlas(named: "petanim.atlas")
+    var petSpriteArray = Array<SKTexture>()
     
     override func didMoveToView(view: SKView) {
-        // 2
+
         backgroundColor = UIColor(red: 0.58, green: 0.84, blue: 0.78, alpha: 1)
-        // 3
+
+        setupPet()
+        setupPetSprites()
+        pet.texture = petSpriteArray[1]
+        
+    }
+    
+    func setupPet()
+    {
         pet.position = CGPoint(x: size.width * 0.5, y: size.height * 0.40)
         pet.size = CGSize(width: 387 * 0.6, height: 384 * 0.6)
-//        pet.userInteractionEnabled = true; // this is weird, need to research
+        //        pet.userInteractionEnabled = true; // this is weird, need to research
         pet.name = "pet"
         petTargetLocation = CGVector(dx: pet.position.x, dy: pet.position.y)
-        // 4
         addChild(pet)
-        
-        spriteArray.append(textureAtlas.textureNamed("pet_1"))
-        spriteArray.append(textureAtlas.textureNamed("pet_2"))
-        spriteArray.append(textureAtlas.textureNamed("pet_3"))
-        spriteArray.append(textureAtlas.textureNamed("pet_4"))
-        pet.texture = spriteArray[1]
-        
+    }
+    
+    func setupPetSprites()
+    {
+        petSpriteArray.append(petTextureAtlas.textureNamed("pet_1"))
+        petSpriteArray.append(petTextureAtlas.textureNamed("pet_2"))
+        petSpriteArray.append(petTextureAtlas.textureNamed("pet_3"))
+        petSpriteArray.append(petTextureAtlas.textureNamed("pet_4"))
     }
     
     override func update(currentTime: NSTimeInterval) {
