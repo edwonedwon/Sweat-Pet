@@ -1,7 +1,7 @@
 import UIKit
 import SpriteKit
 
-class CyclingViewController: UIViewController {
+class PetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

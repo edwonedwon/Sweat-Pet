@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
     </dependencies>
     <scenes>
-        <!--RUN-->
+        <!--RUN View Controller-->
         <scene sceneID="MqI-XM-47t">
             <objects>
-                <viewController id="1DJ-ON-yIf" sceneMemberID="viewController">
+                <viewController id="1DJ-ON-yIf" userLabel="RUN View Controller" customClass="RunViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nja-Sv-TRt"/>
                         <viewControllerLayoutGuide type="bottom" id="O7m-Bs-hhW"/>
@@ -15,28 +15,18 @@
                     <view key="view" contentMode="scaleToFill" id="IDP-O0-bqr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cCW-4f-8lo">
-                                <rect key="frame" x="-46" y="28" width="600" height="600"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="cCW-4f-8lo"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="RUN" image="runner" id="Id5-KE-52t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ny-be-WpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643.5" y="1158"/>
+            <point key="canvasLocation" x="643" y="1170"/>
         </scene>
-        <!--PET-->
+        <!--PET View Controller-->
         <scene sceneID="IMt-uK-WRf">
             <objects>
-                <viewController id="V8j-pU-BKJ" customClass="CyclingViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="V8j-pU-BKJ" userLabel="PET View Controller" customClass="PetViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HbP-ch-mCn"/>
                         <viewControllerLayoutGuide type="bottom" id="AAd-VX-owe"/>

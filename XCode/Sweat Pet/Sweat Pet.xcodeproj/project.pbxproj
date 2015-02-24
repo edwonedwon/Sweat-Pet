@@ -12,6 +12,7 @@
 		B08E073B19D7F9370070E82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08E073A19D7F9370070E82F /* Images.xcassets */; };
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
+		EB426A541A9CA5020033B72C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB426A531A9CA5020033B72C /* HealthKit.framework */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
@@ -38,6 +39,7 @@
 		B08E074519D7F9370070E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08E074619D7F9370070E82F /* Sweat_PetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweat_PetTests.swift; sourceTree = "<group>"; };
 		EB426A511A9CA28E0033B72C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		EB426A531A9CA5020033B72C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB426A541A9CA5020033B72C /* HealthKit.framework in Frameworks */,
 				EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,7 @@
 		B08E072519D7F9370070E82F = {
 			isa = PBXGroup;
 			children = (
+				EB426A531A9CA5020033B72C /* HealthKit.framework */,
 				EBB15BD91A9A42FF004583CD /* SpriteKit.framework */,
 				B08E073019D7F9370070E82F /* Sweat Pet */,
 				B08E074319D7F9370070E82F /* Sweat PetTests */,

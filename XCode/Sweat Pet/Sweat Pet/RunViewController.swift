@@ -1,7 +1,7 @@
-import Foundation
 import UIKit
+import HealthKit
 
-class PetViewController: UIViewController {
+class RunViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
