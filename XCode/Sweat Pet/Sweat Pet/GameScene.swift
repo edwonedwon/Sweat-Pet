@@ -5,8 +5,19 @@ class GameScene : SKScene {
     
     var pet = SKSpriteNode()
     var petMouth = SKSpriteNode()
+    var petNose = SKSpriteNode()
+    var petPupilL = SKSpriteNode()
+    var petPupilR = SKSpriteNode()
+    var petWhiteL = SKSpriteNode()
+    var petWhiteR = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
+    
+    var pupilSize = 15.0
+    var eyeHeight = 15.0
+    var eyeSpread = 75.0
+    var mouthHeight = -50.0
+    var noseHeight = -2.0
     
     let spring = CGFloat(0.15)
     let damp = CGFloat(0.8                                                                  )
@@ -23,8 +34,8 @@ class GameScene : SKScene {
     var petNoseSpriteArray = Array<SKTexture>()
     let petPupilTextureAtlas = SKTextureAtlas(named: "pet_pupil.atlas")
     var petPupilSpriteArray = Array<SKTexture>()
-    let petWhiteOfEyeTextureAtlas = SKTextureAtlas(named: "pet_white_of_eye.atlas")
-    var petWhiteOfEyeSpriteArray = Array<SKTexture>()
+    let petWhiteTextureAtlas = SKTextureAtlas(named: "pet_white_of_eye.atlas")
+    var petWhiteSpriteArray = Array<SKTexture>()
     
     override func didMoveToView(view: SKView) {
 
@@ -35,11 +46,30 @@ class GameScene : SKScene {
         setupPetPartsSprites()
         pet.texture = petBodySpriteArray[0]
         pet.addChild(petMouth)
-        petMouth.texture = petMouthSpriteArray[0]
-        petMouth.position = CGPoint(x: 0, y: 0)
-        petMouth.size = CGSize(width: 50, height: 40)
-       
+        pet.addChild(petNose)
+        pet.addChild(petWhiteL)
+        petWhiteL.addChild(petPupilL)
+        pet.addChild(petWhiteR)
+        petWhiteR.addChild(petPupilR)
         
+        petMouth.texture = petMouthSpriteArray[0]
+        petMouth.position = CGPoint(x: 0, y: mouthHeight)
+        petMouth.size = CGSize(width: 40, height: 25)
+        petNose.texture = petNoseSpriteArray[0]
+        petNose.position = CGPoint(x: 0, y: noseHeight)
+        petNose.size = CGSize(width: 50,height: 30)
+        petWhiteL.texture = petWhiteSpriteArray[0]
+        petWhiteL.position = CGPoint(x: -eyeSpread, y: eyeHeight)
+        petWhiteL.size = CGSize(width: 40, height: 40)
+        petPupilL.texture = petPupilSpriteArray[0]
+        petPupilL.position = CGPoint(x: 10, y: 0)
+        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
+        petWhiteR.texture = petWhiteSpriteArray[0]
+        petWhiteR.position = CGPoint(x: eyeSpread, y: eyeHeight)
+        petWhiteR.size = CGSize(width: 40, height: 40)
+        petPupilR.texture = petPupilSpriteArray[0]
+        petPupilR.position = CGPoint(x: -10, y: 0)
+        petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
     }
     
     func setupPetPartsSprites ()
@@ -48,7 +78,7 @@ class GameScene : SKScene {
         petMouthSpriteArray.append(petMouthTextureAtlas.textureNamed("mouth_1"))
         petNoseSpriteArray.append(petNoseTextureAtlas.textureNamed("nose_1"))
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_1"))
-        petWhiteOfEyeSpriteArray.append(petWhiteOfEyeTextureAtlas.textureNamed("white_of_eye_1"))
+        petWhiteSpriteArray.append(petWhiteTextureAtlas.textureNamed("white_of_eye_1"))
     }
     
     func setupPet()
@@ -75,20 +105,27 @@ class GameScene : SKScene {
     
     override func didSimulatePhysics() {
         if (touching == false) {
-            var dif  = CGVector(
-                dx: pet.position.x - petTargetLocation.dx,
-                dy: pet.position.y - petTargetLocation.dy
-            )
-            velocity.dx -= dif.dx * spring
-            velocity.dy -= dif.dy * spring
-
-            velocity.dx *= damp
-            velocity.dy *= damp
-     
-            // apply velocity
-            pet.position.x += velocity.dx
-            pet.position.y += velocity.dy
+            mainPetSpring()
         }
+        
+        
+    }
+    
+    func mainPetSpring ()
+    {
+        var dif  = CGVector(
+            dx: pet.position.x - petTargetLocation.dx,
+            dy: pet.position.y - petTargetLocation.dy
+        )
+        velocity.dx -= dif.dx * spring
+        velocity.dy -= dif.dy * spring
+        
+        velocity.dx *= damp
+        velocity.dy *= damp
+        
+        // apply velocity
+        pet.position.x += velocity.dx
+        pet.position.y += velocity.dy
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -108,11 +145,12 @@ class GameScene : SKScene {
         for touch: AnyObject in touches {
             touching = true
             let location = (touch as! UITouch).locationInNode(self)
-//            if (self.nodeAtPoint(location).name == "pet") // if touching pet
-//            {
-                pet.position.x = location.x
-                pet.position.y = location.y
-//            }
+            pet.position.x = location.x
+            pet.position.y = location.y
+            if (self.nodeAtPoint(location).name == "pet") // if touching pet
+            {
+                
+            }
         }
     }
     
