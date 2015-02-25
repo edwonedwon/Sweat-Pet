@@ -57,6 +57,7 @@
 		EBD7BEF11A9CEFD0008065AF /* pet_pupil.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_pupil.atlas; sourceTree = "<group>"; };
 		EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_white_of_eye.atlas; sourceTree = "<group>"; };
 		EBD7BEF81A9D059E008065AF /* pet_tongue.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_tongue.atlas; sourceTree = "<group>"; };
+		EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet.entitlements"; sourceTree = "<group>"; };
 		EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +104,7 @@
 		B08E073019D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXGroup;
 			children = (
+				EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */,
 				EBD7BEED1A9CEFD0008065AF /* Pet_Parts */,
 				EB6817761A9B0938005C3A38 /* petanim.atlas */,
 				EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */,
@@ -204,6 +206,12 @@
 				TargetAttributes = {
 					B08E072D19D7F9370070E82F = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = K4NQBC9GFA;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					B08E073F19D7F9370070E82F = {
 						CreatedOnToolsVersion = 6.0;
@@ -383,9 +391,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Sweat Pet/Sweat Pet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sweat Pet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -394,9 +406,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Sweat Pet/Sweat Pet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sweat Pet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
