@@ -10,6 +10,7 @@ class GameScene : SKScene {
     var petPupilR = SKSpriteNode()
     var petWhiteL = SKSpriteNode()
     var petWhiteR = SKSpriteNode()
+    var petTongue = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
     let touchOffsetY: CGFloat = 50.0
@@ -26,6 +27,9 @@ class GameScene : SKScene {
     var velocity = CGVector(dx: 0, dy: 0)
     var touching = false
     
+    var spinTongue = false
+    let tongueSpinSpeed = CGFloat(0.2)
+    
     let petTextureAtlas = SKTextureAtlas(named: "petanim.atlas")
     var petSpriteArray = Array<SKTexture>()
     let petBodyTextureAtlas = SKTextureAtlas(named: "pet_body.atlas")
@@ -38,6 +42,8 @@ class GameScene : SKScene {
     var petPupilSpriteArray = Array<SKTexture>()
     let petWhiteTextureAtlas = SKTextureAtlas(named: "pet_white_of_eye.atlas")
     var petWhiteSpriteArray = Array<SKTexture>()
+    let petTongueTextureAtlas = SKTextureAtlas(named: "pet_tongue.atlas")
+    var petTongueSpriteArray = Array<SKTexture>()
     
     override func didMoveToView(view: SKView) {
 
@@ -47,16 +53,24 @@ class GameScene : SKScene {
         setupPetSprites()
         setupPetPartsSprites()
         pet.texture = petBodySpriteArray[0]
-        pet.addChild(petMouth)
+
         pet.addChild(petNose)
         pet.addChild(petWhiteL)
         petWhiteL.addChild(petPupilL)
         pet.addChild(petWhiteR)
         petWhiteR.addChild(petPupilR)
+        pet.addChild(petMouth)
+        petMouth.addChild(petTongue)
         
         petMouth.texture = petMouthSpriteArray[0]
         petMouth.position = CGPoint(x: 0, y: mouthHeight)
         petMouth.size = CGSize(width: 40, height: 25)
+        petTongue.texture = petTongueSpriteArray[0]
+        petTongue.position = CGPoint(x: 0, y: 0)
+        petTongue.size = CGSize(width: 73, height: 99)
+        petTongue.anchorPoint = CGPoint(x: 0.5, y: 0.1)
+        petTongue.alpha = 0.0
+        
         petNose.texture = petNoseSpriteArray[0]
         petNose.position = CGPoint(x: 0, y: noseHeight)
         petNose.size = CGSize(width: 50,height: 30)
@@ -78,6 +92,7 @@ class GameScene : SKScene {
     {
         petBodySpriteArray.append(petBodyTextureAtlas.textureNamed("body_1"))
         petMouthSpriteArray.append(petMouthTextureAtlas.textureNamed("mouth_1"))
+        petTongueSpriteArray.append(petTongueTextureAtlas.textureNamed("tongue_1"))
         petNoseSpriteArray.append(petNoseTextureAtlas.textureNamed("nose_1"))
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_1"))
         petPupilSpriteArray.append(petPupilTextureAtlas.textureNamed("pupil_2"))
@@ -106,7 +121,10 @@ class GameScene : SKScene {
     }
     
     override func update(currentTime: NSTimeInterval) {
-
+        if (spinTongue == true)
+        {
+            petTongue.zRotation += tongueSpinSpeed
+        }
     }
     
     override func didSimulatePhysics() {
@@ -140,9 +158,10 @@ class GameScene : SKScene {
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
             pet.position.y = location.y + touchOffsetY
+            petTongue.alpha = 1.0
             
             blink()
-
+            spinTongue = true
             if (self.nodeAtPoint(location).name == "pet") // if touched pet
             {
 //                pet.texture = petBodySpriteArray[0]
@@ -150,24 +169,21 @@ class GameScene : SKScene {
         }
     }
     
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        touching = false
+        spinTongue = false
+        petTongue.alpha = 0.0
+        unBlink()
+    }
     
     func blink()
     {
-//        petPupilL.texture = petPupilSpriteArray[1]
-//        petPupilL.size = CGSize(width: pupilSize, height: 2)
         petPupilL.alpha = 0.0
         petWhiteL.texture = petWhiteSpriteArray[2]
-//        petWhiteL.color = UIColor(white: 0.2, alpha: 1.0)
-//        petWhiteL.colorBlendFactor = 1.0
         petWhiteL.size = CGSize(width: whiteSize, height: 5)
         petPupilR.alpha = 0.0
         petWhiteR.texture = petWhiteSpriteArray[2]
-//        petWhiteR.color = UIColor(white: 0.2, alpha: 1.0)
-//        petWhiteR.colorBlendFactor = 1.0
         petWhiteR.size = CGSize(width: -whiteSize, height: 5)
-//        petPupilR.texture = petPupilSpriteArray[1]
-//        petPupilR.size = CGSize(width: pupilSize, height: 2)
-        
     }
     
     func unBlink()
@@ -175,18 +191,10 @@ class GameScene : SKScene {
         petPupilL.alpha = 1.0
         petWhiteL.texture = petWhiteSpriteArray[0]
         petWhiteL.size = CGSize(width: whiteSize, height: whiteSize)
-//        petWhiteL.color = UIColor(white: 1.0, alpha: 1.0)
-//        petWhiteL.colorBlendFactor = 0.0
+
         petPupilR.alpha = 1.0
         petWhiteR.texture = petWhiteSpriteArray[0]
         petWhiteR.size = CGSize(width: whiteSize, height: whiteSize)
-//        petWhiteR.color = UIColor(white: 1.0, alpha: 1.0)
-//        petWhiteR.colorBlendFactor = 0.0
-        
-//        petPupilL.texture = petPupilSpriteArray[0]
-//        petPupilL.size = CGSize(width: pupilSize, height: pupilSize)
-//        petPupilR.texture = petPupilSpriteArray[0]
-//        petPupilR.size = CGSize(width: pupilSize, height: pupilSize)
     }
 
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -200,11 +208,6 @@ class GameScene : SKScene {
             
             }
         }
-    }
-    
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        touching = false
-        unBlink()
     }
     
     func bounce() {
