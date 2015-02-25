@@ -6,7 +6,6 @@ class HealthManager
     
     let healthKitStore: HKHealthStore = HKHealthStore()
     let kUnknownString   = "Unknown"
-    var weight:HKQuantitySample?
     
     func authorizeHealthKit(completion: ((success:Bool, error:NSError!) -> Void)!)
     {
@@ -51,16 +50,21 @@ class HealthManager
         }
     }
     
+    var energy:HKQuantitySample?
+    
+    var tempString = NSString()
+    
     func readEnergy () -> NSString
     {
-        var weightLocalizedString = NSString()
-//        var key = HKQuantityTypeIdentifierActiveEnergyBurned
+        var energyLocalizedString = NSString()
+        var theKey = HKQuantityTypeIdentifierActiveEnergyBurned
         
         // 1. Construct an HKSampleType for weight
-        let sampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+        let sampleType = HKSampleType.quantityTypeForIdentifier(theKey)
+        
         
         // 2. Call the method to read the most recent weight sample
-        readMostRecentSample(sampleType, completion: { (mostRecentWeight, error) -> Void in
+        readMostRecentSample(sampleType, completion: { (mostRecentEnergy, error) -> Void in
             
             if( error != nil )
             {
@@ -68,13 +72,14 @@ class HealthManager
                 return;
             }
             
-//            var weightLocalizedString = self.kUnknownString;
+            var energyLocalizedString = self.kUnknownString;
             // 3. Format the weight to display it on the screen
-            self.weight = mostRecentWeight as? HKQuantitySample;
-            if let kilograms = self.weight?.quantity.doubleValueForUnit(HKUnit.gramUnitWithMetricPrefix(.Kilo)) {
-                let weightFormatter = NSMassFormatter()
-                weightFormatter.forPersonMassUse = true;
-                weightLocalizedString = weightFormatter.stringFromKilograms(kilograms)
+            self.energy = mostRecentEnergy as? HKQuantitySample;
+            if let calories = self.energy?.quantity.doubleValueForUnit(HKUnit.calorieUnit()) {
+                let energyFormatter = NSEnergyFormatter()
+                energyLocalizedString = energyFormatter.stringFromValue(calories, unit: NSEnergyFormatterUnit.Calorie)
+//                println(energyLocalizedString)
+                self.tempString = energyLocalizedString
             }
             
             // 4. Update UI in the main thread
@@ -84,9 +89,7 @@ class HealthManager
 
         });
         
-//        println("active energy burned: ")
-//        println(activeEnergyBurned)
-        return weightLocalizedString
+        return tempString
 
     }
     

@@ -15,7 +15,8 @@ class RunViewController: UIViewController
     }
     
     @IBAction func ReadButtonAction(sender: AnyObject) {
-        activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
+        println(healthManager.readEnergy())
+        self.activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
     }
     
     @IBAction func AuthorizeButtonAction(sender: AnyObject) {
