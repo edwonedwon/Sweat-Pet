@@ -5,6 +5,8 @@ class HealthManager
 {
     
     let healthKitStore: HKHealthStore = HKHealthStore()
+    let kUnknownString   = "Unknown"
+    var weight:HKQuantitySample?
     
     func authorizeHealthKit(completion: ((success:Bool, error:NSError!) -> Void)!)
     {
@@ -49,43 +51,77 @@ class HealthManager
         }
     }
     
-    func readEnergy ()
+    func readEnergy () -> NSString
     {
-//        var activeEnergyBurned: AnyObject? = healthKitStore.valueForKey(HKQuantityTypeIdentifierActiveEnergyBurned)
-//        println(activeEnergyBurned)
+        var weightLocalizedString = NSString()
+//        var key = HKQuantityTypeIdentifierActiveEnergyBurned
         
+        // 1. Construct an HKSampleType for weight
+        let sampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+        
+        // 2. Call the method to read the most recent weight sample
+        readMostRecentSample(sampleType, completion: { (mostRecentWeight, error) -> Void in
+            
+            if( error != nil )
+            {
+                println("Error reading weight from HealthKit Store: \(error.localizedDescription)")
+                return;
+            }
+            
+//            var weightLocalizedString = self.kUnknownString;
+            // 3. Format the weight to display it on the screen
+            self.weight = mostRecentWeight as? HKQuantitySample;
+            if let kilograms = self.weight?.quantity.doubleValueForUnit(HKUnit.gramUnitWithMetricPrefix(.Kilo)) {
+                let weightFormatter = NSMassFormatter()
+                weightFormatter.forPersonMassUse = true;
+                weightLocalizedString = weightFormatter.stringFromKilograms(kilograms)
+            }
+            
+            // 4. Update UI in the main thread
+//            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+//            });
+
+        });
+        
+//        println("active energy burned: ")
+//        println(activeEnergyBurned)
+        return weightLocalizedString
+
     }
     
-    func readProfile() -> ( age:Int?,  biologicalsex:HKBiologicalSexObject?, bloodtype:HKBloodTypeObject?)
+    func readMostRecentSample(sampleType:HKSampleType , completion: ((HKSample!, NSError!) -> Void)!)
     {
-        var error:NSError?
-        var age:Int?
         
-        // 1. Request birthday and calculate age
-        if let birthDay = healthKitStore.dateOfBirthWithError(&error)
-        {
-            let today = NSDate()
-            let calendar = NSCalendar.currentCalendar()
-            let differenceComponents = NSCalendar.currentCalendar().components(.YearCalendarUnit, fromDate: birthDay, toDate: today, options: NSCalendarOptions(0) )
-            age = differenceComponents.year
-        }
-        if error != nil {
-            println("Error reading Birthday: \(error)")
-        }
+        // 1. Build the Predicate
+        let past = NSDate.distantPast() as! NSDate
+        let now   = NSDate()
+        let mostRecentPredicate = HKQuery.predicateForSamplesWithStartDate(past, endDate:now, options: .None)
         
-        // 2. Read biological sex
-        var biologicalSex:HKBiologicalSexObject? = healthKitStore.biologicalSexWithError(&error);
-        if error != nil {
-            println("Error reading Biological Sex: \(error)")
-        }
-        // 3. Read blood type
-        var bloodType:HKBloodTypeObject? = healthKitStore.bloodTypeWithError(&error);
-        if error != nil {
-            println("Error reading Blood Type: \(error)")
-        }
+        // 2. Build the sort descriptor to return the samples in descending order
+        let sortDescriptor = NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: false)
+        // 3. we want to limit the number of samples returned by the query to just 1 (the most recent)
+        let limit = 1
         
-        // 4. Return the information read in a tuple
-        return (age, biologicalSex, bloodType)
+        // 4. Build samples query
+        let sampleQuery = HKSampleQuery(sampleType: sampleType, predicate: mostRecentPredicate, limit: limit, sortDescriptors: [sortDescriptor])
+            { (sampleQuery, results, error ) -> Void in
+                
+                if let queryError = error {
+                    completion(nil,error)
+                    return;
+                }
+                
+                // Get the first sample
+                let mostRecentSample = results.first as? HKQuantitySample
+                
+                // Execute the completion closure
+                if completion != nil {
+                    completion(mostRecentSample,nil)
+                }
+        }
+        // 5. Execute the Query
+        self.healthKitStore.executeQuery(sampleQuery)
     }
     
 }

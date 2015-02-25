@@ -4,7 +4,9 @@ import HealthKit
 class RunViewController: UIViewController
 {
     
-      let healthManager:HealthManager = HealthManager()
+    let healthManager:HealthManager = HealthManager()
+    
+    @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
     
     override func viewDidLoad()
     {
@@ -13,7 +15,7 @@ class RunViewController: UIViewController
     }
     
     @IBAction func ReadButtonAction(sender: AnyObject) {
-        healthManager.readEnergy()
+        activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
     }
     
     @IBAction func AuthorizeButtonAction(sender: AnyObject) {

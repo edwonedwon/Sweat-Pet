@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sweat Pet/RunViewController.swift"
-            timestampString = "446490334.984451"
+            filePath = "Sweat Pet/HealthManager.swift"
+            timestampString = "446587162.853708"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "AuthorizeButtonAction(_:)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "readEnergy()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

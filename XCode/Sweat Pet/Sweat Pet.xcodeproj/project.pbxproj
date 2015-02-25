@@ -14,6 +14,8 @@
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
 		EB426A541A9CA5020033B72C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB426A531A9CA5020033B72C /* HealthKit.framework */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
+		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
+		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
 		EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1977E1A9CD7F900401B70 /* HealthManager.swift */; };
@@ -48,6 +50,8 @@
 		EB426A511A9CA28E0033B72C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		EB426A531A9CA5020033B72C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
+		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
+		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		EBC1977E1A9CD7F900401B70 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		B08E073019D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXGroup;
 			children = (
+				EB810FB91A9DC460004FEBFF /* Sounds */,
 				EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */,
 				EBD7BEED1A9CEFD0008065AF /* Pet_Parts */,
 				EB6817761A9B0938005C3A38 /* petanim.atlas */,
@@ -142,6 +147,15 @@
 				B08E074519D7F9370070E82F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB810FB91A9DC460004FEBFF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */,
+				EB810FBD1A9DC48F004FEBFF /* lick.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		EBD7BEED1A9CEFD0008065AF /* Pet_Parts */ = {
@@ -243,12 +257,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */,
 				EBD7BEF71A9CEFD0008065AF /* pet_white_of_eye.atlas in Resources */,
 				B08E073919D7F9370070E82F /* Main.storyboard in Resources */,
 				B08E073B19D7F9370070E82F /* Images.xcassets in Resources */,
 				EBD7BEF91A9D059E008065AF /* pet_tongue.atlas in Resources */,
 				EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */,
 				EBD7BEF31A9CEFD0008065AF /* pet_body.atlas in Resources */,
+				EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */,
 				EBD7BEF51A9CEFD0008065AF /* pet_nose.atlas in Resources */,
 				EBD7BEF41A9CEFD0008065AF /* pet_mouth.atlas in Resources */,
 				EBD7BEF61A9CEFD0008065AF /* pet_pupil.atlas in Resources */,

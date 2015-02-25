@@ -13,7 +13,7 @@ class GameScene : SKScene {
     var petTongue = SKSpriteNode()
     var petTargetLocation = CGVector(dx: 0, dy: 0)
     var touchLocation = CGVector()
-    let touchOffsetY: CGFloat = 50.0
+    let touchOffsetY: CGFloat = 30.0
     
     var pupilSize = 15.0
     var whiteSize = 40
@@ -23,7 +23,7 @@ class GameScene : SKScene {
     var noseHeight = -2.0
     
     let spring = CGFloat(0.15)
-    let damp = CGFloat(0.8                                                                  )
+    let damp = CGFloat(0.8)
     var velocity = CGVector(dx: 0, dy: 0)
     var touching = false
     
@@ -159,7 +159,10 @@ class GameScene : SKScene {
             pet.position.x = location.x
             pet.position.y = location.y + touchOffsetY
             petTongue.alpha = 1.0
-            
+            runAction(SKAction.sequence([
+                SKAction.playSoundFileNamed("lick.wav", waitForCompletion: false)  ,
+                SKAction.playSoundFileNamed("lick_synth.wav", waitForCompletion: false)
+                ]))
             blink()
             spinTongue = true
             if (self.nodeAtPoint(location).name == "pet") // if touched pet
