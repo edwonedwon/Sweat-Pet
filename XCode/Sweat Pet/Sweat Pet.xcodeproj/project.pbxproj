@@ -61,6 +61,7 @@
 		EBD7BEF11A9CEFD0008065AF /* pet_pupil.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_pupil.atlas; sourceTree = "<group>"; };
 		EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_white_of_eye.atlas; sourceTree = "<group>"; };
 		EBD7BEF81A9D059E008065AF /* pet_tongue.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_tongue.atlas; sourceTree = "<group>"; };
+		EBE2DCD61A9E95D400A500BD /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; };
 		EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet.entitlements"; sourceTree = "<group>"; };
 		EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +119,7 @@
 				EB426A511A9CA28E0033B72C /* RunViewController.swift */,
 				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
+				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
 				B08E073A19D7F9370070E82F /* Images.xcassets */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
 			);
@@ -169,6 +171,14 @@
 				EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */,
 			);
 			path = Pet_Parts;
+			sourceTree = "<group>";
+		};
+		EBE2DCD51A9E95D400A500BD /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2DCD61A9E95D400A500BD /* Closures.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
