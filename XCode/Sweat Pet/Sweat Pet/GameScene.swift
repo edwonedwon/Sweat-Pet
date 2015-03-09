@@ -169,6 +169,7 @@ class GameScene : SKScene {
             {
 //                pet.texture = petBodySpriteArray[0]
             }
+            
         }
     }
     

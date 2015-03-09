@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
     </dependencies>
     <scenes>
         <!--RUN View Controller-->
@@ -41,13 +41,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-nB-PvD">
                                 <rect key="frame" x="286" y="290" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Energy Burned" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4g-gu-XkA">
                                 <rect key="frame" x="217" y="270" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -86,15 +86,60 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXP-Mb-yC4" userLabel="PetView" customClass="SKView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vial fill" translatesAutoresizingMaskIntoConstraints="NO" id="dwM-Hw-Ysx">
+                                        <rect key="frame" x="21" y="39" width="23" height="78"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="78" id="Eep-qP-JLe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96N-y1-HPN" userLabel="vial button">
+                                        <rect key="frame" x="21" y="20" width="23" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="hU5-EM-Jrc"/>
+                                        </constraints>
+                                        <state key="normal" image="vial outline">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vial black circle" translatesAutoresizingMaskIntoConstraints="NO" id="ga6-iV-WpR">
+                                        <rect key="frame" x="34" y="96" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="iln-kS-lrd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ece-kS-ZOE">
+                                        <rect key="frame" x="44" y="100" width="10" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="bVE-eA-7Zi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.79431029040404044" green="0.79431029040404044" blue="0.79431029040404044" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="96N-y1-HPN" firstAttribute="leading" secondItem="pXP-Mb-yC4" secondAttribute="leading" constant="21" id="6aD-7l-OJ2"/>
+                                    <constraint firstItem="ece-kS-ZOE" firstAttribute="leading" secondItem="dwM-Hw-Ysx" secondAttribute="trailing" id="Dr2-A8-DtY"/>
+                                    <constraint firstItem="ga6-iV-WpR" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="96" id="M7m-XA-Wnm"/>
+                                    <constraint firstItem="ga6-iV-WpR" firstAttribute="leading" secondItem="pXP-Mb-yC4" secondAttribute="leading" constant="34" id="Ptx-2R-RDD"/>
+                                    <constraint firstItem="ece-kS-ZOE" firstAttribute="centerX" secondItem="ga6-iV-WpR" secondAttribute="centerX" id="Qn3-hb-tcf"/>
+                                    <constraint firstItem="dwM-Hw-Ysx" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="39" id="Ykn-zr-gI0"/>
+                                    <constraint firstItem="96N-y1-HPN" firstAttribute="bottom" secondItem="dwM-Hw-Ysx" secondAttribute="bottom" id="a86-og-hkx"/>
+                                    <constraint firstItem="96N-y1-HPN" firstAttribute="leading" secondItem="dwM-Hw-Ysx" secondAttribute="leading" id="dlQ-bQ-yYW"/>
+                                    <constraint firstItem="96N-y1-HPN" firstAttribute="trailing" secondItem="dwM-Hw-Ysx" secondAttribute="trailing" id="t0e-na-hAj"/>
+                                    <constraint firstItem="96N-y1-HPN" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="20" id="vk9-sB-pod"/>
+                                    <constraint firstItem="ece-kS-ZOE" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="100" id="wfP-ay-XkY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="top" secondItem="TX5-1N-trt" secondAttribute="top" id="9An-Om-Pj0"/>
-                            <constraint firstAttribute="trailing" secondItem="pXP-Mb-yC4" secondAttribute="trailing" id="SDx-0I-h4H"/>
-                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="leading" secondItem="TX5-1N-trt" secondAttribute="leading" id="TTc-fX-6Cq"/>
-                            <constraint firstAttribute="bottom" secondItem="pXP-Mb-yC4" secondAttribute="bottom" constant="49" id="UYQ-3P-aT4"/>
+                            <constraint firstAttribute="trailing" secondItem="pXP-Mb-yC4" secondAttribute="trailing" id="Uzd-xU-BCe"/>
+                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="top" secondItem="TX5-1N-trt" secondAttribute="top" id="XQp-7S-KZf"/>
+                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="bottom" secondItem="AAd-VX-owe" secondAttribute="top" id="exh-qp-dw4"/>
+                            <constraint firstItem="pXP-Mb-yC4" firstAttribute="leading" secondItem="TX5-1N-trt" secondAttribute="leading" id="r3p-FM-aRz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="PET" image="pet icon" id="oie-Jx-1CC"/>
@@ -130,6 +175,9 @@
     <resources>
         <image name="pet icon" width="35" height="35"/>
         <image name="runner" width="34" height="35"/>
+        <image name="vial black circle" width="50" height="50"/>
+        <image name="vial fill" width="34" height="136"/>
+        <image name="vial outline" width="39" height="159"/>
     </resources>
     <color key="tintColor" white="0.41349712171052633" alpha="1" colorSpace="calibratedWhite"/>
 </document>

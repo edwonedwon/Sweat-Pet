@@ -59,11 +59,11 @@ class HealthManager
         var energyLocalizedString = NSString()
         var theKey = HKQuantityTypeIdentifierActiveEnergyBurned
         
-        // 1. Construct an HKSampleType for weight
+        // 1. Construct an HKSampleType
         let sampleType = HKSampleType.quantityTypeForIdentifier(theKey)
         
         
-        // 2. Call the method to read the most recent weight sample
+        // 2. Call the method to read the most recent sample
         readMostRecentSample(sampleType, completion: { (mostRecentEnergy, error) -> Void in
             
             if( error != nil )
@@ -101,10 +101,11 @@ class HealthManager
         let now   = NSDate()
         let mostRecentPredicate = HKQuery.predicateForSamplesWithStartDate(past, endDate:now, options: .None)
         
+        
         // 2. Build the sort descriptor to return the samples in descending order
         let sortDescriptor = NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: false)
         // 3. we want to limit the number of samples returned by the query to just 1 (the most recent)
-        let limit = 1
+        let limit = 1000
         
         // 4. Build samples query
         let sampleQuery = HKSampleQuery(sampleType: sampleType, predicate: mostRecentPredicate, limit: limit, sortDescriptors: [sortDescriptor])
@@ -115,7 +116,16 @@ class HealthManager
                     return;
                 }
                 
+                var sampleTotal = Float()
+                
                 // Get the first sample
+                for result in results
+                {
+                    sampleTotal += result.value as Float
+                }
+                
+                println(sampleTotal)
+                
                 let mostRecentSample = results.first as? HKQuantitySample
                 
                 // Execute the completion closure
