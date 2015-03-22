@@ -62,9 +62,9 @@ class HealthManager
         // 1. Construct an HKSampleType
         let sampleType = HKSampleType.quantityTypeForIdentifier(theKey)
         
-        
         // 2. Call the method to read the most recent sample
-        readMostRecentSample(sampleType, completion: { (mostRecentEnergy, error) -> Void in
+        readMostRecentSample(sampleType, completion:
+        { (mostRecentEnergy, error) -> Void in
             
             if( error != nil )
             {
