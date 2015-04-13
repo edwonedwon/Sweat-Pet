@@ -15,7 +15,7 @@
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
-		EB9E20A71ADA256A00182CBA /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20A61ADA256A00182CBA /* PetModel.swift */; };
+		EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */; };
 		EBA9FD2A1ABB693100753643 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA9FD291ABB693100753643 /* HealthKit.framework */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
@@ -54,8 +54,8 @@
 		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
 		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
 		EB9149161ABBA60A00940950 /* HealthKit3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit3.playground; sourceTree = "<group>"; };
-		EB9E20A61ADA256A00182CBA /* PetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		EB9E20A81ADA32B700182CBA /* Dates.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dates.playground; sourceTree = "<group>"; };
+		EB9E20AA1ADC433900182CBA /* PetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetModel.xcdatamodel; sourceTree = "<group>"; };
 		EBA9FD291ABB693100753643 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				EBC1977E1A9CD7F900401B70 /* HealthManager.swift */,
 				EB426A511A9CA28E0033B72C /* RunViewController.swift */,
 				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
-				EB9E20A61ADA256A00182CBA /* PetModel.swift */,
+				EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */,
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
 				B08E073A19D7F9370070E82F /* Images.xcassets */,
@@ -307,11 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */,
+				EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */,
 				EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */,
 				EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
 				EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */,
-				EB9E20A71ADA256A00182CBA /* PetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +521,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB9E20AA1ADC433900182CBA /* PetModel.xcdatamodel */,
+			);
+			currentVersion = EB9E20AA1ADC433900182CBA /* PetModel.xcdatamodel */;
+			path = PetModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B08E072619D7F9370070E82F /* Project object */;
 }
