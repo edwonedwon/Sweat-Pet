@@ -33,7 +33,7 @@ formatter.stringFromDate(firstLandPhoneCallDate!)
 // testing zone
 
 var now = NSDate()
-var birth = NSDate(timeIntervalSinceNow: -100000000000)
+var birth = NSDate(timeIntervalSinceNow: -1000)
 
 var timeSinceBirth = NSTimeInterval()
 timeSinceBirth = now.timeIntervalSinceDate(birth)
@@ -48,5 +48,7 @@ func stringFromTimeInterval(interval:NSTimeInterval) -> NSString {
     var minutes = (ti / 60) % 60
     var hours = (ti / 3600)
     
-    return NSString(format: "%0.2d:%0.2d:%0.2d.%0.3d",hours,minutes,seconds,ms)
+    return NSString(format: "h: %0.2d: m: %0.2d: s: %0.2d.%0.3d",hours,minutes,seconds,ms)
 }
+
+stringFromTimeInterval(timeSinceBirth)
