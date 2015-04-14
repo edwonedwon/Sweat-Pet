@@ -8,6 +8,7 @@ class RunViewController: UIViewController
     
     @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

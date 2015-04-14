@@ -3,6 +3,8 @@ import SpriteKit
 
 class PetViewController: UIViewController {
     
+    let petControl = PetController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,5 +28,23 @@ class PetViewController: UIViewController {
         return true
     }
     
+    @IBAction func vialButtonAction(sender: AnyObject)
+    {
+        println("touched vial")
+//        petController.birth()
+    }
+    @IBAction func NewPetAction(sender: AnyObject)
+    {
+        petControl.newPet()
+    }
+    @IBAction func UpdateAgeAction(sender: AnyObject)
+    {
+        petControl.updateAge()
+    }
+
+    @IBAction func ReadAgeAction(sender: AnyObject)
+    {
+        petControl.readAge()
+    }
 }
 

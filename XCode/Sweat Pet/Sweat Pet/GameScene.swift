@@ -44,7 +44,7 @@ class GameScene : SKScene {
     var petWhiteSpriteArray = Array<SKTexture>()
     let petTongueTextureAtlas = SKTextureAtlas(named: "pet_tongue.atlas")
     var petTongueSpriteArray = Array<SKTexture>()
-    
+        
     override func didMoveToView(view: SKView) {
 
         backgroundColor = UIColor(red: 0.58, green: 0.84, blue: 0.78, alpha: 1)
@@ -170,6 +170,7 @@ class GameScene : SKScene {
 //                pet.texture = petBodySpriteArray[0]
             }
             
+            
         }
     }
     
@@ -207,10 +208,12 @@ class GameScene : SKScene {
             let location = (touch as! UITouch).locationInNode(self)
             pet.position.x = location.x
             pet.position.y = location.y + touchOffsetY
+            
             if (self.nodeAtPoint(location).name == "pet") // if touching pet
             {
-            
+                
             }
+            
         }
     }
     
