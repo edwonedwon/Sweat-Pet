@@ -97,7 +97,7 @@
                             <constraint firstAttribute="centerY" secondItem="GLN-O3-5n8" secondAttribute="centerY" id="AyS-1v-9hg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="info" id="ABa-fN-yTv"/>
+                    <tabBarItem key="tabBarItem" title="info" selectedImage="Default" id="ABa-fN-yTv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgw-5D-XVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -274,6 +274,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Default" width="34" height="35"/>
         <image name="pet icon" width="35" height="35"/>
         <image name="runner" width="34" height="35"/>
         <image name="vial black circle" width="50" height="50"/>
