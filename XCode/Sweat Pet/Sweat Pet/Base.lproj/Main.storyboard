@@ -70,7 +70,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ny-be-WpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="1174"/>
+            <point key="canvasLocation" x="643" y="1164"/>
+        </scene>
+        <!--info-->
+        <scene sceneID="pAe-Hs-Y1h">
+            <objects>
+                <viewController id="7ui-Yc-Pil" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L0Q-Vu-QcA"/>
+                        <viewControllerLayoutGuide type="bottom" id="U8G-n5-nh6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PIf-eO-D5E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLN-O3-5n8">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="GLN-O3-5n8" secondAttribute="centerX" id="73x-vS-r6x"/>
+                            <constraint firstAttribute="centerY" secondItem="GLN-O3-5n8" secondAttribute="centerY" id="AyS-1v-9hg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="info" id="ABa-fN-yTv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgw-5D-XVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="1865"/>
         </scene>
         <!--PET View Controller-->
         <scene sceneID="IMt-uK-WRf">
@@ -233,11 +265,12 @@
                     <connections>
                         <segue destination="V8j-pU-BKJ" kind="relationship" relationship="viewControllers" id="Tf6-eZ-vol"/>
                         <segue destination="1DJ-ON-yIf" kind="relationship" relationship="viewControllers" id="QGb-cd-zaT"/>
+                        <segue destination="7ui-Yc-Pil" kind="relationship" relationship="viewControllers" id="d6W-ON-6Y6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6G-75-Q5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241.5" y="788"/>
+            <point key="canvasLocation" x="-320" y="1288"/>
         </scene>
     </scenes>
     <resources>

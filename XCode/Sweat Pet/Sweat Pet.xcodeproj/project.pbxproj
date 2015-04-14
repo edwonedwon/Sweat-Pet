@@ -17,6 +17,7 @@
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
 		EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */; };
 		EB9E20AD1ADC458E00182CBA /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20AC1ADC458E00182CBA /* PetController.swift */; };
+		EB9E20B01ADCE02800182CBA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20AF1ADCE02800182CBA /* InfoViewController.swift */; };
 		EBA9FD2A1ABB693100753643 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA9FD291ABB693100753643 /* HealthKit.framework */; };
 		EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB15BD91A9A42FF004583CD /* SpriteKit.framework */; };
 		EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB15BDD1A9A4836004583CD /* GameScene.swift */; };
@@ -58,6 +59,7 @@
 		EB9E20A81ADA32B700182CBA /* Dates.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dates.playground; sourceTree = "<group>"; };
 		EB9E20AA1ADC433900182CBA /* PetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetModel.xcdatamodel; sourceTree = "<group>"; };
 		EB9E20AC1ADC458E00182CBA /* PetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
+		EB9E20AF1ADCE02800182CBA /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		EBA9FD291ABB693100753643 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EBB15BD91A9A42FF004583CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		EBB15BDD1A9A4836004583CD /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -117,20 +119,14 @@
 		B08E073019D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXGroup;
 			children = (
-				EB810FB91A9DC460004FEBFF /* Sounds */,
-				EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */,
-				EBD7BEED1A9CEFD0008065AF /* Pet_Parts */,
-				EB6817761A9B0938005C3A38 /* petanim.atlas */,
-				EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
+				EB9E20AE1ADCDFD300182CBA /* ViewControllers */,
+				EB9E20B11ADCE07000182CBA /* Pet Data */,
+				EB9E20B21ADCE0A400182CBA /* Pet Art */,
+				EB810FB91A9DC460004FEBFF /* Sounds */,
 				EBC1977E1A9CD7F900401B70 /* HealthManager.swift */,
-				EB426A511A9CA28E0033B72C /* RunViewController.swift */,
-				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
-				EB9E20AC1ADC458E00182CBA /* PetController.swift */,
-				EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */,
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
-				B08E073A19D7F9370070E82F /* Images.xcassets */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
 			);
 			path = "Sweat Pet";
@@ -139,6 +135,7 @@
 		B08E073119D7F9370070E82F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */,
 				B08E073219D7F9370070E82F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -168,6 +165,36 @@
 				EB810FBD1A9DC48F004FEBFF /* lick.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EB9E20AE1ADCDFD300182CBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */,
+				EB426A511A9CA28E0033B72C /* RunViewController.swift */,
+				EB9E20AF1ADCE02800182CBA /* InfoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB9E20B11ADCE07000182CBA /* Pet Data */ = {
+			isa = PBXGroup;
+			children = (
+				EBB15BDD1A9A4836004583CD /* GameScene.swift */,
+				EB9E20AC1ADC458E00182CBA /* PetController.swift */,
+				EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */,
+			);
+			name = "Pet Data";
+			sourceTree = "<group>";
+		};
+		EB9E20B21ADCE0A400182CBA /* Pet Art */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7BEED1A9CEFD0008065AF /* Pet_Parts */,
+				EB6817761A9B0938005C3A38 /* petanim.atlas */,
+				B08E073A19D7F9370070E82F /* Images.xcassets */,
+			);
+			name = "Pet Art";
 			sourceTree = "<group>";
 		};
 		EBD7BEED1A9CEFD0008065AF /* Pet_Parts */ = {
@@ -315,6 +342,7 @@
 				EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
 				EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */,
+				EB9E20B01ADCE02800182CBA /* InfoViewController.swift in Sources */,
 				EB9E20AD1ADC458E00182CBA /* PetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
