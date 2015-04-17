@@ -75,7 +75,7 @@
         <!--info-->
         <scene sceneID="pAe-Hs-Y1h">
             <objects>
-                <viewController id="7ui-Yc-Pil" sceneMemberID="viewController">
+                <viewController id="7ui-Yc-Pil" customClass="InfoViewController" customModule="Sweat_Pet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L0Q-Vu-QcA"/>
                         <viewControllerLayoutGuide type="bottom" id="U8G-n5-nh6"/>
@@ -97,7 +97,7 @@
                             <constraint firstAttribute="centerY" secondItem="GLN-O3-5n8" secondAttribute="centerY" id="AyS-1v-9hg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="info" selectedImage="Default" id="ABa-fN-yTv"/>
+                    <tabBarItem key="tabBarItem" title="info" image="bicycle" id="ABa-fN-yTv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgw-5D-XVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,49 +158,9 @@
                                             <action selector="vialButtonAction:" destination="V8j-pU-BKJ" eventType="touchUpInside" id="FWJ-Ih-XZG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpx-sj-MwV">
-                                        <rect key="frame" x="254" y="33" width="79" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="OHe-3e-566"/>
-                                            <constraint firstAttribute="width" constant="79" id="fKw-P4-jV9"/>
-                                        </constraints>
-                                        <state key="normal" title="New Pet">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="NewPetAction:" destination="V8j-pU-BKJ" eventType="touchUpInside" id="x3u-zW-fNu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyQ-E5-5Gf">
-                                        <rect key="frame" x="228" y="199" width="130" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="5dz-lx-7cu"/>
-                                            <constraint firstAttribute="width" constant="150" id="cCQ-NL-Nq4"/>
-                                        </constraints>
-                                        <state key="normal" title="Read Age">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ReadAgeAction:" destination="V8j-pU-BKJ" eventType="touchUpInside" id="1uk-Go-frD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkd-gE-kDO">
-                                        <rect key="frame" x="228" y="87" width="130" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="TSb-Rt-4KS"/>
-                                            <constraint firstAttribute="height" constant="30" id="kc2-Xa-Bum"/>
-                                        </constraints>
-                                        <state key="normal" title="Update Age">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="UpdateAgeAction:" destination="V8j-pU-BKJ" eventType="touchUpInside" id="XFW-fW-Ax8"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79431029040404044" green="0.79431029040404044" blue="0.79431029040404044" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="qkd-gE-kDO" secondAttribute="centerY" constant="50" id="APM-oF-Ldx"/>
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="leading" secondItem="dwM-Hw-Ysx" secondAttribute="trailing" id="Dr2-A8-DtY"/>
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="width" secondItem="gJg-6A-3J5" secondAttribute="width" id="FHD-Yb-NOC"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="trailing" secondItem="ga6-iV-WpR" secondAttribute="trailing" constant="-20" id="GxB-rh-bRP"/>
@@ -212,15 +172,10 @@
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="centerY" secondItem="ga6-iV-WpR" secondAttribute="centerY" constant="-0.5" id="YRH-lI-PRK"/>
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="39" id="Ykn-zr-gI0"/>
                                     <constraint firstItem="vtu-1I-UEc" firstAttribute="leading" secondItem="pXP-Mb-yC4" secondAttribute="leading" id="a6b-yA-6cy"/>
-                                    <constraint firstAttribute="centerY" secondItem="yyQ-E5-5Gf" secondAttribute="centerY" constant="-50" id="bfB-ar-Zd2"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="20" id="cph-4d-aIR"/>
-                                    <constraint firstAttribute="centerX" secondItem="Qpx-sj-MwV" secondAttribute="centerX" id="dd2-MU-zpZ"/>
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="centerX" secondItem="gJg-6A-3J5" secondAttribute="centerX" id="eKm-TU-E9p"/>
-                                    <constraint firstAttribute="centerX" secondItem="yyQ-E5-5Gf" secondAttribute="centerX" id="fNx-nm-Wq9"/>
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="centerX" secondItem="ga6-iV-WpR" secondAttribute="centerX" id="hhn-R7-0Ig"/>
-                                    <constraint firstAttribute="centerX" secondItem="qkd-gE-kDO" secondAttribute="centerX" id="iVO-C0-a2U"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="bottom" secondItem="ga6-iV-WpR" secondAttribute="bottom" constant="-5" id="od4-VQ-Cm4"/>
-                                    <constraint firstAttribute="centerY" relation="lessThanOrEqual" secondItem="Qpx-sj-MwV" secondAttribute="centerY" constant="100" id="v8E-Ko-O7y"/>
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="100" id="wfP-ay-XkY"/>
                                 </constraints>
                                 <variation key="default">
@@ -274,7 +229,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default" width="34" height="35"/>
+        <image name="bicycle" width="64" height="35"/>
         <image name="pet icon" width="35" height="35"/>
         <image name="runner" width="34" height="35"/>
         <image name="vial black circle" width="50" height="50"/>

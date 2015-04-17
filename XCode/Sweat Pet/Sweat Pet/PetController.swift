@@ -37,6 +37,7 @@ class PetController
         }
     }
     
+    // update age calculates the current age and saves it to core data
     func updateAge ()
     {
         var appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
@@ -61,6 +62,7 @@ class PetController
         saveAge(timeSinceBirth)
     }
     
+    // save age only saves the age to core data as a Double
     func saveAge (age:Double)
     {
         var appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
@@ -78,7 +80,8 @@ class PetController
         println("saving age as " + (stringFromTimeInterval(age) as String))
     }
     
-    func readAge ()
+    // read age simply reads the age from core data
+    func readAge () -> NSTimeInterval
     {
         var appDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         var context:NSManagedObjectContext = appDel.managedObjectContext!
@@ -89,6 +92,7 @@ class PetController
         var res = results[0] as! NSManagedObject
         var age = res.valueForKey("age") as! NSTimeInterval
         println ("reading age as " + (stringFromTimeInterval(age) as String))
+        return age
     }
     
     func doHavePet() -> Bool
