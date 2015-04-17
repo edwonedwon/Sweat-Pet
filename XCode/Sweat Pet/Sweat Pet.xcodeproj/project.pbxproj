@@ -122,6 +122,7 @@
 		EBBC660B1AE1794200FE7D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		EBBC661E1AE17C7100FE7D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		EBC1977E1A9CD7F900401B70 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_body.atlas; sourceTree = "<group>"; };
 		EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_mouth.atlas; sourceTree = "<group>"; };
@@ -273,6 +274,7 @@
 		EBBC65F31AE1794200FE7D0D /* Sweat Pet WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */,
 				EBBC65F71AE1794200FE7D0D /* InterfaceController.swift */,
 				EBBC65F91AE1794200FE7D0D /* NotificationController.swift */,
 				EBBC65FB1AE1794200FE7D0D /* GlanceController.swift */,
@@ -436,6 +438,11 @@
 					EBBC65F11AE1794200FE7D0D = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = K4NQBC9GFA;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EBBC66001AE1794200FE7D0D = {
 						CreatedOnToolsVersion = 6.3;
@@ -739,6 +746,7 @@
 		EBBC66101AE1794200FE7D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sweat Pet WatchKit Extension/Sweat Pet WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -751,6 +759,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -758,6 +767,7 @@
 		EBBC66111AE1794200FE7D0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sweat Pet WatchKit Extension/Sweat Pet WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -767,6 +777,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
