@@ -77,7 +77,7 @@ class PetController
         // set the age value on the pet
         pet.setValue(age, forKey: "age")
         context.save(nil)
-        println("saving age as " + (stringFromTimeInterval(age) as String))
+//        println("saving age as " + (stringFromTimeInterval(age) as String))
     }
     
     // read age simply reads the age from core data
@@ -91,7 +91,7 @@ class PetController
         var results:NSArray = context.executeFetchRequest(request,error: nil)!
         var res = results[0] as! NSManagedObject
         var age = res.valueForKey("age") as! NSTimeInterval
-        println ("reading age as " + (stringFromTimeInterval(age) as String))
+//        println ("reading age as " + (stringFromTimeInterval(age) as String))
         return age
     }
     
@@ -122,7 +122,8 @@ class PetController
         var seconds = ti % 60
         var minutes = (ti / 60) % 60
         var hours = (ti / 3600)
+        var days = (ti / 86400)
         
-        return NSString(format: "h:%0.2d: m:%0.2d: s:%0.2d.%0.3d",hours,minutes,seconds,ms)
+        return NSString(format: "D:%0.2d: H:%0.2d: M:%0.2d: S:%0.2d.%0.3d",days,hours,minutes,seconds,ms)
     }
 }

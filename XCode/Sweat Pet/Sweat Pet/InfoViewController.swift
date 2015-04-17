@@ -19,16 +19,14 @@ class InfoViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        petControl.updateAge()
     }
     
     override func viewDidAppear(animated: Bool)
     {
-        println("info viewDidAppear")
-            dispatch_async(dispatch_get_main_queue(),
-            {
-                self.startUIUpdateTimer()
-            })
+        dispatch_async(dispatch_get_main_queue(),
+        {
+            self.startUIUpdateTimer()
+        })
     }
     
     override func viewDidDisappear(animated: Bool)
@@ -47,22 +45,24 @@ class InfoViewController: UIViewController
         return true
     }
     
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     
     func startUIUpdateTimer() {
         // NOTE: For our purposes, the timer must run on the main queue, so use GCD to make sure.
         //       This can still be called from the main queue without a problem since we're using dispatch_async.
-        dispatch_async(dispatch_get_main_queue()) {
+        dispatch_async(dispatch_get_main_queue())
+        {
             // Start a timer that calls self.updateUI() once every tenth of a second
             self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target:self, selector:"updateUI", userInfo: nil, repeats: true)
         }
     }
     
-    var poop = Int(0)
-    
-    func updateUI() {
-        poop += Int(1)
-        testLabel.text = "updating \(poop)"
+    func updateUI()
+    {
+        petControl.updateAge()
+        var ageRaw = petControl.readAge()
+        var ageString = petControl.stringFromTimeInterval(ageRaw)
+        ageLabel.text = "Pet's Age: " + (ageString as String)
     }
 
 }
