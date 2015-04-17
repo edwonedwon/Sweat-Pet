@@ -99,6 +99,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="info" image="bicycle" id="ABa-fN-yTv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="testLabel" destination="GLN-O3-5n8" id="EmE-1a-4Rh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgw-5D-XVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
