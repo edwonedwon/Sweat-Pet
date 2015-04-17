@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'Sweat Pet' do
+
+    pod 'MMWormhole', '~> 1.1.1'
+
+end
+
+target 'Sweat PetTests' do
+
+end
+
+target 'Sweat Pet WatchKit Extension' do
+
+end
+
+target 'Sweat Pet WatchKit App' do
+
+end
+
