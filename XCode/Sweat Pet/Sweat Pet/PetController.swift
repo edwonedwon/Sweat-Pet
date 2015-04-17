@@ -10,6 +10,9 @@ import CoreData
 
 class PetController
 {
+//    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
+    
+
     
     func newPet ()
     {
@@ -125,5 +128,17 @@ class PetController
         var days = (ti / 86400)
         
         return NSString(format: "D:%0.2d: H:%0.2d: M:%0.2d: S:%0.2d.%0.3d",days,hours,minutes,seconds,ms)
+    }
+    
+    func watchTest()
+    {
+//        if let appWatchData = sharedDefaults?.objectForKey("AppleWatchData") as? NSString {
+//            println(appWatchData)
+//        }
+    }
+    
+    func sharedDataTest()
+    {
+        
     }
 }

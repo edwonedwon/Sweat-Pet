@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D0C034FC-696B-4CE6-8849-44B580756EAA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Sweat Pet</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7E780A19C199E44687D92CF57787D54B81AF0796</key>
 		<string>https://github.com/edwonia/Sweat-Pet.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XCode/Sweat Pet/Sweat Pet.xcodeproj/project.xcworkspace</string>
+	<string>XCode/Sweat Pet/Sweat Pet.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7E780A19C199E44687D92CF57787D54B81AF0796</key>
