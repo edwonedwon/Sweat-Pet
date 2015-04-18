@@ -3,5 +3,5 @@ options: "45f5ff5f5f39ad751e15b18b279351e4"
 inputs: 
 - "/Users/Edwon/Projects/Sweat Pet/XCode/Sweat Pet/Sweat Pet WatchKit Extension/NotificationController.swift"
 - "/Users/Edwon/Projects/Sweat Pet/XCode/Sweat Pet/Sweat Pet WatchKit Extension/InterfaceController.swift"
-- "/Users/Edwon/Projects/Sweat Pet/XCode/Sweat Pet/Sweat Pet/MMWormholeTest.swift"
+- !dirty "/Users/Edwon/Projects/Sweat Pet/XCode/Sweat Pet/Sweat Pet/MMWormholeTest.swift"
 - "/Users/Edwon/Projects/Sweat Pet/XCode/Sweat Pet/Sweat Pet WatchKit Extension/GlanceController.swift"

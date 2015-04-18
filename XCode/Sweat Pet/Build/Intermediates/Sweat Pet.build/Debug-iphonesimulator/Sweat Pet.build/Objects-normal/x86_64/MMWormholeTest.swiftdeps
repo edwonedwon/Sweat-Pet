@@ -6,14 +6,13 @@ nominals:
 class-members:
 top-level:
 - "MMWormhole"
-- !private "StringLiteralType"
+- "StringLiteralType"
 member-access:
 - "C9Sweat_Pet14MMWormholeTest"
+- "SQ"
 - "CSo10MMWormhole"
-- "PSs9AnyObject"
-- !private "SQ"
-- !private "SS"
 - "CSo8NSObject"
+- "PSs9AnyObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
