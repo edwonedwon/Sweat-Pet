@@ -7,199 +7,398 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12C2C3ACC73984395B812194 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D183A45D5C9930FD3FDFAC /* MMWormhole.h */; };
-		543EA507FEA2EE6265206F2C /* Pods-Sweat Pet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F41EB294C9B56755079095 /* Pods-Sweat Pet-dummy.m */; };
-		59CA3ED9F61026023AF6BAFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D7E163A06F72D203F09196 /* Foundation.framework */; };
-		6212F17C1E32ED57BB430B9C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1B9155482CCF37109B814A /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7C4B9051CB94D23821E757B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D7E163A06F72D203F09196 /* Foundation.framework */; };
-		B2DC4F301D9810A9F2A7E9E6 /* Pods-Sweat Pet-MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F832400F79805D32F042F88A /* Pods-Sweat Pet-MMWormhole-dummy.m */; };
+		085B76F0E9BF1C2B562A83B1 /* Pods-Sweat Pet WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C818F59E60A0FC91AE4D422E /* Pods-Sweat Pet WatchKit Extension-dummy.m */; };
+		0C1741DE3342AEE16394F717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		1BCFCEEF941F7F8BFABD7B86 /* Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 695A1301B26A3862ED9EC464 /* Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m */; };
+		1D54E0A1BFF92A82D997D628 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		37E8B874DCEBB8C735985D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		4C9C2F63DD84637615A743BB /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 53532B8C075BFEB622F6BD94 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		554B0FCBD1AF4F1BC1E7DF03 /* Pods-Sweat Pet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BD0EF23146222DE41D1638 /* Pods-Sweat Pet-dummy.m */; };
+		5B7C065AB5F93FAF70048141 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E917315F75B9392869CCD6 /* MMWormhole.h */; };
+		66D82E254672DB84E382A3EC /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E917315F75B9392869CCD6 /* MMWormhole.h */; };
+		67C74B5CFBC3F96D8E3905FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		7AC1FB12F8FAB622F276C681 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 53532B8C075BFEB622F6BD94 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7EC8D831B9BDD98B2D69D46E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		8C2FDC419E05A82347BD596D /* Pods-Sweat Pet-MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8820C65A041DD7D4BC43D9D0 /* Pods-Sweat Pet-MMWormhole-dummy.m */; };
+		A54F3E62AEA6573C61504D56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		AEB258DF65BF5ACB9B75C93C /* Pods-Sweat PetTests-MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D76889935CE3F464F489E881 /* Pods-Sweat PetTests-MMWormhole-dummy.m */; };
+		C03EFA8DD83DF2D8855F5C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		D3C9E688576BE561D85C8425 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E917315F75B9392869CCD6 /* MMWormhole.h */; };
+		D6F49BB4FBBA71936ACCCCC9 /* Pods-Sweat PetTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B3926505FFC579D8D5F8A /* Pods-Sweat PetTests-dummy.m */; };
+		E3B86996525BCAF5754AEAD2 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 53532B8C075BFEB622F6BD94 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E3EB6D4067512C6DFD0F7068 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 53532B8C075BFEB622F6BD94 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC311CC60650B7B24E57486B /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E917315F75B9392869CCD6 /* MMWormhole.h */; };
+		FA615F4C0EF27A359739FF69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F6375FF6BAF1865E5DC3C /* Foundation.framework */; };
+		FAD9810840875731CC20CAF0 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 255DD9420260ADEA0F581CFE /* Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m */; };
+		FF27FD04329DC7513BB40961 /* Pods-Sweat Pet WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C9CDFA9DA3F08C6144140 /* Pods-Sweat Pet WatchKit App-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		431161E3B2DEA5EE95439245 /* PBXContainerItemProxy */ = {
+		1F7E38F58E1AF0E41FBB9FEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ECAD423B619B454991498BA3 /* Project object */;
+			containerPortal = 2F3A7D350BF285A93E9450E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6012CC826D4BD38FC06AFB16;
+			remoteGlobalIDString = 57AC21CB25615D02BC282F88;
+			remoteInfo = "Pods-Sweat PetTests-MMWormhole";
+		};
+		2C336DED0F31CCD498F02029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3A7D350BF285A93E9450E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6549BF90D1CA3E6CE514D8B1;
+			remoteInfo = "Pods-Sweat Pet WatchKit App-MMWormhole";
+		};
+		D0E6C94B54E88D5E4BFEFF1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3A7D350BF285A93E9450E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A4AE31D596D7D2AEBADC4B;
+			remoteInfo = "Pods-Sweat Pet WatchKit Extension-MMWormhole";
+		};
+		F566E17BB4A2E9350AF4D6EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3A7D350BF285A93E9450E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0652E30DCF4E9CDA58781736;
 			remoteInfo = "Pods-Sweat Pet-MMWormhole";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		175EDA1D43C525D97F0DA0B9 /* libPods-Sweat Pet-MMWormhole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet-MMWormhole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26F41EB294C9B56755079095 /* Pods-Sweat Pet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet-dummy.m"; sourceTree = "<group>"; };
-		36F7D52FD5D5F160C4B935C7 /* Pods-Sweat Pet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sweat Pet-resources.sh"; sourceTree = "<group>"; };
-		491F64E536AA6949FB8733AD /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		929ACE6FFCDACD076938343B /* Pods-Sweat Pet-MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet-MMWormhole-prefix.pch"; sourceTree = "<group>"; };
-		93E9B716E6AEAE0D7CB0C2C2 /* Pods-Sweat Pet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sweat Pet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		946AB3BBE619EE6407492023 /* Pods-Sweat Pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet.debug.xcconfig"; sourceTree = "<group>"; };
-		96D09B7489075A3EDCCA3B22 /* Pods-Sweat Pet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sweat Pet-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7D7E163A06F72D203F09196 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BD1B9155482CCF37109B814A /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
-		C4964F8F589750CF9C63FA4C /* Pods-Sweat Pet-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet-environment.h"; sourceTree = "<group>"; };
-		C4966CB8E84BD7E529D97D2C /* libPods-Sweat Pet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3D183A45D5C9930FD3FDFAC /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
-		E9A188AF26FE1EE1DEC1F0B1 /* Pods-Sweat Pet-MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet-MMWormhole.xcconfig"; sourceTree = "<group>"; };
-		F0F0FDC16484779F73E1594E /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet-MMWormhole-Private.xcconfig"; sourceTree = "<group>"; };
-		F832400F79805D32F042F88A /* Pods-Sweat Pet-MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet-MMWormhole-dummy.m"; sourceTree = "<group>"; };
-		FDAAEED39961FE4B26307046 /* Pods-Sweat Pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet.release.xcconfig"; sourceTree = "<group>"; };
+		00B28B52F958FFA98B14D615 /* Pods-Sweat Pet WatchKit App-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet WatchKit App-environment.h"; sourceTree = "<group>"; };
+		038F3669D4B4E1ADEE603A03 /* Pods-Sweat Pet WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sweat Pet WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		09F4ED470EAB8CAC1C77E166 /* libPods-Sweat Pet WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D848F4A6C5738E3FB9B7566 /* Pods-Sweat Pet WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sweat Pet WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FCD48D53736AC325C85B06E /* Pods-Sweat Pet-MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Sweat Pet-MMWormhole-prefix.pch"; path = "../Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		100080054F853A9E8583F3DD /* libPods-Sweat Pet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1133A7C2F7A336720025A160 /* Pods-Sweat PetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat PetTests.release.xcconfig"; sourceTree = "<group>"; };
+		14869741FF455573E7CF6940 /* Pods-Sweat PetTests-MMWormhole-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat PetTests-MMWormhole-Private.xcconfig"; path = "../Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole-Private.xcconfig"; sourceTree = "<group>"; };
+		14CA8DFFD18D4DBAAC98521B /* Pods-Sweat Pet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sweat Pet-acknowledgements.plist"; sourceTree = "<group>"; };
+		1597A48F9C6066FC0F07C07E /* Pods-Sweat Pet WatchKit App-MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet WatchKit App-MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		179C9CDFA9DA3F08C6144140 /* Pods-Sweat Pet WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		2050E2B2D0B2C842495EB795 /* Pods-Sweat Pet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sweat Pet-resources.sh"; sourceTree = "<group>"; };
+		24602555057C68362B46878B /* libPods-Sweat Pet-MMWormhole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet-MMWormhole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		255DD9420260ADEA0F581CFE /* Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m"; path = "../Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		356E6FD0793491B78A8A74A0 /* Pods-Sweat Pet-MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet-MMWormhole.xcconfig"; path = "../Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole.xcconfig"; sourceTree = "<group>"; };
+		375665572DB92EA5B58CBF51 /* Pods-Sweat Pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet.debug.xcconfig"; sourceTree = "<group>"; };
+		486AE072F57F3EFC2BA4E206 /* Pods-Sweat Pet WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sweat Pet WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		532037B9C9B8ED022284C92D /* libPods-Sweat Pet WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53532B8C075BFEB622F6BD94 /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
+		5AFEEC52959C3628E9665578 /* Pods-Sweat PetTests-MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat PetTests-MMWormhole.xcconfig"; path = "../Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole.xcconfig"; sourceTree = "<group>"; };
+		5BBA6B08B8B0E104D10E0EC8 /* Pods-Sweat PetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat PetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7C877B0440F14D44FC42DF /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet-MMWormhole-Private.xcconfig"; path = "../Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-Private.xcconfig"; sourceTree = "<group>"; };
+		641A1BA1B34728C97405574E /* Pods-Sweat Pet WatchKit Extension-MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit Extension-MMWormhole.xcconfig"; path = "../Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole.xcconfig"; sourceTree = "<group>"; };
+		695A1301B26A3862ED9EC464 /* Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		6BBF3096FD357F997CCA9C92 /* Pods-Sweat Pet WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sweat Pet WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6EA8E9E8FDD205BEF1DE365D /* Pods-Sweat Pet WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		715B3926505FFC579D8D5F8A /* Pods-Sweat PetTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat PetTests-dummy.m"; sourceTree = "<group>"; };
+		789CB6AB0A544D9C97104FFF /* Pods-Sweat Pet WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sweat Pet WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		795F6375FF6BAF1865E5DC3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7F751E16116018B678699AC5 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		8200060DD9181FAA2C85A853 /* Pods-Sweat Pet WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sweat Pet WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		83593739DFA9CC5026FBBCCC /* Pods-Sweat PetTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sweat PetTests-resources.sh"; sourceTree = "<group>"; };
+		8820C65A041DD7D4BC43D9D0 /* Pods-Sweat Pet-MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Sweat Pet-MMWormhole-dummy.m"; path = "../Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		8966987267AB235692D01E36 /* Pods-Sweat Pet WatchKit Extension-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet WatchKit Extension-environment.h"; sourceTree = "<group>"; };
+		896A9760889B51950390824A /* Pods-Sweat Pet WatchKit App-MMWormhole-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit App-MMWormhole-Private.xcconfig"; sourceTree = "<group>"; };
+		92FB2E231595268C970CC9C2 /* Pods-Sweat Pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet.release.xcconfig"; sourceTree = "<group>"; };
+		9A82ED1D3508B11E6BA2E9C9 /* Pods-Sweat Pet WatchKit App-MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit App-MMWormhole.xcconfig"; sourceTree = "<group>"; };
+		9C5D009EC0F1E16E24B6D64E /* Pods-Sweat Pet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sweat Pet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A1FFFA09810123FDD7210C42 /* libPods-Sweat PetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat PetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03467B2880BB2ED4914ADC2 /* Pods-Sweat PetTests-MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Sweat PetTests-MMWormhole-prefix.pch"; path = "../Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		B9464E25EF6358E637E8F606 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch"; path = "../Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		C340035FC2946FFDD97FA5CA /* Pods-Sweat PetTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sweat PetTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6E917315F75B9392869CCD6 /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
+		C818F59E60A0FC91AE4D422E /* Pods-Sweat Pet WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		C92F3DFE3442E6CA96F35DED /* Pods-Sweat Pet WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0461D74B907A4E9284FF39 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB63388336D204A00A0A83F9 /* Pods-Sweat Pet-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat Pet-environment.h"; sourceTree = "<group>"; };
+		D733ACD65871C4AED9F04A90 /* libPods-Sweat PetTests-MMWormhole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat PetTests-MMWormhole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76889935CE3F464F489E881 /* Pods-Sweat PetTests-MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Sweat PetTests-MMWormhole-dummy.m"; path = "../Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		D968BE328A88EF000F22B56D /* Pods-Sweat PetTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sweat PetTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E66C7E97971027CD6F413689 /* Pods-Sweat PetTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sweat PetTests-environment.h"; sourceTree = "<group>"; };
+		E8561E9D8239D02173E42C62 /* libPods-Sweat Pet WatchKit Extension-MMWormhole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit Extension-MMWormhole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86547FE71FF37C016646FF5 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sweat Pet WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F7BD0EF23146222DE41D1638 /* Pods-Sweat Pet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sweat Pet-dummy.m"; sourceTree = "<group>"; };
+		F817A0353FBB2888D6912446 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig"; path = "../Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig"; sourceTree = "<group>"; };
+		F96500A8122C5799F2E39142 /* libPods-Sweat Pet WatchKit App-MMWormhole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit App-MMWormhole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E84087A7A743BED0ACD7831 /* Frameworks */ = {
+		00B881C8A60F0C52207F23E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CA3ED9F61026023AF6BAFC /* Foundation.framework in Frameworks */,
+				37E8B874DCEBB8C735985D47 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF0F6EFA62AFFB71D3F4102A /* Frameworks */ = {
+		2FC20DF42D98339A91BE53FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4B9051CB94D23821E757B1 /* Foundation.framework in Frameworks */,
+				0C1741DE3342AEE16394F717 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51A8A27975D11965B7D54920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03EFA8DD83DF2D8855F5C92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C30A2C9FA9967F14DE321B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA615F4C0EF27A359739FF69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6988A477D52C41E6179D9D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C74B5CFBC3F96D8E3905FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACA9EEFCB446CB196363AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54F3E62AEA6573C61504D56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3D0DB0675B7627EC69FEF32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC8D831B9BDD98B2D69D46E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AD347616D0BD413AA01EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D54E0A1BFF92A82D997D628 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14E726CF152DD38BC087C684 = {
+		0B24329B9D5FE406943E0F10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				491F64E536AA6949FB8733AD /* Podfile */,
-				8908C56C3777529FE8A4789B /* Frameworks */,
-				BE995CE4DB9A935741F8A883 /* Pods */,
-				B19EF24BF801DB371A9F76E5 /* Products */,
-				8ED99B5F3C34AB39DA3F7333 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		61E63B6EFF496675C8CCB8B8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9A188AF26FE1EE1DEC1F0B1 /* Pods-Sweat Pet-MMWormhole.xcconfig */,
-				F0F0FDC16484779F73E1594E /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */,
-				F832400F79805D32F042F88A /* Pods-Sweat Pet-MMWormhole-dummy.m */,
-				929ACE6FFCDACD076938343B /* Pods-Sweat Pet-MMWormhole-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Sweat Pet-MMWormhole";
-			sourceTree = "<group>";
-		};
-		6D5F4CDE9D2DE4403C0944FA /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				D3D183A45D5C9930FD3FDFAC /* MMWormhole.h */,
-				BD1B9155482CCF37109B814A /* MMWormhole.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		8908C56C3777529FE8A4789B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BBE6645B83FF8AFC37935C3B /* iOS */,
+				4ACD29FB1A254A4CB787C0FB /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8ED99B5F3C34AB39DA3F7333 /* Targets Support Files */ = {
+		2137563A62AAF631634BAC9F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFBF040F9CC8D693BA7658DA /* Pods-Sweat Pet */,
+				AC2686413D0CF25BC073ED8A /* Pods-Sweat Pet */,
+				8EBA8640C308DB81B1CF688C /* Pods-Sweat Pet WatchKit App */,
+				EFAB074CF271BB41F16BE703 /* Pods-Sweat Pet WatchKit Extension */,
+				23F17D3B211E78520584F33D /* Pods-Sweat PetTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B19EF24BF801DB371A9F76E5 /* Products */ = {
+		23F17D3B211E78520584F33D /* Pods-Sweat PetTests */ = {
 			isa = PBXGroup;
 			children = (
-				C4966CB8E84BD7E529D97D2C /* libPods-Sweat Pet.a */,
-				175EDA1D43C525D97F0DA0B9 /* libPods-Sweat Pet-MMWormhole.a */,
+				C340035FC2946FFDD97FA5CA /* Pods-Sweat PetTests-acknowledgements.markdown */,
+				D968BE328A88EF000F22B56D /* Pods-Sweat PetTests-acknowledgements.plist */,
+				715B3926505FFC579D8D5F8A /* Pods-Sweat PetTests-dummy.m */,
+				E66C7E97971027CD6F413689 /* Pods-Sweat PetTests-environment.h */,
+				83593739DFA9CC5026FBBCCC /* Pods-Sweat PetTests-resources.sh */,
+				5BBA6B08B8B0E104D10E0EC8 /* Pods-Sweat PetTests.debug.xcconfig */,
+				1133A7C2F7A336720025A160 /* Pods-Sweat PetTests.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-Sweat PetTests";
+			path = "Target Support Files/Pods-Sweat PetTests";
 			sourceTree = "<group>";
 		};
-		BBE6645B83FF8AFC37935C3B /* iOS */ = {
+		2945847D3291DCB3ED223BFC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7D7E163A06F72D203F09196 /* Foundation.framework */,
+				9A82ED1D3508B11E6BA2E9C9 /* Pods-Sweat Pet WatchKit App-MMWormhole.xcconfig */,
+				896A9760889B51950390824A /* Pods-Sweat Pet WatchKit App-MMWormhole-Private.xcconfig */,
+				695A1301B26A3862ED9EC464 /* Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m */,
+				1597A48F9C6066FC0F07C07E /* Pods-Sweat Pet WatchKit App-MMWormhole-prefix.pch */,
+				641A1BA1B34728C97405574E /* Pods-Sweat Pet WatchKit Extension-MMWormhole.xcconfig */,
+				F817A0353FBB2888D6912446 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig */,
+				255DD9420260ADEA0F581CFE /* Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m */,
+				B9464E25EF6358E637E8F606 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch */,
+				356E6FD0793491B78A8A74A0 /* Pods-Sweat Pet-MMWormhole.xcconfig */,
+				5F7C877B0440F14D44FC42DF /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */,
+				8820C65A041DD7D4BC43D9D0 /* Pods-Sweat Pet-MMWormhole-dummy.m */,
+				0FCD48D53736AC325C85B06E /* Pods-Sweat Pet-MMWormhole-prefix.pch */,
+				5AFEEC52959C3628E9665578 /* Pods-Sweat PetTests-MMWormhole.xcconfig */,
+				14869741FF455573E7CF6940 /* Pods-Sweat PetTests-MMWormhole-Private.xcconfig */,
+				D76889935CE3F464F489E881 /* Pods-Sweat PetTests-MMWormhole-dummy.m */,
+				B03467B2880BB2ED4914ADC2 /* Pods-Sweat PetTests-MMWormhole-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Sweat Pet WatchKit App-MMWormhole";
+			sourceTree = "<group>";
+		};
+		4ACD29FB1A254A4CB787C0FB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				795F6375FF6BAF1865E5DC3C /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BE995CE4DB9A935741F8A883 /* Pods */ = {
+		4B11EA0281BE438A6D42CB82 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CFE0CBA2E86F91C8D3422E27 /* MMWormhole */,
+				C6E917315F75B9392869CCD6 /* MMWormhole.h */,
+				53532B8C075BFEB622F6BD94 /* MMWormhole.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5F72B3C76353F8EFDCDA50F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81F1ADBCC6D17F9F2A5A7B0C /* MMWormhole */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CFE0CBA2E86F91C8D3422E27 /* MMWormhole */ = {
+		81F1ADBCC6D17F9F2A5A7B0C /* MMWormhole */ = {
 			isa = PBXGroup;
 			children = (
-				6D5F4CDE9D2DE4403C0944FA /* Core */,
-				61E63B6EFF496675C8CCB8B8 /* Support Files */,
+				4B11EA0281BE438A6D42CB82 /* Core */,
+				2945847D3291DCB3ED223BFC /* Support Files */,
 			);
 			path = MMWormhole;
 			sourceTree = "<group>";
 		};
-		DFBF040F9CC8D693BA7658DA /* Pods-Sweat Pet */ = {
+		8EBA8640C308DB81B1CF688C /* Pods-Sweat Pet WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				93E9B716E6AEAE0D7CB0C2C2 /* Pods-Sweat Pet-acknowledgements.markdown */,
-				96D09B7489075A3EDCCA3B22 /* Pods-Sweat Pet-acknowledgements.plist */,
-				26F41EB294C9B56755079095 /* Pods-Sweat Pet-dummy.m */,
-				C4964F8F589750CF9C63FA4C /* Pods-Sweat Pet-environment.h */,
-				36F7D52FD5D5F160C4B935C7 /* Pods-Sweat Pet-resources.sh */,
-				946AB3BBE619EE6407492023 /* Pods-Sweat Pet.debug.xcconfig */,
-				FDAAEED39961FE4B26307046 /* Pods-Sweat Pet.release.xcconfig */,
+				789CB6AB0A544D9C97104FFF /* Pods-Sweat Pet WatchKit App-acknowledgements.markdown */,
+				038F3669D4B4E1ADEE603A03 /* Pods-Sweat Pet WatchKit App-acknowledgements.plist */,
+				179C9CDFA9DA3F08C6144140 /* Pods-Sweat Pet WatchKit App-dummy.m */,
+				00B28B52F958FFA98B14D615 /* Pods-Sweat Pet WatchKit App-environment.h */,
+				8200060DD9181FAA2C85A853 /* Pods-Sweat Pet WatchKit App-resources.sh */,
+				C92F3DFE3442E6CA96F35DED /* Pods-Sweat Pet WatchKit App.debug.xcconfig */,
+				6EA8E9E8FDD205BEF1DE365D /* Pods-Sweat Pet WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-Sweat Pet WatchKit App";
+			path = "Target Support Files/Pods-Sweat Pet WatchKit App";
+			sourceTree = "<group>";
+		};
+		9B581ED35985F7389DECE08D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100080054F853A9E8583F3DD /* libPods-Sweat Pet.a */,
+				532037B9C9B8ED022284C92D /* libPods-Sweat Pet WatchKit App.a */,
+				F96500A8122C5799F2E39142 /* libPods-Sweat Pet WatchKit App-MMWormhole.a */,
+				09F4ED470EAB8CAC1C77E166 /* libPods-Sweat Pet WatchKit Extension.a */,
+				E8561E9D8239D02173E42C62 /* libPods-Sweat Pet WatchKit Extension-MMWormhole.a */,
+				24602555057C68362B46878B /* libPods-Sweat Pet-MMWormhole.a */,
+				A1FFFA09810123FDD7210C42 /* libPods-Sweat PetTests.a */,
+				D733ACD65871C4AED9F04A90 /* libPods-Sweat PetTests-MMWormhole.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD04A831AAB86A6B5E7C794 = {
+			isa = PBXGroup;
+			children = (
+				CB0461D74B907A4E9284FF39 /* Podfile */,
+				0B24329B9D5FE406943E0F10 /* Frameworks */,
+				5F72B3C76353F8EFDCDA50F8 /* Pods */,
+				9B581ED35985F7389DECE08D /* Products */,
+				2137563A62AAF631634BAC9F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AC2686413D0CF25BC073ED8A /* Pods-Sweat Pet */ = {
+			isa = PBXGroup;
+			children = (
+				9C5D009EC0F1E16E24B6D64E /* Pods-Sweat Pet-acknowledgements.markdown */,
+				14CA8DFFD18D4DBAAC98521B /* Pods-Sweat Pet-acknowledgements.plist */,
+				F7BD0EF23146222DE41D1638 /* Pods-Sweat Pet-dummy.m */,
+				CB63388336D204A00A0A83F9 /* Pods-Sweat Pet-environment.h */,
+				2050E2B2D0B2C842495EB795 /* Pods-Sweat Pet-resources.sh */,
+				375665572DB92EA5B58CBF51 /* Pods-Sweat Pet.debug.xcconfig */,
+				92FB2E231595268C970CC9C2 /* Pods-Sweat Pet.release.xcconfig */,
 			);
 			name = "Pods-Sweat Pet";
 			path = "Target Support Files/Pods-Sweat Pet";
 			sourceTree = "<group>";
 		};
+		EFAB074CF271BB41F16BE703 /* Pods-Sweat Pet WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF3096FD357F997CCA9C92 /* Pods-Sweat Pet WatchKit Extension-acknowledgements.markdown */,
+				0D848F4A6C5738E3FB9B7566 /* Pods-Sweat Pet WatchKit Extension-acknowledgements.plist */,
+				C818F59E60A0FC91AE4D422E /* Pods-Sweat Pet WatchKit Extension-dummy.m */,
+				8966987267AB235692D01E36 /* Pods-Sweat Pet WatchKit Extension-environment.h */,
+				486AE072F57F3EFC2BA4E206 /* Pods-Sweat Pet WatchKit Extension-resources.sh */,
+				7F751E16116018B678699AC5 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */,
+				E86547FE71FF37C016646FF5 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-Sweat Pet WatchKit Extension";
+			path = "Target Support Files/Pods-Sweat Pet WatchKit Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0180CEA95BA40E20833FCCFC /* Headers */ = {
+		3205A21CEE3A8FA24B2D488A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C2C3ACC73984395B812194 /* MMWormhole.h in Headers */,
+				D3C9E688576BE561D85C8425 /* MMWormhole.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4402A290A122E429FA74EF2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C065AB5F93FAF70048141 /* MMWormhole.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C5D3432E0E3F8FB0CA8294 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D82E254672DB84E382A3EC /* MMWormhole.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F30A9B0DDC0CC4DCCD3629 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC311CC60650B7B24E57486B /* MMWormhole.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		184F95F9FF06EC956950F394 /* Pods-Sweat Pet */ = {
+		0652E30DCF4E9CDA58781736 /* Pods-Sweat Pet-MMWormhole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CF19384412975FD0C73E6B0 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet" */;
+			buildConfigurationList = 6F9E931BC1A11928B01555A1 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet-MMWormhole" */;
 			buildPhases = (
-				D3550675ACB0AD589D77F3CD /* Sources */,
-				DF0F6EFA62AFFB71D3F4102A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				49826FF7B734A6BE4A44F547 /* PBXTargetDependency */,
-			);
-			name = "Pods-Sweat Pet";
-			productName = "Pods-Sweat Pet";
-			productReference = C4966CB8E84BD7E529D97D2C /* libPods-Sweat Pet.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6012CC826D4BD38FC06AFB16 /* Pods-Sweat Pet-MMWormhole */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7542365E8DD6CB4E39A30E34 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet-MMWormhole" */;
-			buildPhases = (
-				0803940C5B162210B731AEF3 /* Sources */,
-				2E84087A7A743BED0ACD7831 /* Frameworks */,
-				0180CEA95BA40E20833FCCFC /* Headers */,
+				8EE406CEAB76043AA676E3ED /* Sources */,
+				00B881C8A60F0C52207F23E5 /* Frameworks */,
+				4402A290A122E429FA74EF2D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -207,68 +406,262 @@
 			);
 			name = "Pods-Sweat Pet-MMWormhole";
 			productName = "Pods-Sweat Pet-MMWormhole";
-			productReference = 175EDA1D43C525D97F0DA0B9 /* libPods-Sweat Pet-MMWormhole.a */;
+			productReference = 24602555057C68362B46878B /* libPods-Sweat Pet-MMWormhole.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		57AC21CB25615D02BC282F88 /* Pods-Sweat PetTests-MMWormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8992A9C680ACB7C9C09D1E65 /* Build configuration list for PBXNativeTarget "Pods-Sweat PetTests-MMWormhole" */;
+			buildPhases = (
+				270C40F810EB942994F091A9 /* Sources */,
+				51A8A27975D11965B7D54920 /* Frameworks */,
+				74F30A9B0DDC0CC4DCCD3629 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Sweat PetTests-MMWormhole";
+			productName = "Pods-Sweat PetTests-MMWormhole";
+			productReference = D733ACD65871C4AED9F04A90 /* libPods-Sweat PetTests-MMWormhole.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6549BF90D1CA3E6CE514D8B1 /* Pods-Sweat Pet WatchKit App-MMWormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0646CBB96CB13615AAB7502 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit App-MMWormhole" */;
+			buildPhases = (
+				3DB73CA50965F67FD8158AD5 /* Sources */,
+				6988A477D52C41E6179D9D02 /* Frameworks */,
+				3205A21CEE3A8FA24B2D488A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Sweat Pet WatchKit App-MMWormhole";
+			productName = "Pods-Sweat Pet WatchKit App-MMWormhole";
+			productReference = F96500A8122C5799F2E39142 /* libPods-Sweat Pet WatchKit App-MMWormhole.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6FBD903428EADF55C9015B42 /* Pods-Sweat PetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26CE14E431EC7F072EBC6C97 /* Build configuration list for PBXNativeTarget "Pods-Sweat PetTests" */;
+			buildPhases = (
+				BEB0F620055E4F4C296BE990 /* Sources */,
+				6ACA9EEFCB446CB196363AF2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476E956D64EFC5D3E3C2DC31 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sweat PetTests";
+			productName = "Pods-Sweat PetTests";
+			productReference = A1FFFA09810123FDD7210C42 /* libPods-Sweat PetTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8B7558441904A0D20D3AFD7F /* Pods-Sweat Pet WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9E80E5519F323781AD00E8 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit App" */;
+			buildPhases = (
+				870ECD1EE90D19DC93B53DC1 /* Sources */,
+				A3D0DB0675B7627EC69FEF32 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEDC89BDD111DBE754E4DE20 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sweat Pet WatchKit App";
+			productName = "Pods-Sweat Pet WatchKit App";
+			productReference = 532037B9C9B8ED022284C92D /* libPods-Sweat Pet WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92A4AE31D596D7D2AEBADC4B /* Pods-Sweat Pet WatchKit Extension-MMWormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B52CFA15B58400D42B79DE /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit Extension-MMWormhole" */;
+			buildPhases = (
+				7FFF8D8A772E35ECA1670BA2 /* Sources */,
+				63C30A2C9FA9967F14DE321B /* Frameworks */,
+				45C5D3432E0E3F8FB0CA8294 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Sweat Pet WatchKit Extension-MMWormhole";
+			productName = "Pods-Sweat Pet WatchKit Extension-MMWormhole";
+			productReference = E8561E9D8239D02173E42C62 /* libPods-Sweat Pet WatchKit Extension-MMWormhole.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CEECB72B6128DD32468B957B /* Pods-Sweat Pet WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D438D2D6B495E83FEEE32CB8 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit Extension" */;
+			buildPhases = (
+				774E5474D015FF0F64635AE2 /* Sources */,
+				D3AD347616D0BD413AA01EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB6FCFE84DBD3F1239FF6A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sweat Pet WatchKit Extension";
+			productName = "Pods-Sweat Pet WatchKit Extension";
+			productReference = 09F4ED470EAB8CAC1C77E166 /* libPods-Sweat Pet WatchKit Extension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DF63E30116ADD7ED45D19D35 /* Pods-Sweat Pet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C5DDC6994E35C7E8DEE1E3 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet" */;
+			buildPhases = (
+				38458BA9AADD9EB2DAF945E2 /* Sources */,
+				2FC20DF42D98339A91BE53FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB37254CD4CAD3A391E36C39 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sweat Pet";
+			productName = "Pods-Sweat Pet";
+			productReference = 100080054F853A9E8583F3DD /* libPods-Sweat Pet.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ECAD423B619B454991498BA3 /* Project object */ = {
+		2F3A7D350BF285A93E9450E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = AB8ED398EE034A81885A19CE /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = AB1450DE26C55846B644E9D7 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 14E726CF152DD38BC087C684;
-			productRefGroup = B19EF24BF801DB371A9F76E5 /* Products */;
+			mainGroup = 9FD04A831AAB86A6B5E7C794;
+			productRefGroup = 9B581ED35985F7389DECE08D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				184F95F9FF06EC956950F394 /* Pods-Sweat Pet */,
-				6012CC826D4BD38FC06AFB16 /* Pods-Sweat Pet-MMWormhole */,
+				DF63E30116ADD7ED45D19D35 /* Pods-Sweat Pet */,
+				8B7558441904A0D20D3AFD7F /* Pods-Sweat Pet WatchKit App */,
+				6549BF90D1CA3E6CE514D8B1 /* Pods-Sweat Pet WatchKit App-MMWormhole */,
+				CEECB72B6128DD32468B957B /* Pods-Sweat Pet WatchKit Extension */,
+				92A4AE31D596D7D2AEBADC4B /* Pods-Sweat Pet WatchKit Extension-MMWormhole */,
+				0652E30DCF4E9CDA58781736 /* Pods-Sweat Pet-MMWormhole */,
+				6FBD903428EADF55C9015B42 /* Pods-Sweat PetTests */,
+				57AC21CB25615D02BC282F88 /* Pods-Sweat PetTests-MMWormhole */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0803940C5B162210B731AEF3 /* Sources */ = {
+		270C40F810EB942994F091A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6212F17C1E32ED57BB430B9C /* MMWormhole.m in Sources */,
-				B2DC4F301D9810A9F2A7E9E6 /* Pods-Sweat Pet-MMWormhole-dummy.m in Sources */,
+				E3EB6D4067512C6DFD0F7068 /* MMWormhole.m in Sources */,
+				AEB258DF65BF5ACB9B75C93C /* Pods-Sweat PetTests-MMWormhole-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3550675ACB0AD589D77F3CD /* Sources */ = {
+		38458BA9AADD9EB2DAF945E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543EA507FEA2EE6265206F2C /* Pods-Sweat Pet-dummy.m in Sources */,
+				554B0FCBD1AF4F1BC1E7DF03 /* Pods-Sweat Pet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB73CA50965F67FD8158AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC1FB12F8FAB622F276C681 /* MMWormhole.m in Sources */,
+				1BCFCEEF941F7F8BFABD7B86 /* Pods-Sweat Pet WatchKit App-MMWormhole-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774E5474D015FF0F64635AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085B76F0E9BF1C2B562A83B1 /* Pods-Sweat Pet WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFF8D8A772E35ECA1670BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B86996525BCAF5754AEAD2 /* MMWormhole.m in Sources */,
+				FAD9810840875731CC20CAF0 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870ECD1EE90D19DC93B53DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27FD04329DC7513BB40961 /* Pods-Sweat Pet WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE406CEAB76043AA676E3ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9C2F63DD84637615A743BB /* MMWormhole.m in Sources */,
+				8C2FDC419E05A82347BD596D /* Pods-Sweat Pet-MMWormhole-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB0F620055E4F4C296BE990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F49BB4FBBA71936ACCCCC9 /* Pods-Sweat PetTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49826FF7B734A6BE4A44F547 /* PBXTargetDependency */ = {
+		476E956D64EFC5D3E3C2DC31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sweat PetTests-MMWormhole";
+			target = 57AC21CB25615D02BC282F88 /* Pods-Sweat PetTests-MMWormhole */;
+			targetProxy = 1F7E38F58E1AF0E41FBB9FEA /* PBXContainerItemProxy */;
+		};
+		9EB6FCFE84DBD3F1239FF6A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sweat Pet WatchKit Extension-MMWormhole";
+			target = 92A4AE31D596D7D2AEBADC4B /* Pods-Sweat Pet WatchKit Extension-MMWormhole */;
+			targetProxy = D0E6C94B54E88D5E4BFEFF1E /* PBXContainerItemProxy */;
+		};
+		EB37254CD4CAD3A391E36C39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Sweat Pet-MMWormhole";
-			target = 6012CC826D4BD38FC06AFB16 /* Pods-Sweat Pet-MMWormhole */;
-			targetProxy = 431161E3B2DEA5EE95439245 /* PBXContainerItemProxy */;
+			target = 0652E30DCF4E9CDA58781736 /* Pods-Sweat Pet-MMWormhole */;
+			targetProxy = F566E17BB4A2E9350AF4D6EB /* PBXContainerItemProxy */;
+		};
+		EEDC89BDD111DBE754E4DE20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sweat Pet WatchKit App-MMWormhole";
+			target = 6549BF90D1CA3E6CE514D8B1 /* Pods-Sweat Pet WatchKit App-MMWormhole */;
+			targetProxy = 2C336DED0F31CCD498F02029 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1109D46D220433F46DEDFEBB /* Debug */ = {
+		11134461A431D6EF6C8C5CC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 946AB3BBE619EE6407492023 /* Pods-Sweat Pet.debug.xcconfig */;
+			baseConfigurationReference = C92F3DFE3442E6CA96F35DED /* Pods-Sweat Pet WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -282,28 +675,12 @@
 			};
 			name = Debug;
 		};
-		4D674BF33306A17628CB68D5 /* Release */ = {
+		1A19248CEC19950EC95A1A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F0FDC16484779F73E1594E /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */;
+			baseConfigurationReference = 14869741FF455573E7CF6940 /* Pods-Sweat PetTests-MMWormhole-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		4E98C65FE6C111D72D3B484F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F0FDC16484779F73E1594E /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -314,9 +691,75 @@
 			};
 			name = Debug;
 		};
-		A45A31C372AB4EC00A501D25 /* Release */ = {
+		2C7A78EAAC48C19D680C8063 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDAAEED39961FE4B26307046 /* Pods-Sweat Pet.release.xcconfig */;
+			baseConfigurationReference = F817A0353FBB2888D6912446 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31A4944014D50DFB6FD56305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896A9760889B51950390824A /* Pods-Sweat Pet WatchKit App-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet WatchKit App-MMWormhole/Pods-Sweat Pet WatchKit App-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3557ED5C1ACA3891852321AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F817A0353FBB2888D6912446 /* Pods-Sweat Pet WatchKit Extension-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet WatchKit Extension-MMWormhole/Pods-Sweat Pet WatchKit Extension-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		52B0771237EB6A931E820486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14869741FF455573E7CF6940 /* Pods-Sweat PetTests-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat PetTests-MMWormhole/Pods-Sweat PetTests-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5456CB106D6733478EC55A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1133A7C2F7A336720025A160 /* Pods-Sweat PetTests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -330,41 +773,23 @@
 			};
 			name = Release;
 		};
-		DAB05E485D8BFF82CE833CF3 /* Release */ = {
+		6194F06BB0E701A205798860 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBA6B08B8B0E104D10E0EC8 /* Pods-Sweat PetTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		F03AE344A6A6EBB1607678B8 /* Debug */ = {
+		660023884A91AB38D243AF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -403,37 +828,255 @@
 			};
 			name = Debug;
 		};
+		821DD6F70D88135A38EF6075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7C877B0440F14D44FC42DF /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		834F32CAD469F7BC46A06085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92FB2E231595268C970CC9C2 /* Pods-Sweat Pet.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		983F75D0EF53A43B98494B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A4D8503DF09800CF061D578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375665572DB92EA5B58CBF51 /* Pods-Sweat Pet.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9B5807438CEE39FE8D9F41AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA8E9E8FDD205BEF1DE365D /* Pods-Sweat Pet WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A7D027A050618193D791477E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7C877B0440F14D44FC42DF /* Pods-Sweat Pet-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet-MMWormhole/Pods-Sweat Pet-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5C7E757209839CCA8B153A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86547FE71FF37C016646FF5 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D14D5E1A00BCA6E5C3AD8192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896A9760889B51950390824A /* Pods-Sweat Pet WatchKit App-MMWormhole-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sweat Pet WatchKit App-MMWormhole/Pods-Sweat Pet WatchKit App-MMWormhole-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FD2AC1446F4F1F8E217C6D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F751E16116018B678699AC5 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CF19384412975FD0C73E6B0 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet" */ = {
+		02C5DDC6994E35C7E8DEE1E3 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1109D46D220433F46DEDFEBB /* Debug */,
-				A45A31C372AB4EC00A501D25 /* Release */,
+				9A4D8503DF09800CF061D578 /* Debug */,
+				834F32CAD469F7BC46A06085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7542365E8DD6CB4E39A30E34 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet-MMWormhole" */ = {
+		18B52CFA15B58400D42B79DE /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit Extension-MMWormhole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E98C65FE6C111D72D3B484F /* Debug */,
-				4D674BF33306A17628CB68D5 /* Release */,
+				2C7A78EAAC48C19D680C8063 /* Debug */,
+				3557ED5C1ACA3891852321AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB8ED398EE034A81885A19CE /* Build configuration list for PBXProject "Pods" */ = {
+		26CE14E431EC7F072EBC6C97 /* Build configuration list for PBXNativeTarget "Pods-Sweat PetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F03AE344A6A6EBB1607678B8 /* Debug */,
-				DAB05E485D8BFF82CE833CF3 /* Release */,
+				6194F06BB0E701A205798860 /* Debug */,
+				5456CB106D6733478EC55A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9E80E5519F323781AD00E8 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11134461A431D6EF6C8C5CC2 /* Debug */,
+				9B5807438CEE39FE8D9F41AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F9E931BC1A11928B01555A1 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet-MMWormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				821DD6F70D88135A38EF6075 /* Debug */,
+				A7D027A050618193D791477E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8992A9C680ACB7C9C09D1E65 /* Build configuration list for PBXNativeTarget "Pods-Sweat PetTests-MMWormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A19248CEC19950EC95A1A50 /* Debug */,
+				52B0771237EB6A931E820486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1450DE26C55846B644E9D7 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660023884A91AB38D243AF80 /* Debug */,
+				983F75D0EF53A43B98494B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D438D2D6B495E83FEEE32CB8 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2AC1446F4F1F8E217C6D5D /* Debug */,
+				C5C7E757209839CCA8B153A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0646CBB96CB13615AAB7502 /* Build configuration list for PBXNativeTarget "Pods-Sweat Pet WatchKit App-MMWormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14D5E1A00BCA6E5C3AD8192 /* Debug */,
+				31A4944014D50DFB6FD56305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ECAD423B619B454991498BA3 /* Project object */;
+	rootObject = 2F3A7D350BF285A93E9450E1 /* Project object */;
 }

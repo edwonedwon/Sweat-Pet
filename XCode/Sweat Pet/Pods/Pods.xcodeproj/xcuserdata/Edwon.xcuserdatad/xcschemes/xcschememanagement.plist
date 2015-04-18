@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Sweat Pet WatchKit App-MMWormhole.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Sweat Pet WatchKit App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Sweat Pet WatchKit Extension-MMWormhole.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Sweat Pet WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Sweat Pet-MMWormhole.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,15 +34,55 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Sweat PetTests-MMWormhole.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Sweat PetTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>184F95F9FF06EC956950F394</key>
+		<key>0652E30DCF4E9CDA58781736</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6012CC826D4BD38FC06AFB16</key>
+		<key>57AC21CB25615D02BC282F88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6549BF90D1CA3E6CE514D8B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FBD903428EADF55C9015B42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B7558441904A0D20D3AFD7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92A4AE31D596D7D2AEBADC4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEECB72B6128DD32468B957B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF63E30116ADD7ED45D19D35</key>
 		<dict>
 			<key>primary</key>
 			<true/>

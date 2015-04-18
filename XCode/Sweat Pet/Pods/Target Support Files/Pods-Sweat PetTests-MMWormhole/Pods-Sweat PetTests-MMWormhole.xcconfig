@@ -1,0 +1,1 @@
+PODS_SWEAT_PETTESTS_MMWORMHOLE_OTHER_LDFLAGS = -framework "Foundation"

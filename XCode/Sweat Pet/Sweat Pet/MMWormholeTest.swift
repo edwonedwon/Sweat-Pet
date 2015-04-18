@@ -10,10 +10,15 @@ import Foundation
 
 class MMWormholeTest
 {
-    let dipe = MMWormhole()
+    let wormhole = MMWormhole()
     
-    func poo ()
+    func test ()
     {
-
+        wormhole.passMessageObject("dipe", identifier: "button")
+    }
+    
+    func dipe ()
+    {
+        
     }
 }

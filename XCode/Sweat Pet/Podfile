@@ -8,14 +8,17 @@ target 'Sweat Pet' do
 end
 
 target 'Sweat PetTests' do
+    pod 'MMWormhole', '~> 1.1.1'
 
 end
 
 target 'Sweat Pet WatchKit Extension' do
+    pod 'MMWormhole', '~> 1.1.1'
 
 end
 
 target 'Sweat Pet WatchKit App' do
+    pod 'MMWormhole', '~> 1.1.1'
 
 end
 

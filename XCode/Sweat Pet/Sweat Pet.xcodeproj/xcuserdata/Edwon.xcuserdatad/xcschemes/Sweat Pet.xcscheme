@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E32F77B9A59C8A509BFA91BC"
+               BuildableName = "libPods-Sweat Pet.a"
+               BlueprintName = "Pods-Sweat Pet"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "B08E072D19D7F9370070E82F"
                BuildableName = "Sweat Pet.app"
                BlueprintName = "Sweat Pet"

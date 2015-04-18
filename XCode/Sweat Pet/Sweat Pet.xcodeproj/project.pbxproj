@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E93127A68441E526BBD4061 /* libPods-Sweat PetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8925B72819111EFB30F2BF /* libPods-Sweat PetTests.a */; };
 		473C29C70284537D702CAD48 /* libPods-Sweat Pet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444F0300CAF1A30682A0100 /* libPods-Sweat Pet.a */; };
+		75AD62FA6DDEE8302C840667 /* libPods-Sweat Pet WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95925C4673E722B004BE6DB1 /* libPods-Sweat Pet WatchKit App.a */; };
 		B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E073319D7F9370070E82F /* AppDelegate.swift */; };
 		B08E073919D7F9370070E82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08E073719D7F9370070E82F /* Main.storyboard */; };
 		B08E073B19D7F9370070E82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08E073A19D7F9370070E82F /* Images.xcassets */; };
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
+		C7ED81BF0133EB5668A44692 /* libPods-Sweat Pet WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */; };
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
@@ -92,7 +95,14 @@
 
 /* Begin PBXFileReference section */
 		57AB8E5F156380FDBAB368D1 /* Pods-Sweat Pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet/Pods-Sweat Pet.release.xcconfig"; sourceTree = "<group>"; };
+		626DBD05F3751CC3B8CF3043 /* Pods-Sweat PetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat PetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat PetTests/Pods-Sweat PetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D8925B72819111EFB30F2BF /* libPods-Sweat PetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat PetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74067E45A9DFB1EB38EDC871 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet WatchKit Extension/Pods-Sweat Pet WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		80FFB2BE3C69CD84F9FF3E11 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet WatchKit Extension/Pods-Sweat Pet WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		8444F0300CAF1A30682A0100 /* libPods-Sweat Pet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B67871821D36143EDF8BD07 /* Pods-Sweat Pet WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet WatchKit App/Pods-Sweat Pet WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95925C4673E722B004BE6DB1 /* libPods-Sweat Pet WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sweat Pet WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDC78214604C8EA0E087B11 /* Pods-Sweat Pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet/Pods-Sweat Pet.debug.xcconfig"; sourceTree = "<group>"; };
 		B08E072E19D7F9370070E82F /* Sweat Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweat Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08E073219D7F9370070E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,9 +152,19 @@
 		EBF63D391ABB8E3300E63978 /* HealthKit2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit2.playground; sourceTree = "<group>"; };
 		EBFB65431AE1DD720017C888 /* Sweat-Pet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sweat-Pet-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMWormholeTest.swift; sourceTree = "<group>"; };
+		F5138D34FAB5E365629424A8 /* Pods-Sweat Pet WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat Pet WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat Pet WatchKit App/Pods-Sweat Pet WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		FDDD1C5C6DDB469323687E48 /* Pods-Sweat PetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sweat PetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sweat PetTests/Pods-Sweat PetTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8742283179BFDA71D1EB8186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AD62FA6DDEE8302C840667 /* libPods-Sweat Pet WatchKit App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B08E072B19D7F9370070E82F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E93127A68441E526BBD4061 /* libPods-Sweat PetTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7ED81BF0133EB5668A44692 /* libPods-Sweat Pet WatchKit Extension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				8444F0300CAF1A30682A0100 /* libPods-Sweat Pet.a */,
+				95925C4673E722B004BE6DB1 /* libPods-Sweat Pet WatchKit App.a */,
+				9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */,
+				6D8925B72819111EFB30F2BF /* libPods-Sweat PetTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +211,12 @@
 			children = (
 				ABDC78214604C8EA0E087B11 /* Pods-Sweat Pet.debug.xcconfig */,
 				57AB8E5F156380FDBAB368D1 /* Pods-Sweat Pet.release.xcconfig */,
+				8B67871821D36143EDF8BD07 /* Pods-Sweat Pet WatchKit App.debug.xcconfig */,
+				F5138D34FAB5E365629424A8 /* Pods-Sweat Pet WatchKit App.release.xcconfig */,
+				74067E45A9DFB1EB38EDC871 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */,
+				80FFB2BE3C69CD84F9FF3E11 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */,
+				626DBD05F3751CC3B8CF3043 /* Pods-Sweat PetTests.debug.xcconfig */,
+				FDDD1C5C6DDB469323687E48 /* Pods-Sweat PetTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -395,9 +426,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B08E074D19D7F9370070E82F /* Build configuration list for PBXNativeTarget "Sweat PetTests" */;
 			buildPhases = (
+				82FAFB667A4116F84A46E319 /* Check Pods Manifest.lock */,
 				B08E073C19D7F9370070E82F /* Sources */,
 				B08E073D19D7F9370070E82F /* Frameworks */,
 				B08E073E19D7F9370070E82F /* Resources */,
+				F105C800419EE5C8CA486B78 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,9 +446,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBBC66151AE1794200FE7D0D /* Build configuration list for PBXNativeTarget "Sweat Pet WatchKit Extension" */;
 			buildPhases = (
+				3948693B8F5EADC8184174BE /* Check Pods Manifest.lock */,
 				EBBC65EE1AE1794200FE7D0D /* Sources */,
 				EBBC65EF1AE1794200FE7D0D /* Frameworks */,
 				EBBC65F01AE1794200FE7D0D /* Resources */,
+				278D51B2D0E839D3C5A34725 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,7 +466,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBBC66141AE1794200FE7D0D /* Build configuration list for PBXNativeTarget "Sweat Pet WatchKit App" */;
 			buildPhases = (
+				29F0A49805CDA1B7CB4BC187 /* Check Pods Manifest.lock */,
 				EBBC65FF1AE1794200FE7D0D /* Resources */,
+				8742283179BFDA71D1EB8186 /* Frameworks */,
+				015142130DF878CED0AF3B05 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -567,6 +605,66 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		015142130DF878CED0AF3B05 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sweat Pet WatchKit App/Pods-Sweat Pet WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		278D51B2D0E839D3C5A34725 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sweat Pet WatchKit Extension/Pods-Sweat Pet WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29F0A49805CDA1B7CB4BC187 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3948693B8F5EADC8184174BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		769374B2D0A29B64BA665523 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,6 +678,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sweat Pet/Pods-Sweat Pet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82FAFB667A4116F84A46E319 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F105C800419EE5C8CA486B78 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sweat PetTests/Pods-Sweat PetTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -755,6 +883,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sweat Pet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-Sweat Pet-MMWormhole\"",
+					"-framework",
+					"\"Foundation\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
@@ -773,6 +908,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sweat Pet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-Sweat Pet-MMWormhole\"",
+					"-framework",
+					"\"Foundation\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
@@ -782,6 +924,7 @@
 		};
 		B08E074E19D7F9370070E82F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626DBD05F3751CC3B8CF3043 /* Pods-Sweat PetTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -801,6 +944,7 @@
 		};
 		B08E074F19D7F9370070E82F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDD1C5C6DDB469323687E48 /* Pods-Sweat PetTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -816,6 +960,7 @@
 		};
 		EBBC66101AE1794200FE7D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74067E45A9DFB1EB38EDC871 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Sweat Pet WatchKit Extension/Sweat Pet WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -838,6 +983,7 @@
 		};
 		EBBC66111AE1794200FE7D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FFB2BE3C69CD84F9FF3E11 /* Pods-Sweat Pet WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Sweat Pet WatchKit Extension/Sweat Pet WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -857,6 +1003,7 @@
 		};
 		EBBC66121AE1794200FE7D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B67871821D36143EDF8BD07 /* Pods-Sweat Pet WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -879,6 +1026,7 @@
 		};
 		EBBC66131AE1794200FE7D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5138D34FAB5E365629424A8 /* Pods-Sweat Pet WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
