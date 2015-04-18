@@ -41,6 +41,8 @@
 		EBD7BEF71A9CEFD0008065AF /* pet_white_of_eye.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF21A9CEFD0008065AF /* pet_white_of_eye.atlas */; };
 		EBD7BEF91A9D059E008065AF /* pet_tongue.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF81A9D059E008065AF /* pet_tongue.atlas */; };
 		EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */; };
+		EBFB65451AE1DF840017C888 /* MMWormholeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */; };
+		EBFB65461AE1DF840017C888 /* MMWormholeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		EBE3E51F1A9DB3E300B5BCBC /* Sweat Pet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet.entitlements"; sourceTree = "<group>"; };
 		EBF6288B1A9C8D97000CCE12 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		EBF63D391ABB8E3300E63978 /* HealthKit2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit2.playground; sourceTree = "<group>"; };
+		EBFB65431AE1DD720017C888 /* Sweat-Pet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sweat-Pet-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMWormholeTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 		B08E072519D7F9370070E82F = {
 			isa = PBXGroup;
 			children = (
+				EBFB65431AE1DD720017C888 /* Sweat-Pet-Bridging-Header.h */,
 				EBBC661E1AE17C7100FE7D0D /* Images.xcassets */,
 				EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */,
 				EBA9FD291ABB693100753643 /* HealthKit.framework */,
@@ -226,6 +231,7 @@
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
+				EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */,
 			);
 			path = "Sweat Pet";
 			sourceTree = "<group>";
@@ -583,6 +589,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBFB65451AE1DF840017C888 /* MMWormholeTest.swift in Sources */,
 				EBB15BDE1A9A4836004583CD /* GameScene.swift in Sources */,
 				EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */,
 				EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */,
@@ -608,6 +615,7 @@
 			files = (
 				EBBC65FA1AE1794200FE7D0D /* NotificationController.swift in Sources */,
 				EBBC65F81AE1794200FE7D0D /* InterfaceController.swift in Sources */,
+				EBFB65461AE1DF840017C888 /* MMWormholeTest.swift in Sources */,
 				EBBC65FC1AE1794200FE7D0D /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +757,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -766,6 +775,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -822,6 +832,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -840,6 +851,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sweat-Pet-Bridging-Header.h";
 			};
 			name = Release;
 		};

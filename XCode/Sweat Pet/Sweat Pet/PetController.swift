@@ -12,7 +12,6 @@ class PetController
 {
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
     
-
     
     func newPet ()
     {
