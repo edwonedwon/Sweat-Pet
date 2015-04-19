@@ -10,11 +10,13 @@ import Foundation
 
 class MMWormholeTest
 {
-    let wormhole = MMWormhole(applicationGroupIdentifier: "group.Sweat-Pet", optionalDirectory: "Wormhole")
+//    let wormhole = MMWormhole(applicationGroupIdentifier: "group.Sweat-Pet", optionalDirectory: "Wormhole")
     
     func test ()
     {
-        wormhole.passMessageObject(<#messageObject: NSCoding!#>, identifier: <#String!#>)
+//        var coder = NSCoder()
+//        var coding = NSCoding(coder: coder)
+//        wormhole.passMessageObject(coding, identifier: "test")
     }
     
     func dipe ()

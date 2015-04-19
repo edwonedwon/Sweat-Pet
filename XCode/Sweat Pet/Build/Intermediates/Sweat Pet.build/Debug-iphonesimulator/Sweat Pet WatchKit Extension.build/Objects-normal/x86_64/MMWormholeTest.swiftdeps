@@ -5,14 +5,18 @@ nominals:
 - "C28Sweat_Pet_WatchKit_Extension14MMWormholeTest"
 class-members:
 top-level:
-- "MMWormhole"
 - "StringLiteralType"
+- "MMWormhole"
+- !private "NSCoder"
+- !private "NSCoding"
 member-access:
-- "CSo10MMWormhole"
 - "PSs9AnyObject"
-- "CSo8NSObject"
-- "C28Sweat_Pet_WatchKit_Extension14MMWormholeTest"
 - "SQ"
+- "C28Sweat_Pet_WatchKit_Extension14MMWormholeTest"
+- "CSo10MMWormhole"
+- !private "CSo7NSCoder"
+- "CSo8NSObject"
+- !private "PSo8NSCoding"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
