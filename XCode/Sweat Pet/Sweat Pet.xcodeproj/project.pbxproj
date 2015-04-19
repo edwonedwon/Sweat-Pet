@@ -253,6 +253,7 @@
 		B08E073019D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXGroup;
 			children = (
+				EBAC6D431AE40F730030C71A /* Test */,
 				B08E073719D7F9370070E82F /* Main.storyboard */,
 				EB9E20AE1ADCDFD300182CBA /* ViewControllers */,
 				EB9E20B11ADCE07000182CBA /* Pet Data */,
@@ -262,7 +263,6 @@
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
-				EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */,
 			);
 			path = "Sweat Pet";
 			sourceTree = "<group>";
@@ -330,6 +330,14 @@
 				B08E073A19D7F9370070E82F /* Images.xcassets */,
 			);
 			name = "Pet Art";
+			sourceTree = "<group>";
+		};
+		EBAC6D431AE40F730030C71A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB65441AE1DF840017C888 /* MMWormholeTest.swift */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		EBBC65F31AE1794200FE7D0D /* Sweat Pet WatchKit Extension */ = {
