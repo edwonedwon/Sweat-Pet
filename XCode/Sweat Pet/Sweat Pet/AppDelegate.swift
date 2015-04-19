@@ -18,7 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
-
+    
+    // App Delegate to handle WatchKit Extension Requests
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        
+        println("message recieved")
+        
+        // retrieved parameters from apple watch
+        println(userInfo?["value1"])
+        println(userInfo?["value2"])
+        
+        // pass back values to Apple Watch
+        var retValues = Dictionary<String,String>()
+        retValues["retVal1"] = "return Test 1 dipe"
+        retValues["retVal2"] = "return Test 2 dipe"
+        
+        reply(retValues)
+        
+//        let infoView = InfoViewController()
+//        infoView.testLabelChange()
+        
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

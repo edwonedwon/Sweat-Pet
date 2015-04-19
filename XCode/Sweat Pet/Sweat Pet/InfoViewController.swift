@@ -11,6 +11,12 @@ import UIKit
 class InfoViewController: UIViewController
 {
     
+//    required init(coder aDecoder: NSCoder)
+//    {
+//        println("dipe")
+//        super.init(coder: aDecoder)
+//    }
+    
     var timer: NSTimer?
     
     let petControl = PetController()
@@ -19,7 +25,19 @@ class InfoViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleWatchKitNotification:"), name: "WatchKitSaysHello", object: nil)
+        self.testLabel.text = "dipe"
     }
+    
+    deinit
+    {
+//        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+//    
+//    func handleWatchKitNotification(notification: NSNotification)
+//    {
+//        println("handling")
+//    }
     
     override func viewDidAppear(animated: Bool)
     {
@@ -46,6 +64,15 @@ class InfoViewController: UIViewController
     }
     
     @IBOutlet weak var ageLabel: UILabel!
+    
+    @IBOutlet weak var testLabel: UILabel!
+    
+    func testLabelChange ()
+    {
+
+        self.testLabel.text = "dipe"
+//        println("dipetastic")
+    }
     
     func startUIUpdateTimer() {
         // NOTE: For our purposes, the timer must run on the main queue, so use GCD to make sure.

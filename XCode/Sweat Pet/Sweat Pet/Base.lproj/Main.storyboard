@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -90,17 +90,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llY-bS-4nz">
+                                <rect key="frame" x="241" y="20" width="118" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="VJa-fS-H81"/>
+                                    <constraint firstAttribute="width" constant="118" id="ccB-rX-Clp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="GLN-O3-5n8" secondAttribute="centerX" id="73x-vS-r6x"/>
                             <constraint firstAttribute="centerY" secondItem="GLN-O3-5n8" secondAttribute="centerY" id="AyS-1v-9hg"/>
+                            <constraint firstItem="llY-bS-4nz" firstAttribute="top" secondItem="PIf-eO-D5E" secondAttribute="top" constant="20" id="KZF-ma-Vge"/>
+                            <constraint firstAttribute="centerX" secondItem="llY-bS-4nz" secondAttribute="centerX" id="iWg-yA-aK3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="info" image="bicycle" id="ABa-fN-yTv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ageLabel" destination="GLN-O3-5n8" id="URC-Gv-FdL"/>
+                        <outlet property="testLabel" destination="llY-bS-4nz" id="uym-DO-fRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgw-5D-XVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,8 +155,8 @@
                                             <constraint firstAttribute="width" constant="30" id="wnZ-Uy-ruG"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ece-kS-ZOE">
-                                        <rect key="frame" x="44" y="100" width="10" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ece-kS-ZOE">
+                                        <rect key="frame" x="44" y="100" width="11" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

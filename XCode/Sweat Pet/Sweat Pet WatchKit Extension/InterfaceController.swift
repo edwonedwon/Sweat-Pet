@@ -38,12 +38,20 @@ class InterfaceController: WKInterfaceController {
             println("dipe")
         }
     }
-    
+
     @IBAction func buttonAction()
     {
         println("watch button!")
-//        sharedDefaults?.setObject("Came from Apple Watch App", forKey: "AppleWatchData")
-//        sharedDefaults?.synchronize()
+        
+        var parentValues = Dictionary<String,String>()
+        parentValues["testVal1"] = "parent Test 1"
+        parentValues["testVal2"] = "parent Test 2"
+        
+        WKInterfaceController.openParentApplication(parentValues, reply: {(replyValues, error) -> Void in
+            println(replyValues["retVal1"])
+            println(replyValues["retVal2"])
+        })
+        
     }
     
 }
