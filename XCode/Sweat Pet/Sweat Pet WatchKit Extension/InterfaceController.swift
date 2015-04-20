@@ -48,7 +48,8 @@ class InterfaceController: WKInterfaceController {
 //        parentValues["testVal2"] = "parent Test 2"
         
         var tempString = "it worked, and I hate life so much right now"
-        var parentValues = NSDictionary(objects: [tempString], forKeys: ["type"])
+        var f = Float(100)
+        var parentValues = NSDictionary(objects: [tempString, f], forKeys: ["type", "float"])
         
         WKInterfaceController.openParentApplication(parentValues as [NSObject : AnyObject], reply: {(replyValues, error) -> Void in
             println(replyValues?["retVal1"])

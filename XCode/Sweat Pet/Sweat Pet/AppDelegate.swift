@@ -30,6 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            NSLog(request as String)
         }
         
+        if let userInfo = userInfo, request = userInfo["float"] as? Float
+        {
+            NSLog(request.description)
+        }
+        
         // pass back values to Apple Watch
         var retValues = Dictionary<String,String>()
         retValues["retVal1"] = "return Test 1 dipe"
