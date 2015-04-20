@@ -10,14 +10,19 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sweat_Pet_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="background" id="sXL-uv-uxr">
+                        <group width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="sXL-uv-uxr" userLabel="Group Buttons">
                             <items>
-                                <button width="0.50000000000000011" alignment="left" verticalAlignment="bottom" title="FEED" id="4ps-tw-tl7">
+                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="FEED" id="4ps-tw-tl7">
                                     <connections>
                                         <action selector="buttonAction" destination="AgC-eL-Hgc" id="RzK-rf-G6i"/>
                                     </connections>
                                 </button>
-                                <button width="0.50000000000000011" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY"/>
+                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.75" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="JhX-r0-sVK"/>
                             </items>
                         </group>
                     </items>
