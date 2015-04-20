@@ -3,7 +3,7 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "29 - iPad Settings.png",
+      "filename" : "29 - iPad Settings-5.png",
       "scale" : "1x"
     },
     {
@@ -21,25 +21,25 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "40 - iPhone Spotlight.png",
+      "filename" : "80 - Spotlight-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "80 - Spotlight.png",
+      "filename" : "120 - iPhone-1.png",
       "scale" : "3x"
     },
     {
       "size" : "57x57",
       "idiom" : "iphone",
-      "filename" : "57 - Settings.png",
+      "filename" : "57 - Settings-2.png",
       "scale" : "1x"
     },
     {
       "size" : "57x57",
       "idiom" : "iphone",
-      "filename" : "120 - iPhone-1.png",
+      "filename" : "114 - iPhone 2x.png",
       "scale" : "2x"
     },
     {
@@ -51,73 +51,14 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "120 - iPhone-2.png",
+      "filename" : "180 - iPhone 6 Plus.png",
       "scale" : "3x"
-    },
-    {
-      "size" : "29x29",
-      "idiom" : "ipad",
-      "filename" : "58 - Settings.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "29x29",
-      "idiom" : "ipad",
-      "filename" : "58 - iPad Settings 2x-1.png",
-      "scale" : "2x"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "ipad",
-      "filename" : "40 - iPhone Spotlight-1.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "ipad",
-      "filename" : "80 - Spotlight-1.png",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "50x50",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "50x50",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "72x72",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "72x72",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "76x76",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "76x76",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "car",
-      "size" : "120x120",
-      "scale" : "1x"
     },
     {
       "size" : "24x24",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "29 - iPad Settings-1.png",
+      "filename" : "48  - Watch 38mm.png",
       "role" : "notificationCenter",
       "subtype" : "38mm"
     },
@@ -125,21 +66,21 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "29 - iPad Settings-2.png",
+      "filename" : "55  - Watch 42mm.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29 - iPad Settings-3.png",
+      "filename" : "58 - iPad Settings 2x-1.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "29 - iPad Settings-4.png",
+      "filename" : "87 - iPhone Settings 3x-3.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -147,7 +88,7 @@
       "size" : "40x40",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "40 - iPhone Spotlight-2.png",
+      "filename" : "80 - Spotlight.png",
       "role" : "appLauncher",
       "subtype" : "38mm"
     },
@@ -155,7 +96,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "57 - Settings-1.png",
+      "filename" : "88 - Watch Long.png",
       "role" : "longLook",
       "subtype" : "42mm"
     },
@@ -163,7 +104,7 @@
       "size" : "86x86",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "87 - iPhone Settings 3x-1.png",
+      "filename" : "172 - Watch Short 38mm.png",
       "role" : "quickLook",
       "subtype" : "38mm"
     },
@@ -171,7 +112,7 @@
       "size" : "98x98",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "87 - iPhone Settings 3x-2.png",
+      "filename" : "196 - Watch Short 42mm.png",
       "role" : "quickLook",
       "subtype" : "42mm"
     }
