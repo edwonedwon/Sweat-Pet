@@ -502,7 +502,7 @@
 						DevelopmentTeam = K4NQBC9GFA;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.HealthKit = {
 								enabled = 1;

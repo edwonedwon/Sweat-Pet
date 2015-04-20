@@ -1,38 +1,45 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "29 - iPad Settings.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "58 - iPad Settings 2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "87 - iPhone Settings 3x.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "40 - iPhone Spotlight.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "80 - Spotlight.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "57 - Settings.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "iphone",
       "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "120 - iPhone-1.png",
       "scale" : "2x"
     },
     {
@@ -42,28 +49,33 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "120 - iPhone-2.png",
       "scale" : "3x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "58 - Settings.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "58 - iPad Settings 2x-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "40 - iPhone Spotlight-1.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "80 - Spotlight-1.png",
       "scale" : "2x"
     },
     {
@@ -105,6 +117,7 @@
       "size" : "24x24",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "29 - iPad Settings-1.png",
       "role" : "notificationCenter",
       "subtype" : "38mm"
     },
@@ -112,18 +125,21 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "29 - iPad Settings-2.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "29 - iPad Settings-3.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "29 - iPad Settings-4.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -131,6 +147,7 @@
       "size" : "40x40",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "40 - iPhone Spotlight-2.png",
       "role" : "appLauncher",
       "subtype" : "38mm"
     },
@@ -138,6 +155,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "57 - Settings-1.png",
       "role" : "longLook",
       "subtype" : "42mm"
     },
@@ -145,6 +163,7 @@
       "size" : "86x86",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "87 - iPhone Settings 3x-1.png",
       "role" : "quickLook",
       "subtype" : "38mm"
     },
@@ -152,29 +171,8 @@
       "size" : "98x98",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "87 - iPhone Settings 3x-2.png",
       "role" : "quickLook",
-      "subtype" : "42mm"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "watch",
-      "scale" : "2x",
-      "unassigned" : true,
-      "role" : "appLauncher",
-      "subtype" : "38mm"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "watch",
-      "unassigned" : true,
-      "role" : "appLauncher",
-      "scale" : "2x"
-    },
-    {
-      "scale" : "2x",
-      "idiom" : "watch",
-      "unassigned" : true,
-      "role" : "appLauncher",
       "subtype" : "42mm"
     }
   ],
