@@ -25,19 +25,13 @@ class InfoViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleWatchKitNotification:"), name: "WatchKitSaysHello", object: nil)
-        self.testLabel.text = "dipe"
+        println("view did load")
     }
     
     deinit
     {
-//        NSNotificationCenter.defaultCenter().removeObserver(self)
+
     }
-//    
-//    func handleWatchKitNotification(notification: NSNotification)
-//    {
-//        println("handling")
-//    }
     
     override func viewDidAppear(animated: Bool)
     {

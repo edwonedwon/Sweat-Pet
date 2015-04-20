@@ -32,6 +32,7 @@ class PetViewController: UIViewController {
     @IBAction func vialButtonAction(sender: AnyObject)
     {
         println("touched vial")
+        NSLog("touched vial nslog")
 //        petController.birth()
     }
     

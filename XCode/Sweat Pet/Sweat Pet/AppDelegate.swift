@@ -22,11 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // App Delegate to handle WatchKit Extension Requests
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
         
-        println("message recieved")
+        NSLog("message recieved")
         
         // retrieved parameters from apple watch
-        println(userInfo?["value1"])
-        println(userInfo?["value2"])
+        if let userInfo = userInfo, request = userInfo["type"] as? String
+        {
+           NSLog(request as String)
+        }
         
         // pass back values to Apple Watch
         var retValues = Dictionary<String,String>()
@@ -35,6 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         reply(retValues)
         
+        // GET VIEW CONTROLLER
+//        var window:UIWindow?
+//        if let viewControllers = window?.rootViewController?.childViewControllers {
+//            for viewController in viewControllers {
+//                if viewController.isKindOfClass(InfoViewController)
+//                {
+//                    println("Found info view!!!")
+//                }
+//            }
+//        }
+
 //        let infoView = InfoViewController()
 //        infoView.testLabelChange()
         
