@@ -38,7 +38,7 @@ class InterfaceController: WKInterfaceController {
             println("dipe")
         }
     }
-
+    
     @IBAction func buttonAction()
     {
         println("watch button!")
@@ -51,7 +51,6 @@ class InterfaceController: WKInterfaceController {
             println(replyValues?["retVal1"])
             println(replyValues?["retVal2"])
         })
-        
     }
     
 }

@@ -10,11 +10,16 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sweat_Pet_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="Zhh-Ag-4f3">
-                            <connections>
-                                <action selector="buttonAction" destination="AgC-eL-Hgc" id="2bi-XJ-spJ"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="1" alignment="left" backgroundImage="background" id="sXL-uv-uxr">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" verticalAlignment="bottom" title="FEED" id="4ps-tw-tl7">
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="RzK-rf-G6i"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY"/>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
