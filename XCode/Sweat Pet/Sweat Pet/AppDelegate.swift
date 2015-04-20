@@ -12,8 +12,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -42,16 +41,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         reply(retValues)
         
-        // GET VIEW CONTROLLER
-//        var window:UIWindow?
-//        if let viewControllers = window?.rootViewController?.childViewControllers {
-//            for viewController in viewControllers {
-//                if viewController.isKindOfClass(InfoViewController)
-//                {
-//                    println("Found info view!!!")
-//                }
-//            }
-//        }
+        //      GET VIEW CONTROLLER
+        let app = UIApplication.sharedApplication()
+        var window = app.windows[0] as! UIWindow
+        if let viewControllers = window.rootViewController?.childViewControllers
+        {
+            println("1")
+            for viewController in viewControllers
+            {
+                if viewController.isKindOfClass(InfoViewController)
+                {
+                    NSLog("Found info view!!!")
+                    
+                }
+            }
+        }
 
 //        let infoView = InfoViewController()
 //        infoView.testLabelChange()
