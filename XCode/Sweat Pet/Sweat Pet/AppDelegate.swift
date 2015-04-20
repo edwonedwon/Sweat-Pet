@@ -53,6 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 {
                     NSLog("Found info view!!!")
                     
+                    // TODO - change the label on infoViewController to say something
+                    
+//                    var infoViewController = viewController as! InfoViewController
+//                    infoViewController.testLabel.text = "dipe is soooo fresh"
                 }
             }
         }
