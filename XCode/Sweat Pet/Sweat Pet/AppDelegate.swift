@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSLog("message recieved")
         
         // retrieved parameters from apple watch
-        if let userInfo = userInfo, request = userInfo["type"] as? String
+        if let userInfo = userInfo, request = userInfo["string"] as? String
         {
            NSLog(request as String)
         }
