@@ -40,8 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         retValues["retVal2"] = "return Test 2 dipe"
         
         reply(retValues)
-        
-        //      GET VIEW CONTROLLER
+
+        // GET VIEW CONTROLLER
         let app = UIApplication.sharedApplication()
         var window = app.windows[0] as! UIWindow
         if let viewControllers = window.rootViewController?.childViewControllers
@@ -52,17 +52,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if viewController.isKindOfClass(InfoViewController)
                 {
                     NSLog("Found info view!!!")
-                    
                     // TODO - change the label on infoViewController to say something
-                    
-//                    var infoViewController = viewController as! InfoViewController
-//                    infoViewController.testLabel.text = "dipe is soooo fresh"
+
+                    var infoViewController = viewController as! InfoViewController
+                    infoViewController.testLabel.text = "dipe is soooo fresh"
                 }
             }
         }
-
-//        let infoView = InfoViewController()
-//        infoView.testLabelChange()
         
     }
     
