@@ -100,12 +100,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYL-gy-ybp">
+                                <rect key="frame" x="241" y="499" width="118" height="30"/>
+                                <state key="normal" title="Send Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendNotificationButton:" destination="7ui-Yc-Pil" eventType="touchUpInside" id="Rko-Mq-Ioz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="GLN-O3-5n8" secondAttribute="centerX" id="73x-vS-r6x"/>
                             <constraint firstAttribute="centerY" secondItem="GLN-O3-5n8" secondAttribute="centerY" id="AyS-1v-9hg"/>
+                            <constraint firstAttribute="bottom" secondItem="ZYL-gy-ybp" secondAttribute="bottom" constant="71" id="G1Q-Bs-Vfs"/>
                             <constraint firstItem="llY-bS-4nz" firstAttribute="top" secondItem="PIf-eO-D5E" secondAttribute="top" constant="20" id="KZF-ma-Vge"/>
+                            <constraint firstAttribute="centerX" secondItem="ZYL-gy-ybp" secondAttribute="centerX" id="bcY-cV-VpU"/>
                             <constraint firstAttribute="centerX" secondItem="llY-bS-4nz" secondAttribute="centerX" id="iWg-yA-aK3"/>
                         </constraints>
                     </view>

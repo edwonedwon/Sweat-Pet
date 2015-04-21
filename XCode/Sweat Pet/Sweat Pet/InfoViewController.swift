@@ -61,6 +61,12 @@ class InfoViewController: UIViewController
     
     @IBOutlet weak var testLabel: UILabel!
     
+    @IBAction func sendNotificationButton(sender: AnyObject)
+    {
+        println("send notification")
+    }
+    
+    
     func testLabelChange ()
     {
 

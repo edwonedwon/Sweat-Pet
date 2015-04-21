@@ -15,8 +15,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /* First ask the user if we are
+        allowed to perform local notifications */
+//        let settings = UIUserNotificationSettings(forTypes: .Alert,
+//            categories: nil)
+//        
+//        application.registerUserNotificationSettings(settings)
+        
         return true
     }
+    
+    // Schedule Notifications
+//    func application(application: UIApplication,
+//        didRegisterUserNotificationSettings
+//        notificationSettings: UIUserNotificationSettings){
+//            
+//            if notificationSettings.types == nil{
+//                /* The user did not allow us to send notifications */
+//                return
+//            }
+//            
+//            let notification = UILocalNotification()
+//            
+//            /* Time and timezone settings */
+//            
+//            notification.fireDate = NSDate(timeIntervalSinceNow: 4)
+//            notification.timeZone = NSCalendar.currentCalendar().timeZone
+//            
+//            notification.alertBody = "A new item is downloaded"
+//            
+//            /* Action settings */
+//            notification.hasAction = true
+//            notification.alertAction = "View"
+//            
+//            /* Badge settings */
+//            notification.applicationIconBadgeNumber++
+//            
+//            /* Additional information, user info */
+//            notification.userInfo = [
+//                "Key 1" : "Value 1",
+//                "Key 2" : "Value 2"
+//            ]
+//            
+//            /* Schedule the notification */
+//            application.scheduleLocalNotification(notification)
+//            
+//    }
+
     
     // App Delegate to handle WatchKit Extension Requests
     func application(application: UIApplication,
