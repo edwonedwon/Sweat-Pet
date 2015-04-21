@@ -17,7 +17,11 @@
                                         <action selector="buttonAction" destination="AgC-eL-Hgc" id="RzK-rf-G6i"/>
                                     </connections>
                                 </button>
-                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY"/>
+                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY">
+                                    <connections>
+                                        <action selector="buttonClean" destination="AgC-eL-Hgc" id="5Fo-qc-8OW"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <group width="1" height="0.75" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
