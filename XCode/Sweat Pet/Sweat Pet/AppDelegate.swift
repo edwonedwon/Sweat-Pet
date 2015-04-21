@@ -81,11 +81,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         {
             NSLog(request.description)
         }
+            
+        if let userInfo = userInfo, request = userInfo["statsString"] as? String
+        {
+            NSLog(request as String)
+        }
         
         // pass back values to Apple Watch
-        var retValues = Dictionary<String,String>()
-        retValues["retVal1"] = "return Test 1 dipe"
-        retValues["retVal2"] = "return Test 2 dipe"
+            var retValues =
+            [
+                "retVal1": "return Test 1 dipe",
+                "retVal2": "return Test 2 dipe",
+                "age": 200
+            ]
         
         reply(retValues)
 

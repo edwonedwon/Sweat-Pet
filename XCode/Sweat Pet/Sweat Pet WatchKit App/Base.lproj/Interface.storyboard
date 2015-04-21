@@ -119,6 +119,9 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="ageNumberLabel" destination="2QV-fc-1Lm" id="1Xp-OU-cVU"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="528" y="347"/>

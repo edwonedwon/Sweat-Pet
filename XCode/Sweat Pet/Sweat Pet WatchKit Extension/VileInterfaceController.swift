@@ -5,14 +5,15 @@ class VileInterfaceController: WKInterfaceController
 {
     override func awakeWithContext(context: AnyObject?)
     {
+        // called when the watch app opens as far as I can tell
         super.awakeWithContext(context)
-        println("vile")
     }
     
     @IBAction func makeSweatButton()
     {
-        println("pressed make sweat")
+        
     }
+    
     override func willActivate()
     {
         // This method is called when watch view controller is about to be visible to user

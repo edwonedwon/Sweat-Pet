@@ -29,16 +29,6 @@ class PetInterfaceController: WKInterfaceController
         super.didDeactivate()
     }
     
-    func getDataFromParentApp(image: String)
-    {
-        let dictionary = ["Desired Word":image]
-        WKInterfaceController.openParentApplication(dictionary)
-        {
-            (replyInfo, error) -> Void in
-            println("dipe")
-        }
-    }
-    
     @IBAction func buttonFeed()
     {
         println("watch button!")

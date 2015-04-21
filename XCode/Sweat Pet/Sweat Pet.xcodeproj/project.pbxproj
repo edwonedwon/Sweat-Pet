@@ -17,6 +17,7 @@
 		C7ED81BF0133EB5668A44692 /* libPods-Sweat Pet WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */; };
 		EB23F7181AE6375600E3171C /* VileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7171AE6375600E3171C /* VileInterfaceController.swift */; };
 		EB23F71A1AE637E500E3171C /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */; };
+		EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */; };
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
 		EB486F8C1AE5D7CD003D0760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB486F8B1AE5D7CD003D0760 /* Images.xcassets */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
@@ -116,6 +117,7 @@
 		B08E074619D7F9370070E82F /* Sweat_PetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweat_PetTests.swift; sourceTree = "<group>"; };
 		EB23F7171AE6375600E3171C /* VileInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VileInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
+		EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUtil.swift; sourceTree = "<group>"; };
 		EB2F2A4C1ABB710A00467EB8 /* HealthKit1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit1.playground; sourceTree = "<group>"; };
 		EB426A511A9CA28E0033B72C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		EB486F8B1AE5D7CD003D0760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */,
+				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
 				EBBC65F71AE1794200FE7D0D /* PetInterfaceController.swift */,
 				EB23F7171AE6375600E3171C /* VileInterfaceController.swift */,
 				EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */,
@@ -757,6 +760,7 @@
 			files = (
 				EBBC65FA1AE1794200FE7D0D /* NotificationController.swift in Sources */,
 				EBBC65F81AE1794200FE7D0D /* PetInterfaceController.swift in Sources */,
+				EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */,
 				EBFB65461AE1DF840017C888 /* MMWormholeTest.swift in Sources */,
 				EBBC65FC1AE1794200FE7D0D /* GlanceController.swift in Sources */,
 				EB23F7181AE6375600E3171C /* VileInterfaceController.swift in Sources */,
