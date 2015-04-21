@@ -3,6 +3,8 @@ import SpriteKit
 
 class GameScene : SKScene {
     
+    var audioOn = false;
+    
     var pet = SKSpriteNode()
     var petMouth = SKSpriteNode()
     var petNose = SKSpriteNode()
@@ -159,10 +161,13 @@ class GameScene : SKScene {
             pet.position.x = location.x
             pet.position.y = location.y + touchOffsetY
             petTongue.alpha = 1.0
-            runAction(SKAction.sequence([
-                SKAction.playSoundFileNamed("lick.wav", waitForCompletion: false)  ,
-                SKAction.playSoundFileNamed("lick_synth.wav", waitForCompletion: false)
-                ]))
+            if (audioOn)
+            {
+                runAction(SKAction.sequence([
+                    SKAction.playSoundFileNamed("lick.wav", waitForCompletion: false)  ,
+                    SKAction.playSoundFileNamed("lick_synth.wav", waitForCompletion: false)
+                    ]))
+            }
             blink()
             spinTongue = true
             if (self.nodeAtPoint(location).name == "pet") // if touched pet
