@@ -12,12 +12,12 @@
                     <items>
                         <group width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="sXL-uv-uxr" userLabel="Group Buttons">
                             <items>
-                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="FEED" id="4ps-tw-tl7">
+                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="IDLE" id="4ps-tw-tl7">
                                     <connections>
                                         <action selector="buttonFeed" destination="AgC-eL-Hgc" id="yvm-uN-qxU"/>
                                     </connections>
                                 </button>
-                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY">
+                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CHEW" id="jId-bo-hFY">
                                     <connections>
                                         <action selector="buttonClean" destination="AgC-eL-Hgc" id="5Fo-qc-8OW"/>
                                     </connections>
@@ -32,10 +32,54 @@
                     </items>
                     <connections>
                         <outlet property="petImage" destination="JhX-r0-sVK" id="QgS-bl-b7l"/>
+                        <segue destination="49I-2H-Hc1" kind="relationship" relationship="nextPage" id="RQ0-I8-CW3"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Nye-yj-F2V">
+            <objects>
+                <controller id="49I-2H-Hc1">
+                    <items>
+                        <group width="1" height="0.80000000000000004" alignment="left" id="RER-Hd-s8A" userLabel="Vial View">
+                            <items>
+                                <imageView width="0.5" height="1" alignment="left" image="vial_fill_07" contentMode="scaleAspectFit" id="0j9-pY-1Q0" userLabel="Vial Image"/>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="U9Z-94-xTj" userLabel="Text">
+                                    <items>
+                                        <separator alignment="left" alpha="0.59999999999999998" id="ewd-Ss-huk"/>
+                                        <group width="1" height="0.29999999999999999" alignment="left" id="R8j-ns-aQv">
+                                            <items>
+                                                <label width="1" alignment="center" verticalAlignment="center" text="3 Min. Left" textAlignment="center" numberOfLines="2" id="hEB-h6-u7w"/>
+                                            </items>
+                                        </group>
+                                        <separator alignment="left" alpha="0.59999999999999998" id="BpQ-9f-8NK"/>
+                                        <group width="1" height="0.65000000000000002" alignment="left" id="xYw-Ux-26C">
+                                            <items>
+                                                <label width="1" alignment="center" verticalAlignment="center" text="12 Min. Done" textAlignment="center" numberOfLines="2" id="A5k-zX-XrA"/>
+                                            </items>
+                                        </group>
+                                        <separator alignment="left" alpha="0.59999999999999998" id="em1-2x-LbZ"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Feed" id="tGl-K1-5Vd"/>
+                    </items>
+                    <connections>
+                        <segue destination="Xng-Dj-LZb" kind="relationship" relationship="nextPage" id="uO3-LJ-Fm9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="351.05000087618828"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="jX6-Z5-sf8">
+            <objects>
+                <controller id="Xng-Dj-LZb"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
