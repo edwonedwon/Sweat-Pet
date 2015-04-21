@@ -26,7 +26,7 @@
                         </group>
                         <group width="1" height="0.75" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
                             <items>
-                                <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" animationDuration="3" id="JhX-r0-sVK" userLabel="Image Pet"/>
+                                <imageView width="1" height="1" alignment="left" image="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" id="JhX-r0-sVK" userLabel="Image Pet"/>
                             </items>
                         </group>
                     </items>
