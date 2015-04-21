@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // App Delegate to handle WatchKit Extension Requests
-    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+    func application(application: UIApplication,
+        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
+        reply: (([NSObject : AnyObject]!) -> Void)!) {
         
         NSLog("message recieved")
         
