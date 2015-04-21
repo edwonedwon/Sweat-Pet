@@ -22,10 +22,13 @@
                         </group>
                         <group width="1" height="0.75" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
                             <items>
-                                <imageView width="1" height="1" alignment="left" id="JhX-r0-sVK"/>
+                                <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" animationDuration="3" id="JhX-r0-sVK" userLabel="Image Pet"/>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="petImage" destination="JhX-r0-sVK" id="QgS-bl-b7l"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

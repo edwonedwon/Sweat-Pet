@@ -13,11 +13,15 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
+    
+    @IBOutlet weak var petImage: WKInterfaceImage!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        // START PET IDLE ANIMATION
+        self.petImage.setImageNamed("PetIdle")
+        self.petImage.startAnimatingWithImagesInRange(NSMakeRange(0, 50), duration: 1, repeatCount: 0)
     }
 
     override func willActivate() {
@@ -52,5 +56,4 @@ class InterfaceController: WKInterfaceController {
             println(replyValues?["retVal2"])
         })
     }
-    
 }

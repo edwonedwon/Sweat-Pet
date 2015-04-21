@@ -16,6 +16,7 @@
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
 		C7ED81BF0133EB5668A44692 /* libPods-Sweat Pet WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */; };
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
+		EB486F8C1AE5D7CD003D0760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB486F8B1AE5D7CD003D0760 /* Images.xcassets */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
@@ -31,7 +32,6 @@
 		EBBC65FE1AE1794200FE7D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBC65FD1AE1794200FE7D0D /* Images.xcassets */; };
 		EBBC66021AE1794200FE7D0D /* Sweat Pet WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = EBBC66011AE1794200FE7D0D /* Sweat Pet WatchKit App.app */; };
 		EBBC660A1AE1794200FE7D0D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC66081AE1794200FE7D0D /* Interface.storyboard */; };
-		EBBC660C1AE1794200FE7D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBC660B1AE1794200FE7D0D /* Images.xcassets */; };
 		EBBC660F1AE1794200FE7D0D /* Sweat Pet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBBC65F21AE1794200FE7D0D /* Sweat Pet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EBBC66171AE17A3B00FE7D0D /* Sweat Pet WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = EBBC66011AE1794200FE7D0D /* Sweat Pet WatchKit App.app */; };
 		EBBC661B1AE17A4600FE7D0D /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */; };
@@ -114,6 +114,7 @@
 		B08E074619D7F9370070E82F /* Sweat_PetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweat_PetTests.swift; sourceTree = "<group>"; };
 		EB2F2A4C1ABB710A00467EB8 /* HealthKit1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit1.playground; sourceTree = "<group>"; };
 		EB426A511A9CA28E0033B72C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		EB486F8B1AE5D7CD003D0760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
 		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
 		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		EBBC66011AE1794200FE7D0D /* Sweat Pet WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweat Pet WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBC66071AE1794200FE7D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBC66091AE1794200FE7D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		EBBC660B1AE1794200FE7D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		EBBC661E1AE17C7100FE7D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet WatchKit Extension.entitlements"; sourceTree = "<group>"; };
@@ -365,8 +365,8 @@
 		EBBC66051AE1794200FE7D0D /* Sweat Pet WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				EB486F8B1AE5D7CD003D0760 /* Images.xcassets */,
 				EBBC66081AE1794200FE7D0D /* Interface.storyboard */,
-				EBBC660B1AE1794200FE7D0D /* Images.xcassets */,
 				EBBC66061AE1794200FE7D0D /* Supporting Files */,
 			);
 			path = "Sweat Pet WatchKit App";
@@ -591,7 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBC660A1AE1794200FE7D0D /* Interface.storyboard in Resources */,
-				EBBC660C1AE1794200FE7D0D /* Images.xcassets in Resources */,
+				EB486F8C1AE5D7CD003D0760 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
