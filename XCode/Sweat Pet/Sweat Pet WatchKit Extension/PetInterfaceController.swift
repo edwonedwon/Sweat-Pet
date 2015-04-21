@@ -1,16 +1,8 @@
-//
-//  InterfaceController.swift
-//  Sweat Pet WatchKit Extension
-//
-//  Created by Edwon Edwon on 4/17/15.
-//  Copyright (c) 2015 EDWON. All rights reserved.
-//
-
 import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController
+class PetInterfaceController: WKInterfaceController
 {
     
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")

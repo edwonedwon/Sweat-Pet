@@ -8,7 +8,7 @@
         <!--Pet Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" userLabel="Pet Interface Controller" customClass="InterfaceController" customModule="Sweat_Pet_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" userLabel="Pet Interface Controller" customClass="PetInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="sXL-uv-uxr" userLabel="Group Buttons">
                             <items>
@@ -41,7 +41,7 @@
         <!--Vial Interface Controller-->
         <scene sceneID="Nye-yj-F2V">
             <objects>
-                <controller id="49I-2H-Hc1" userLabel="Vial Interface Controller">
+                <controller id="49I-2H-Hc1" userLabel="Vial Interface Controller" customClass="VileInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.80000000000000004" alignment="left" id="RER-Hd-s8A" userLabel="Vial View">
                             <items>
@@ -65,7 +65,11 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="0.69999999999999996" height="0.14999999999999999" alignment="center" title="Make Sweat" id="tGl-K1-5Vd"/>
+                        <button width="0.69999999999999996" height="0.14999999999999999" alignment="center" title="Make Sweat" id="tGl-K1-5Vd">
+                            <connections>
+                                <action selector="makeSweatButton" destination="49I-2H-Hc1" id="ojw-6Z-KlA"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <segue destination="Xng-Dj-LZb" kind="relationship" relationship="nextPage" id="uO3-LJ-Fm9"/>
@@ -77,7 +81,7 @@
         <!--Stats Interface Controller-->
         <scene sceneID="jX6-Z5-sf8">
             <objects>
-                <controller id="Xng-Dj-LZb" userLabel="Stats Interface Controller">
+                <controller id="Xng-Dj-LZb" userLabel="Stats Interface Controller" customClass="StatsInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.47999999999999998" alignment="left" layout="vertical" id="JWg-Ez-6hl" userLabel="Age Group">
                             <items>
