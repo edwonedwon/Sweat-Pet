@@ -14,7 +14,7 @@
                             <items>
                                 <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="FEED" id="4ps-tw-tl7">
                                     <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="RzK-rf-G6i"/>
+                                        <action selector="buttonFeed" destination="AgC-eL-Hgc" id="yvm-uN-qxU"/>
                                     </connections>
                                 </button>
                                 <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CLEAN" id="jId-bo-hFY">

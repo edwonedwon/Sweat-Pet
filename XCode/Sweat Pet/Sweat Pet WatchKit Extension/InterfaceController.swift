@@ -47,7 +47,7 @@ class InterfaceController: WKInterfaceController
         }
     }
     
-    @IBAction func buttonAction()
+    @IBAction func buttonFeed()
     {
         println("watch button!")
         
