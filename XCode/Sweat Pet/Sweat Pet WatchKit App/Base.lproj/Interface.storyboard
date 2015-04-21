@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Pet Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sweat_Pet_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" userLabel="Pet Interface Controller" customClass="InterfaceController" customModule="Sweat_Pet_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="sXL-uv-uxr" userLabel="Group Buttons">
                             <items>
@@ -38,14 +38,14 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Vial Interface Controller-->
         <scene sceneID="Nye-yj-F2V">
             <objects>
-                <controller id="49I-2H-Hc1">
+                <controller id="49I-2H-Hc1" userLabel="Vial Interface Controller">
                     <items>
                         <group width="1" height="0.80000000000000004" alignment="left" id="RER-Hd-s8A" userLabel="Vial View">
                             <items>
-                                <imageView width="0.5" height="1" alignment="left" image="vial_fill_07" contentMode="scaleAspectFit" id="0j9-pY-1Q0" userLabel="Vial Image"/>
+                                <imageView width="0.5" height="1" alignment="left" image="vial_fill_7" contentMode="scaleAspectFit" id="0j9-pY-1Q0" userLabel="Vial Image"/>
                                 <group width="0.5" height="1" alignment="left" layout="vertical" id="U9Z-94-xTj" userLabel="Text">
                                     <items>
                                         <separator alignment="left" alpha="0.59999999999999998" id="ewd-Ss-huk"/>
@@ -65,21 +65,59 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Feed" id="tGl-K1-5Vd"/>
+                        <button width="0.69999999999999996" height="0.14999999999999999" alignment="center" title="Make Sweat" id="tGl-K1-5Vd"/>
                     </items>
                     <connections>
                         <segue destination="Xng-Dj-LZb" kind="relationship" relationship="nextPage" id="uO3-LJ-Fm9"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="431" y="351.05000087618828"/>
+            <point key="canvasLocation" x="381" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Stats Interface Controller-->
         <scene sceneID="jX6-Z5-sf8">
             <objects>
-                <controller id="Xng-Dj-LZb"/>
+                <controller id="Xng-Dj-LZb" userLabel="Stats Interface Controller">
+                    <items>
+                        <group width="1" height="0.47999999999999998" alignment="left" layout="vertical" id="JWg-Ez-6hl" userLabel="Age Group">
+                            <items>
+                                <label width="1" height="32" alignment="center" text="Age" textAlignment="center" id="aRV-CG-QDs">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <group width="1" height="26" alignment="left" id="n5w-Qa-ubk">
+                                    <items>
+                                        <label height="1" alignment="center" verticalAlignment="bottom" text="17" textAlignment="center" numberOfLines="2" id="2QV-fc-1Lm" userLabel="Age Label">
+                                            <fontDescription key="font" type="system" pointSize="33"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="bottom" text="DAYS" textAlignment="center" id="ytv-Rh-Pc3" userLabel="Age Label">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator width="0.90000000000000002" alignment="center" alpha="0.5" id="k7j-yC-NfU"/>
+                        <label width="1" height="26" alignment="center" text="Next Feeding" textAlignment="center" id="HMz-DU-eoS">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" id="v1D-cq-Uxx" userLabel="Time Left Group">
+                            <items>
+                                <group width="1" alignment="left" id="62R-Jr-itE">
+                                    <items>
+                                        <label height="28" alignment="center" verticalAlignment="bottom" text="23" textAlignment="center" numberOfLines="2" id="VJL-DO-I0Q" userLabel="Age Label">
+                                            <fontDescription key="font" type="system" pointSize="33"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="bottom" text="HOURS" textAlignment="center" numberOfLines="2" id="Dcc-kh-zpm" userLabel="Age Label">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="619" y="347"/>
+            <point key="canvasLocation" x="528" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
