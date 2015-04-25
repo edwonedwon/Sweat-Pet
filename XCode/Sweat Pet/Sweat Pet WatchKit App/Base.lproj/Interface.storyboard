@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -10,21 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="Pet Interface Controller" customClass="PetInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.25" alignment="left" verticalAlignment="bottom" id="sXL-uv-uxr" userLabel="Group Buttons">
-                            <items>
-                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="IDLE" id="4ps-tw-tl7">
-                                    <connections>
-                                        <action selector="buttonFeed" destination="AgC-eL-Hgc" id="yvm-uN-qxU"/>
-                                    </connections>
-                                </button>
-                                <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="bottom" title="CHEW" id="jId-bo-hFY">
-                                    <connections>
-                                        <action selector="buttonClean" destination="AgC-eL-Hgc" id="5Fo-qc-8OW"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.75" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
+                        <group width="1" height="1" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
                             <items>
                                 <imageView width="1" height="1" alignment="left" image="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" id="JhX-r0-sVK" userLabel="Image Pet"/>
                             </items>
