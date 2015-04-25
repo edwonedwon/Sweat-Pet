@@ -86,10 +86,10 @@ class InfoViewController: UIViewController
     
     func updateUI()
     {
-        petControl.updateAge()
-        var ageRaw = petControl.readAge()
-        var ageString = petControl.stringFromTimeInterval(ageRaw)
-        ageLabel.text = "Pet's Age: " + (ageString as String)
+//        petControl.updateAge()
+//        var ageRaw = petControl.readAge()
+//        var ageString = petControl.stringFromTimeInterval(ageRaw)
+//        ageLabel.text = "Pet's Age: " + (ageString as String)
     }
 
 }
