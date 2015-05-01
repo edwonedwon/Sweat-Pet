@@ -12,7 +12,7 @@
                     <items>
                         <group width="1" height="1" alignment="left" backgroundImage="background" id="gv1-uH-x0f">
                             <items>
-                                <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
+                                <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFill" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
                                     <items>
                                         <group width="1" height="0.25" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
                                             <items>
@@ -21,13 +21,13 @@
                                                         <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="3Oz-mW-DM5"/>
                                                     </connections>
                                                 </button>
-                                                <button width="53" alignment="right" title="Clean" id="qXQ-GI-pie"/>
+                                                <button width="53" alignment="right" enabled="NO" id="qXQ-GI-pie"/>
                                             </items>
                                         </group>
                                         <group width="1" alignment="left" verticalAlignment="bottom" id="ael-H5-eCG" userLabel="Group Bottom Buttons">
                                             <items>
-                                                <button width="0.29999999999999999" alignment="left" title="Button" id="KGW-gu-3ex"/>
-                                                <button width="0.29999999999999999" alignment="right" title="Button" id="Dh9-8w-QqM"/>
+                                                <button width="0.29999999999999999" alignment="left" enabled="NO" id="KGW-gu-3ex"/>
+                                                <button width="0.29999999999999999" alignment="right" enabled="NO" id="Dh9-8w-QqM"/>
                                             </items>
                                         </group>
                                     </items>

@@ -12,16 +12,33 @@ class PetInterfaceController: WKInterfaceController
     @IBAction func feedButtonAction()
     {
         animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
-        animatePet("pet_drink_", length: 50, duration: 2, repeatCount: 0)
-
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
+    }
+    
+    func drinkAnim1()
+    {
+        animatePet("pet_drink_", length: 50, duration: 1.6, repeatCount: 2)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.6, target: self, selector: Selector("drinkAnim2"), userInfo: nil, repeats: false)
+    }
+    
+    func drinkAnim2()
+    {
+        animatePet("pet_drink_finish_", length: 46, duration: 1.5, repeatCount: 0)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("idleAnim"), userInfo: nil, repeats: false)
+    }
+    
+    func idleAnim ()
+    {
+        petImage.setBackgroundImageNamed("pet_idle_16")
+//        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
     }
     
     override func awakeWithContext(context: AnyObject?)
     {
         super.awakeWithContext(context)
-        
+
         // ANIMATE PET IDLE
-        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
+        idleAnim()
     }
 
     override func willActivate()
@@ -49,14 +66,14 @@ class PetInterfaceController: WKInterfaceController
             println(replyValues?["retVal2"])
         })
         
-        // ANIMATE PET IDLE
-        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
+//         ANIMATE PET IDLE
+//        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
     }
     
     @IBAction func buttonClean()
     {
         // ANIMATE PET EAT
-        animatePet("pet_eat_", length: 33, duration: 0.8, repeatCount: 0)
+        idleAnim()
     }
     
     func animatePet(animName: String, length: Int, duration:Float, repeatCount:Int)
