@@ -16,7 +16,7 @@
                                     <items>
                                         <group width="1" height="0.25" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
                                             <items>
-                                                <button width="53" alignment="left" title="Feed" id="YIy-8V-Hts">
+                                                <button width="53" height="28" alignment="left" title="Feed" id="YIy-8V-Hts">
                                                     <connections>
                                                         <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="3Oz-mW-DM5"/>
                                                     </connections>
