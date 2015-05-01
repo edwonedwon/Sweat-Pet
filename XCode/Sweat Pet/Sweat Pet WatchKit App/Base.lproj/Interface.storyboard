@@ -10,14 +10,29 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="Pet Interface Controller" customClass="PetInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="background" id="gv1-uH-x0f" userLabel="Group Creature">
+                        <group width="1" height="1" alignment="left" backgroundImage="background" id="gv1-uH-x0f">
                             <items>
-                                <imageView width="1" height="1" alignment="left" image="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" id="JhX-r0-sVK" userLabel="Image Pet"/>
+                                <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
+                                    <items>
+                                        <group width="1" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
+                                            <items>
+                                                <button width="55" alignment="left" title="Feed" id="0Qb-7i-Zt1"/>
+                                                <button width="53" alignment="right" title="Clean" id="qXQ-GI-pie"/>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" verticalAlignment="bottom" id="ael-H5-eCG" userLabel="Group Bottom Buttons">
+                                            <items>
+                                                <button width="0.29999999999999999" alignment="left" title="Button" id="KGW-gu-3ex"/>
+                                                <button width="0.29999999999999999" alignment="right" title="Button" id="Dh9-8w-QqM"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="petImage" destination="JhX-r0-sVK" id="QgS-bl-b7l"/>
+                        <outlet property="petImage" destination="goZ-sp-Q0m" id="rVG-4F-zaz"/>
                         <segue destination="49I-2H-Hc1" kind="relationship" relationship="nextPage" id="RQ0-I8-CW3"/>
                     </connections>
                 </controller>
@@ -142,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="1001"/>
         </scene>
-        <!--Dynamic Notification Interface Controller-->
+        <!--Notification Controller-->
         <scene sceneID="IbC-JI-RCY">
             <objects>
-                <controller id="dfr-UU-7HU"/>
+                <controller id="dfr-UU-7HU" customClass="NotificationController" customModule="Sweat_Pet_WatchKit_Extension"/>
             </objects>
             <point key="canvasLocation" x="535" y="1001"/>
         </scene>

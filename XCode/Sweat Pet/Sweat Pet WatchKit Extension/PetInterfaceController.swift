@@ -7,7 +7,8 @@ class PetInterfaceController: WKInterfaceController
     
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
     
-    @IBOutlet weak var petImage: WKInterfaceImage!
+//    @IBOutlet weak var petImage: WKInterfaceImage!
+    @IBOutlet weak var petImage: WKInterfaceGroup!
 
     override func awakeWithContext(context: AnyObject?)
     {
@@ -54,7 +55,7 @@ class PetInterfaceController: WKInterfaceController
     
     func animatePet(animName: String, length: Int, duration:Float, repeatCount:Int)
     {
-        self.petImage.setImageNamed(animName)
+        self.petImage.setBackgroundImageNamed(animName)
         var durationTI = NSTimeInterval(duration)
         self.petImage.startAnimatingWithImagesInRange(NSMakeRange(Int(0), length), duration: durationTI, repeatCount: repeatCount)
     }
