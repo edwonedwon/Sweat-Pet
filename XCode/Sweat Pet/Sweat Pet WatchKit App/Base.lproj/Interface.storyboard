@@ -14,20 +14,15 @@
                             <items>
                                 <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFill" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
                                     <items>
-                                        <group width="1" height="0.25" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
+                                        <group width="1" height="1" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
                                             <items>
-                                                <button width="53" height="28" alignment="left" title="Feed" id="YIy-8V-Hts">
+                                                <button width="1" height="1" alignment="left" id="YIy-8V-Hts">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="3Oz-mW-DM5"/>
                                                     </connections>
                                                 </button>
-                                                <button width="53" alignment="right" enabled="NO" id="qXQ-GI-pie"/>
-                                            </items>
-                                        </group>
-                                        <group width="1" alignment="left" verticalAlignment="bottom" id="ael-H5-eCG" userLabel="Group Bottom Buttons">
-                                            <items>
-                                                <button width="0.29999999999999999" alignment="left" enabled="NO" id="KGW-gu-3ex"/>
-                                                <button width="0.29999999999999999" alignment="right" enabled="NO" id="Dh9-8w-QqM"/>
                                             </items>
                                         </group>
                                     </items>
