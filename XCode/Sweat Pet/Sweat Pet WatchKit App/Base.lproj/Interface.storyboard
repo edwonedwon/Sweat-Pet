@@ -14,9 +14,9 @@
                             <items>
                                 <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFit" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
                                     <items>
-                                        <group width="1" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
+                                        <group width="1" height="0.25" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
                                             <items>
-                                                <button width="55" alignment="left" title="Feed" id="0Qb-7i-Zt1"/>
+                                                <button width="53" alignment="left" title="Feed" id="YIy-8V-Hts"/>
                                                 <button width="53" alignment="right" title="Clean" id="qXQ-GI-pie"/>
                                             </items>
                                         </group>
