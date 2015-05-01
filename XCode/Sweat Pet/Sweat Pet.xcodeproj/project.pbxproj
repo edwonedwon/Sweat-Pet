@@ -350,12 +350,12 @@
 			isa = PBXGroup;
 			children = (
 				EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */,
-				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
 				EBBC65F71AE1794200FE7D0D /* PetInterfaceController.swift */,
 				EB23F7171AE6375600E3171C /* VileInterfaceController.swift */,
 				EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */,
 				EBBC65F91AE1794200FE7D0D /* NotificationController.swift */,
 				EBBC65FB1AE1794200FE7D0D /* GlanceController.swift */,
+				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
 				EBBC65FD1AE1794200FE7D0D /* Images.xcassets */,
 				EBBC65F41AE1794200FE7D0D /* Supporting Files */,
 			);

@@ -7,9 +7,15 @@ class PetInterfaceController: WKInterfaceController
     
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
     
-//    @IBOutlet weak var petImage: WKInterfaceImage!
     @IBOutlet weak var petImage: WKInterfaceGroup!
+    
+    @IBAction func feedButtonAction()
+    {
+        animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
+        animatePet("pet_drink_", length: 50, duration: 2, repeatCount: 0)
 
+    }
+    
     override func awakeWithContext(context: AnyObject?)
     {
         super.awakeWithContext(context)
