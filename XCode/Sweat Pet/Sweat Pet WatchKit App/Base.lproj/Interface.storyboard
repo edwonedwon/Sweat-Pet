@@ -27,6 +27,15 @@
                                                         <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="Ap2-M0-Rgl"/>
                                                     </connections>
                                                 </button>
+                                                <label height="0.59999999999999998" alignment="right" verticalAlignment="bottom" text="Age" textAlignment="right" id="0jK-lG-lMu">
+                                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                                </label>
+                                                <label height="0.84999999999999998" alignment="right" verticalAlignment="bottom" text="12" textAlignment="left" id="fH7-jn-E1l">
+                                                    <fontDescription key="font" type="system" pointSize="33"/>
+                                                </label>
+                                                <group width="3" height="1" alignment="right" id="Dzm-SS-LLh">
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </group>
                                             </items>
                                         </group>
                                     </items>
