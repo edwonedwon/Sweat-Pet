@@ -26,6 +26,7 @@
 		EB4A11BD1AF50549000040FD /* SweatPetUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB64901B1AF50C6400609186 /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64901A1AF50C6400609186 /* PetController.swift */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
+		EB7FDFC31AF510C8002287F3 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
 		EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */; };
@@ -44,7 +45,6 @@
 		EBBC66171AE17A3B00FE7D0D /* Sweat Pet WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = EBBC66011AE1794200FE7D0D /* Sweat Pet WatchKit App.app */; };
 		EBBC661B1AE17A4600FE7D0D /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */; };
 		EBBC661F1AE17C7100FE7D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBC661E1AE17C7100FE7D0D /* Images.xcassets */; };
-		EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1977E1A9CD7F900401B70 /* HealthManager.swift */; };
 		EBD7BEF31A9CEFD0008065AF /* pet_body.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */; };
 		EBD7BEF41A9CEFD0008065AF /* pet_mouth.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */; };
 		EBD7BEF51A9CEFD0008065AF /* pet_nose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBD7BEF01A9CEFD0008065AF /* pet_nose.atlas */; };
@@ -166,6 +166,7 @@
 		EB4A11B71AF50549000040FD /* SweatPetUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweatPetUtilTests.swift; sourceTree = "<group>"; };
 		EB64901A1AF50C6400609186 /* PetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
+		EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
 		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
 		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
 		EB9149161ABBA60A00940950 /* HealthKit3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit3.playground; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		EBBC661A1AE17A4600FE7D0D /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		EBBC661E1AE17C7100FE7D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sweat Pet WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		EBC1977E1A9CD7F900401B70 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		EBD7BEEE1A9CEFD0008065AF /* pet_body.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_body.atlas; sourceTree = "<group>"; };
 		EBD7BEEF1A9CEFD0008065AF /* pet_mouth.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_mouth.atlas; sourceTree = "<group>"; };
 		EBD7BEF01A9CEFD0008065AF /* pet_nose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pet_nose.atlas; sourceTree = "<group>"; };
@@ -329,7 +329,6 @@
 				EB9E20B11ADCE07000182CBA /* Pet Data */,
 				EB9E20B21ADCE0A400182CBA /* Pet Art */,
 				EB810FB91A9DC460004FEBFF /* Sounds */,
-				EBC1977E1A9CD7F900401B70 /* HealthManager.swift */,
 				B08E073319D7F9370070E82F /* AppDelegate.swift */,
 				EBE2DCD51A9E95D400A500BD /* Playgrounds */,
 				B08E073119D7F9370070E82F /* Supporting Files */,
@@ -369,6 +368,7 @@
 				EB4A11A81AF50549000040FD /* SweatPetUtil.h */,
 				EB4A11A61AF50549000040FD /* Supporting Files */,
 				EB64901A1AF50C6400609186 /* PetController.swift */,
+				EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */,
 			);
 			path = SweatPetUtil;
 			sourceTree = "<group>";
@@ -912,7 +912,6 @@
 				EBF6288C1A9C8D97000CCE12 /* PetViewController.swift in Sources */,
 				EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */,
 				B08E073419D7F9370070E82F /* AppDelegate.swift in Sources */,
-				EBC1977F1A9CD7F900401B70 /* HealthManager.swift in Sources */,
 				EB9E20B01ADCE02800182CBA /* InfoViewController.swift in Sources */,
 				EB9E20AD1ADC458E00182CBA /* PetController.swift in Sources */,
 			);
@@ -930,6 +929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7FDFC31AF510C8002287F3 /* HealthKitHelper.swift in Sources */,
 				EB64901B1AF50C6400609186 /* PetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

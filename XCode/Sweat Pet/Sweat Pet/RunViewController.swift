@@ -1,13 +1,11 @@
 import UIKit
 import HealthKit
+import SweatPetUtil
 
 class RunViewController: UIViewController
 {
-    
-    let healthManager:HealthManager = HealthManager()
-    
+    let healthManager = HealthKitHelper()
     @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
-    
     
     override func viewDidLoad()
     {
@@ -16,13 +14,17 @@ class RunViewController: UIViewController
     }
     
     @IBAction func ReadButtonAction(sender: AnyObject) {
-        println(healthManager.readEnergy())
-        self.activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
+        // READ HEALTH ACTIVE ENERGY BURNED
+        
+        
+//        println(healthManager.readEnergy())
+//        self.activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
     }
     
     @IBAction func AuthorizeButtonAction(sender: AnyObject) {
-                
-        healthManager.authorizeHealthKit{ (authorized,  error) -> Void in
+        // AUTHORIZE HEALTH KIT
+        
+        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
             if authorized {
                 println("HealthKit authorization received.")
             }
@@ -34,6 +36,7 @@ class RunViewController: UIViewController
                 }
             }
         }
+        
     }
     
     override func didReceiveMemoryWarning()
