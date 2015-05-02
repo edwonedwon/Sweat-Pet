@@ -8,11 +8,12 @@
 
 import WatchKit
 import Foundation
+import SweatPetUtil
 
 class TestInterfaceController: WKInterfaceController
 {
     
-    let watchUtil = WatchUtil()
+    let petControl = PetController()
     
     @IBAction func writeDataButton()
     {

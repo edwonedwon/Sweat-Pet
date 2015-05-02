@@ -1,23 +1,25 @@
 //
-//  WatchUtil.swift
+//  PetController.swift
 //  Sweat Pet
 //
-//  Created by Edwon Edwon on 4/21/15.
+//  Created by Edwon Edwon on 5/2/15.
 //  Copyright (c) 2015 EDWON. All rights reserved.
 //
 
-import UIKit
 import Foundation
-import CoreData
 
-class WatchUtil
+public class PetController
 {
+    public init()
+    {
+        
+    }
+    
     // App Group ID for shared data between phone and watch apps
     let appGroupID = "group.com.Edwon.Sweat-Pet"
     
-    func doHavePet() -> Bool
+    public func doHavePet() -> Bool
     {
-        println("checkedforpet")
         let defaults = NSUserDefaults(suiteName: appGroupID)
         if let birthday = defaults?.objectForKey("birthday") as? NSDate
         {
@@ -26,7 +28,7 @@ class WatchUtil
         return false
     }
     
-    func newPet ()
+    public func newPet ()
     {
         // write data to the shared data for phone and watch apps
         if let defaults = NSUserDefaults(suiteName: appGroupID)
@@ -45,7 +47,7 @@ class WatchUtil
         }
     }
     
-    func readAge () -> Double?
+    public func readAge () -> Double?
     {
         updateAge()
         let defaults = NSUserDefaults(suiteName: appGroupID)
@@ -57,7 +59,7 @@ class WatchUtil
         return nil
     }
     
-    func readAgeDaysString () -> String?
+    public func readAgeDaysString () -> String?
     {
         let formatter = NSNumberFormatter()
         formatter.maximumFractionDigits = 0;
@@ -67,7 +69,7 @@ class WatchUtil
         return(ageString)
     }
     
-    func updateAge ()
+    private func updateAge ()
     {
         if let defaults = NSUserDefaults(suiteName: appGroupID)
         {
@@ -85,7 +87,7 @@ class WatchUtil
         }
     }
     
-    func saveAge (age:Double)
+    public func saveAge (age:Double)
     {
         // set the age value on the pet
         if let defaults = NSUserDefaults(suiteName: appGroupID)
@@ -94,14 +96,13 @@ class WatchUtil
         }
     }
     
-    func daysFromTimeInterval(interval:NSTimeInterval) -> Int
+    public func daysFromTimeInterval(interval:NSTimeInterval) -> Int
     {
         var ti = NSInteger(interval)
         return (ti / 86400)
     }
     
-    // convert age to something readable
-    func stringFromTimeInterval(interval:NSTimeInterval) -> NSString {
+    public func stringFromTimeInterval(interval:NSTimeInterval) -> NSString {
         
         var ti = NSInteger(interval)
         

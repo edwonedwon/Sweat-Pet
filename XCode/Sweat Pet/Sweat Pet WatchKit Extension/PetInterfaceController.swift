@@ -1,11 +1,11 @@
 import WatchKit
 import Foundation
-
+import SweatPetUtil
 
 class PetInterfaceController: WKInterfaceController
 {
     
-    let watchUtil = WatchUtil()
+    let petControl = PetController()
     
     var isDrinking = false
     
@@ -53,9 +53,9 @@ class PetInterfaceController: WKInterfaceController
         idleAnim()
         
         // IF NO PET MAKE A NEW PET
-        if (!watchUtil.doHavePet())
+        if (!petControl.doHavePet())
         {
-            watchUtil.newPet()
+            petControl.newPet()
         }
     }
 
@@ -65,7 +65,7 @@ class PetInterfaceController: WKInterfaceController
         super.willActivate()
         
         // UPDATE AGE LABEL
-        let ageString = watchUtil.readAgeDaysString()
+        let ageString = petControl.readAgeDaysString()
         self.ageLabel.setText(ageString)
     }
 

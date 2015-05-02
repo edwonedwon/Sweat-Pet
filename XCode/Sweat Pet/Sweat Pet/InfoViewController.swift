@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SweatPetUtil
 
 class InfoViewController: UIViewController
 {

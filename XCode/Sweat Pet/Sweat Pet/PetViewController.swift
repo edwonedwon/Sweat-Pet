@@ -1,8 +1,9 @@
 import UIKit
 import SpriteKit
+import SweatPetUtil
 
 class PetViewController: UIViewController {
-   
+    
     let petControl = PetController()
     
     @IBOutlet weak var ageNumberLabel: UILabel!
@@ -12,7 +13,7 @@ class PetViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         ageNumberLabel.text = petControl.readAgeDaysString()
         ageNumberLabel.sizeToFit() // make the age label resize if the number gets longer
-        sceneSetup()
+        sceneSetup()        
     }
 
     @IBOutlet weak var PetViewOutlet: SKView!

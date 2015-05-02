@@ -18,9 +18,13 @@
 		EB1BAD901AF4D4CE00A21D50 /* TestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */; };
 		EB23F7181AE6375600E3171C /* VileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7171AE6375600E3171C /* VileInterfaceController.swift */; };
 		EB23F71A1AE637E500E3171C /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */; };
-		EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */; };
 		EB426A521A9CA28E0033B72C /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB426A511A9CA28E0033B72C /* RunViewController.swift */; };
 		EB486F8C1AE5D7CD003D0760 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB486F8B1AE5D7CD003D0760 /* Images.xcassets */; };
+		EB4A11AF1AF50549000040FD /* SweatPetUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */; };
+		EB4A11B81AF50549000040FD /* SweatPetUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A11B71AF50549000040FD /* SweatPetUtilTests.swift */; };
+		EB4A11BB1AF50549000040FD /* SweatPetUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */; };
+		EB4A11BD1AF50549000040FD /* SweatPetUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB64901B1AF50C6400609186 /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64901A1AF50C6400609186 /* PetController.swift */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
@@ -60,6 +64,27 @@
 			remoteGlobalIDString = B08E072D19D7F9370070E82F;
 			remoteInfo = "Sweat Pet";
 		};
+		EB4A11B01AF50549000040FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B08E072619D7F9370070E82F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4A11A31AF50549000040FD;
+			remoteInfo = SweatPetUtil;
+		};
+		EB4A11B21AF50549000040FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B08E072619D7F9370070E82F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08E072D19D7F9370070E82F;
+			remoteInfo = "Sweat Pet";
+		};
+		EB4A11B91AF50549000040FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B08E072619D7F9370070E82F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4A11A31AF50549000040FD;
+			remoteInfo = SweatPetUtil;
+		};
 		EBBC66031AE1794200FE7D0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B08E072619D7F9370070E82F /* Project object */;
@@ -84,6 +109,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EB4A11BC1AF50549000040FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB4A11BD1AF50549000040FD /* SweatPetUtil.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBBC66161AE1794200FE7D0D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,10 +155,16 @@
 		EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F7171AE6375600E3171C /* VileInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VileInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
-		EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUtil.swift; sourceTree = "<group>"; };
 		EB2F2A4C1ABB710A00467EB8 /* HealthKit1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit1.playground; sourceTree = "<group>"; };
 		EB426A511A9CA28E0033B72C /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		EB486F8B1AE5D7CD003D0760 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB4A11A41AF50549000040FD /* SweatPetUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweatPetUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4A11A71AF50549000040FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4A11A81AF50549000040FD /* SweatPetUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweatPetUtil.h; sourceTree = "<group>"; };
+		EB4A11AE1AF50549000040FD /* SweatPetUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweatPetUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4A11B61AF50549000040FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4A11B71AF50549000040FD /* SweatPetUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweatPetUtilTests.swift; sourceTree = "<group>"; };
+		EB64901A1AF50C6400609186 /* PetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
 		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
 		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
@@ -181,6 +223,7 @@
 				EBB15BDA1A9A42FF004583CD /* SpriteKit.framework in Frameworks */,
 				EBA9FD2A1ABB693100753643 /* HealthKit.framework in Frameworks */,
 				473C29C70284537D702CAD48 /* libPods-Sweat Pet.a in Frameworks */,
+				EB4A11BB1AF50549000040FD /* SweatPetUtil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +232,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E93127A68441E526BBD4061 /* libPods-Sweat PetTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4A11A01AF50549000040FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4A11AB1AF50549000040FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4A11AF1AF50549000040FD /* SweatPetUtil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +299,8 @@
 				B08E074319D7F9370070E82F /* Sweat PetTests */,
 				EBBC65F31AE1794200FE7D0D /* Sweat Pet WatchKit Extension */,
 				EBBC66051AE1794200FE7D0D /* Sweat Pet WatchKit App */,
+				EB4A11A51AF50549000040FD /* SweatPetUtil */,
+				EB4A11B41AF50549000040FD /* SweatPetUtilTests */,
 				B08E072F19D7F9370070E82F /* Products */,
 				7BD519461B7A79B69C3107CD /* Pods */,
 				57A0F770A2629968530B61B1 /* Frameworks */,
@@ -254,6 +314,8 @@
 				B08E074019D7F9370070E82F /* Sweat PetTests.xctest */,
 				EBBC65F21AE1794200FE7D0D /* Sweat Pet WatchKit Extension.appex */,
 				EBBC66011AE1794200FE7D0D /* Sweat Pet WatchKit App.app */,
+				EB4A11A41AF50549000040FD /* SweatPetUtil.framework */,
+				EB4A11AE1AF50549000040FD /* SweatPetUtilTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,6 +359,41 @@
 			isa = PBXGroup;
 			children = (
 				B08E074519D7F9370070E82F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB4A11A51AF50549000040FD /* SweatPetUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A11A81AF50549000040FD /* SweatPetUtil.h */,
+				EB4A11A61AF50549000040FD /* Supporting Files */,
+				EB64901A1AF50C6400609186 /* PetController.swift */,
+			);
+			path = SweatPetUtil;
+			sourceTree = "<group>";
+		};
+		EB4A11A61AF50549000040FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A11A71AF50549000040FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB4A11B41AF50549000040FD /* SweatPetUtilTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A11B71AF50549000040FD /* SweatPetUtilTests.swift */,
+				EB4A11B51AF50549000040FD /* Supporting Files */,
+			);
+			path = SweatPetUtilTests;
+			sourceTree = "<group>";
+		};
+		EB4A11B51AF50549000040FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A11B61AF50549000040FD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -352,7 +449,6 @@
 			isa = PBXGroup;
 			children = (
 				EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */,
-				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
 				EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */,
 				EBBC65F71AE1794200FE7D0D /* PetInterfaceController.swift */,
 				EB23F7171AE6375600E3171C /* VileInterfaceController.swift */,
@@ -419,6 +515,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EB4A11A11AF50549000040FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B08E072D19D7F9370070E82F /* Sweat Pet */ = {
 			isa = PBXNativeTarget;
@@ -430,12 +536,14 @@
 				B08E072C19D7F9370070E82F /* Resources */,
 				EBBC66161AE1794200FE7D0D /* Embed App Extensions */,
 				769374B2D0A29B64BA665523 /* Copy Pods Resources */,
+				EB4A11BC1AF50549000040FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				EBBC660E1AE1794200FE7D0D /* PBXTargetDependency */,
 				EBBC66191AE17A3B00FE7D0D /* PBXTargetDependency */,
+				EB4A11BA1AF50549000040FD /* PBXTargetDependency */,
 			);
 			name = "Sweat Pet";
 			productName = "Sweat Pet";
@@ -460,6 +568,43 @@
 			name = "Sweat PetTests";
 			productName = "Sweat PetTests";
 			productReference = B08E074019D7F9370070E82F /* Sweat PetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB4A11A31AF50549000040FD /* SweatPetUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4A11C21AF50549000040FD /* Build configuration list for PBXNativeTarget "SweatPetUtil" */;
+			buildPhases = (
+				EB4A119F1AF50549000040FD /* Sources */,
+				EB4A11A01AF50549000040FD /* Frameworks */,
+				EB4A11A11AF50549000040FD /* Headers */,
+				EB4A11A21AF50549000040FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweatPetUtil;
+			productName = SweatPetUtil;
+			productReference = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB4A11AD1AF50549000040FD /* SweatPetUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4A11C31AF50549000040FD /* Build configuration list for PBXNativeTarget "SweatPetUtilTests" */;
+			buildPhases = (
+				EB4A11AA1AF50549000040FD /* Sources */,
+				EB4A11AB1AF50549000040FD /* Frameworks */,
+				EB4A11AC1AF50549000040FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB4A11B11AF50549000040FD /* PBXTargetDependency */,
+				EB4A11B31AF50549000040FD /* PBXTargetDependency */,
+			);
+			name = SweatPetUtilTests;
+			productName = SweatPetUtilTests;
+			productReference = EB4A11AE1AF50549000040FD /* SweatPetUtilTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		EBBC65F11AE1794200FE7D0D /* Sweat Pet WatchKit Extension */ = {
@@ -525,6 +670,14 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = B08E072D19D7F9370070E82F;
 					};
+					EB4A11A31AF50549000040FD = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K4NQBC9GFA;
+					};
+					EB4A11AD1AF50549000040FD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B08E072D19D7F9370070E82F;
+					};
 					EBBC65F11AE1794200FE7D0D = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = K4NQBC9GFA;
@@ -557,6 +710,8 @@
 				B08E073F19D7F9370070E82F /* Sweat PetTests */,
 				EBBC65F11AE1794200FE7D0D /* Sweat Pet WatchKit Extension */,
 				EBBC66001AE1794200FE7D0D /* Sweat Pet WatchKit App */,
+				EB4A11A31AF50549000040FD /* SweatPetUtil */,
+				EB4A11AD1AF50549000040FD /* SweatPetUtilTests */,
 			);
 		};
 /* End PBXProject section */
@@ -583,6 +738,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B08E073E19D7F9370070E82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4A11A21AF50549000040FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4A11AC1AF50549000040FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -757,13 +926,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB4A119F1AF50549000040FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB64901B1AF50C6400609186 /* PetController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4A11AA1AF50549000040FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4A11B81AF50549000040FD /* SweatPetUtilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBBC65EE1AE1794200FE7D0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBBC65FA1AE1794200FE7D0D /* NotificationController.swift in Sources */,
 				EBBC65F81AE1794200FE7D0D /* PetInterfaceController.swift in Sources */,
-				EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */,
 				EBFB65461AE1DF840017C888 /* MMWormholeTest.swift in Sources */,
 				EBBC65FC1AE1794200FE7D0D /* GlanceController.swift in Sources */,
 				EB1BAD901AF4D4CE00A21D50 /* TestInterfaceController.swift in Sources */,
@@ -779,6 +963,21 @@
 			isa = PBXTargetDependency;
 			target = B08E072D19D7F9370070E82F /* Sweat Pet */;
 			targetProxy = B08E074119D7F9370070E82F /* PBXContainerItemProxy */;
+		};
+		EB4A11B11AF50549000040FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4A11A31AF50549000040FD /* SweatPetUtil */;
+			targetProxy = EB4A11B01AF50549000040FD /* PBXContainerItemProxy */;
+		};
+		EB4A11B31AF50549000040FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B08E072D19D7F9370070E82F /* Sweat Pet */;
+			targetProxy = EB4A11B21AF50549000040FD /* PBXContainerItemProxy */;
+		};
+		EB4A11BA1AF50549000040FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4A11A31AF50549000040FD /* SweatPetUtil */;
+			targetProxy = EB4A11B91AF50549000040FD /* PBXContainerItemProxy */;
 		};
 		EBBC66041AE1794200FE7D0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -984,6 +1183,99 @@
 			};
 			name = Release;
 		};
+		EB4A11BE1AF50549000040FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SweatPetUtil/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB4A11BF1AF50549000040FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SweatPetUtil/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB4A11C01AF50549000040FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SweatPetUtilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sweat Pet.app/Sweat Pet";
+			};
+			name = Debug;
+		};
+		EB4A11C11AF50549000040FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SweatPetUtilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sweat Pet.app/Sweat Pet";
+			};
+			name = Release;
+		};
 		EBBC66101AE1794200FE7D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74067E45A9DFB1EB38EDC871 /* Pods-Sweat Pet WatchKit Extension.debug.xcconfig */;
@@ -1096,6 +1388,24 @@
 			buildConfigurations = (
 				B08E074E19D7F9370070E82F /* Debug */,
 				B08E074F19D7F9370070E82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4A11C21AF50549000040FD /* Build configuration list for PBXNativeTarget "SweatPetUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4A11BE1AF50549000040FD /* Debug */,
+				EB4A11BF1AF50549000040FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4A11C31AF50549000040FD /* Build configuration list for PBXNativeTarget "SweatPetUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4A11C01AF50549000040FD /* Debug */,
+				EB4A11C11AF50549000040FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

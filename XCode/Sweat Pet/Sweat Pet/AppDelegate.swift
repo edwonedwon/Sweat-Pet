@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SweatPetUtil
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
