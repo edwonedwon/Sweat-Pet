@@ -19,7 +19,7 @@ class PetInterfaceController: WKInterfaceController
         {
             isDrinking = Bool(true)
             animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
-            animateVial("vial_pour_", length: 65, duration: 2, repeatCount: 1)
+            animateVial("vial_pour_", length: 111, duration: 3.5, repeatCount: 1)
             var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
         }
     }
