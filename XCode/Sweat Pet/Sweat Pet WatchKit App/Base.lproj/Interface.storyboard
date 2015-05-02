@@ -45,6 +45,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="ageLabel" destination="fH7-jn-E1l" id="gS1-WU-nBv"/>
                         <outlet property="petImage" destination="goZ-sp-Q0m" id="rVG-4F-zaz"/>
                         <outlet property="vialImage" destination="V7J-BQ-hqb" id="u8r-A3-Pb2"/>
                         <segue destination="49I-2H-Hc1" kind="relationship" relationship="nextPage" id="RQ0-I8-CW3"/>

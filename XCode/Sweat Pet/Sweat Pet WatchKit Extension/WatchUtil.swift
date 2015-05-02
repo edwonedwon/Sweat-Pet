@@ -29,4 +29,14 @@ class WatchUtil
             println(dipe)
         }
     }
+    
+    func readAge () -> Double?
+    {
+        let defaults = NSUserDefaults(suiteName: appGroupID)
+        if let age = defaults?.doubleForKey("age")
+        {
+            return age
+        }
+        return nil
+    }
 }

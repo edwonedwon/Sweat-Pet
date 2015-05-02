@@ -5,13 +5,15 @@ import Foundation
 class PetInterfaceController: WKInterfaceController
 {
     
-    var isDrinking = false
+    let watchUtil = WatchUtil()
     
-//    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
+    var isDrinking = false
     
     @IBOutlet weak var petImage: WKInterfaceGroup!
     
     @IBOutlet weak var vialImage: WKInterfaceImage!
+    
+    @IBOutlet weak var ageLabel: WKInterfaceLabel!
     
     @IBAction func feedButtonAction()
     {
@@ -55,29 +57,18 @@ class PetInterfaceController: WKInterfaceController
     {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        // UPDATE AGE LABEL
+        let formatter = NSNumberFormatter()
+        formatter.maximumFractionDigits = 0;
+        let age = formatter.stringFromNumber(watchUtil.readAge()!)
+        self.ageLabel.setText(age)
     }
 
     override func didDeactivate()
     {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-    }
-    
-    @IBAction func buttonFeed()
-    {
-        println("watch button!")
-        
-        var stringToSend = "the string"
-        var floatToSend = Float(100)
-        var parentValues = NSDictionary(objects: [stringToSend, floatToSend], forKeys: ["string", "float"])
-        
-        WKInterfaceController.openParentApplication(parentValues as [NSObject : AnyObject], reply: {(replyValues, error) -> Void in
-            println(replyValues?["retVal1"])
-            println(replyValues?["retVal2"])
-        })
-        
-//         ANIMATE PET IDLE
-//        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
     }
     
     @IBAction func buttonClean()
