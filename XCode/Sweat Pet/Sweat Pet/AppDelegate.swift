@@ -13,8 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
     
+    let petControl = PetController()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // IF NO PET MAKE A NEW PET
+        if (!petControl.doHavePet())
+        {
+            petControl.newPet()
+        }
         
         /* First ask the user if we are
         allowed to perform local notifications */

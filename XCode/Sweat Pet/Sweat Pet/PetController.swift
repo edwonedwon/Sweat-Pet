@@ -13,6 +13,16 @@ class PetController
     // App Group ID for shared data between phone and watch apps
     let appGroupID = "group.com.Edwon.Sweat-Pet"
     
+    func doHavePet() -> Bool
+    {
+        let defaults = NSUserDefaults(suiteName: appGroupID)
+        if let birthday = defaults?.objectForKey("birthday") as? NSDate
+        {
+            return true
+        }
+        return false
+    }
+    
     func newPet ()
     {
         // write data to the shared data for phone and watch apps
@@ -20,7 +30,7 @@ class PetController
         {
 //            defaults.setValue(String("fromthephoneyesitissofreshinhere"), forKey: "dipeString")
             defaults.setValue(0, forKey: "age") // set age to 0
-            defaults.setValue(NSDate(), forKey: "birthday") // set birthday to now
+            defaults.setObject(NSDate(), forKey: "birthday") // set birthday to now
             var format = NSDateFormatter()
             format.dateStyle = NSDateFormatterStyle.ShortStyle
             format.timeStyle = NSDateFormatterStyle.LongStyle
@@ -33,6 +43,43 @@ class PetController
         }
     }
     
+    func readAge () -> Double?
+    {
+        updateAge()
+        let defaults = NSUserDefaults(suiteName: appGroupID)
+        if let age = defaults?.doubleForKey("age")
+        {
+            println(age)
+            return age
+        }
+        return nil
+    }
+    
+    func updateAge ()
+    {
+        if let defaults = NSUserDefaults(suiteName: appGroupID)
+        {
+            var now = NSDate()
+            var timeSinceBirth = NSTimeInterval()
+            
+            //fetch the birthday from shared data
+            if let birthday = defaults.objectForKey("birthday") as? NSDate
+            {
+                // get the interval between birth and now
+                timeSinceBirth  = now.timeIntervalSinceDate(birthday)
+                saveAge(timeSinceBirth)
+            }
+        }
+    }
+    
+    func saveAge (age:Double)
+    {
+        // set the age value on the pet
+        if let defaults = NSUserDefaults(suiteName: appGroupID)
+        {
+            defaults.setValue(age, forKey: "age")
+        }
+    }
     
 //    func newPet ()
 //    {
