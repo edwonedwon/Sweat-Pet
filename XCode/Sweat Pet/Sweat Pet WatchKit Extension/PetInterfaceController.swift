@@ -5,14 +5,20 @@ import Foundation
 class PetInterfaceController: WKInterfaceController
 {
     
+    var isDrinking = false
+    
 //    let sharedDefaults = NSUserDefaults(suiteName: "group.com.Edwon.Sweat-Pet.Sweat-Pet")
     
     @IBOutlet weak var petImage: WKInterfaceGroup!
     
     @IBAction func feedButtonAction()
     {
-        animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
+        if (!isDrinking)
+        {
+            isDrinking = Bool(true)
+            animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
+        }
     }
     
     func drinkAnim1()
@@ -31,6 +37,7 @@ class PetInterfaceController: WKInterfaceController
     {
         petImage.setBackgroundImageNamed("pet_idle_16")
 //        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
+        isDrinking = Bool(false)
     }
     
     override func awakeWithContext(context: AnyObject?)
