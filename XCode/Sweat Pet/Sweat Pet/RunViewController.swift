@@ -5,7 +5,7 @@ import SweatPetUtil
 class RunViewController: UIViewController
 {
     let healthManager = HealthManager()
-    
+        
     @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
     
     override func viewDidLoad()
@@ -14,15 +14,13 @@ class RunViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func ReadButtonAction(sender: AnyObject) {
-        // READ HEALTH ACTIVE ENERGY BURNED
-        
-        
-//        println(healthManager.readEnergy())
-//        self.activeEnergyBurnedOutlet.text = healthManager.readEnergy() as? String
+    @IBAction func ReadButtonAction(sender: AnyObject)
+    {
+        activeEnergyBurnedOutlet.text = healthManager.updateWeight()
     }
     
-    @IBAction func AuthorizeButtonAction(sender: AnyObject) {
+    @IBAction func AuthorizeButtonAction(sender: AnyObject)
+    {
         
 //        println("authorize healthkit")
         
