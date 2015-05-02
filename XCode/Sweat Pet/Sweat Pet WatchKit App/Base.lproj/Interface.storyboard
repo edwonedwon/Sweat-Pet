@@ -14,13 +14,17 @@
                             <items>
                                 <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFill" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
                                     <items>
-                                        <group width="1" height="1" alignment="left" id="A86-NQ-cta" userLabel="Group Top Buttons">
+                                        <group width="1" height="0.34999999999999998" alignment="left" verticalAlignment="bottom" id="8TD-iK-CZh" userLabel="Group Bottom Buttons">
                                             <items>
-                                                <button width="1" height="1" alignment="left" id="YIy-8V-Hts">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <button alignment="left" verticalAlignment="bottom" id="JvY-Xt-OR9">
+                                                    <group key="contentGroup" width="0.40000000000000002" height="1" alignment="left" contentMode="scaleAspectFit" id="WhN-Jo-9Ge" userLabel="Group Button">
+                                                        <items>
+                                                            <imageView width="1" height="1" alignment="left" image="pet_drink_34" contentMode="scaleAspectFit" id="V7J-BQ-hqb"/>
+                                                        </items>
+                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
                                                     <connections>
-                                                        <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="3Oz-mW-DM5"/>
+                                                        <action selector="feedButtonAction" destination="AgC-eL-Hgc" id="Ap2-M0-Rgl"/>
                                                     </connections>
                                                 </button>
                                             </items>
@@ -164,4 +168,5 @@
             <point key="canvasLocation" x="535" y="1001"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.56862745098039214" green="0.83137254901960789" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
 </document>
