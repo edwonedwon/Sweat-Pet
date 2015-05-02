@@ -51,6 +51,12 @@ class PetInterfaceController: WKInterfaceController
 
         // ANIMATE PET IDLE
         idleAnim()
+        
+        // IF NO PET MAKE A NEW PET
+        if (!watchUtil.doHavePet())
+        {
+            watchUtil.newPet()
+        }
     }
 
     override func willActivate()

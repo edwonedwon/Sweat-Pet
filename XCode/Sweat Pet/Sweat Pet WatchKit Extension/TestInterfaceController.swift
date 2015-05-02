@@ -16,12 +16,12 @@ class TestInterfaceController: WKInterfaceController
     
     @IBAction func writeDataButton()
     {
-        watchUtil.writeSharedData()
+        
     }
     
     @IBAction func readDataButton()
     {
-        watchUtil.readSharedData()
+        
     }
     
     override func awakeWithContext(context: AnyObject?)

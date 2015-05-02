@@ -12,22 +12,36 @@ import CoreData
 
 class WatchUtil
 {
+    // App Group ID for shared data between phone and watch apps
     let appGroupID = "group.com.Edwon.Sweat-Pet"
-
-    func writeSharedData ()
+    
+    func doHavePet() -> Bool
     {
-        if let defaults = NSUserDefaults(suiteName: appGroupID)
+        println("checkedforpet")
+        let defaults = NSUserDefaults(suiteName: appGroupID)
+        if let birthday = defaults?.objectForKey("birthday") as? NSDate
         {
-            defaults.setValue(String("sodipeinhere"), forKey: "dipeString")
+            return true
         }
+        return false
     }
     
-    func readSharedData ()
+    func newPet ()
     {
-        let defaults = NSUserDefaults(suiteName: appGroupID)
-        if let dipe = defaults?.stringForKey("dipeString") 
+        // write data to the shared data for phone and watch apps
+        if let defaults = NSUserDefaults(suiteName: appGroupID)
         {
-            println(dipe)
+            defaults.setValue(0, forKey: "age") // set age to 0
+            defaults.setObject(NSDate(), forKey: "birthday") // set birthday to now
+            var format = NSDateFormatter()
+            format.dateStyle = NSDateFormatterStyle.ShortStyle
+            format.timeStyle = NSDateFormatterStyle.LongStyle
+            
+            // DEBUG
+            println("Made a new pet!")
+            println("my birthday is: " + format.stringFromDate(NSDate()))
+            println("my age is 0!")
+            
         }
     }
     
