@@ -93,6 +93,26 @@
             </objects>
             <point key="canvasLocation" x="381" y="347"/>
         </scene>
+        <!--Test Interface Controller-->
+        <scene sceneID="peX-5v-JMZ">
+            <objects>
+                <controller id="lCx-3c-5aL" customClass="TestInterfaceController" customModule="Sweat_Pet_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Write Data" id="e6M-Qn-Iow">
+                            <connections>
+                                <action selector="writeDataButton" destination="lCx-3c-5aL" id="sgx-tQ-dZn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Read Data" id="Kmo-M5-yjU">
+                            <connections>
+                                <action selector="readDataButton" destination="lCx-3c-5aL" id="0so-vx-J62"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="687" y="347"/>
+        </scene>
         <!--Stats Interface Controller-->
         <scene sceneID="jX6-Z5-sf8">
             <objects>
@@ -136,10 +156,11 @@
                     </items>
                     <connections>
                         <outlet property="ageNumberLabel" destination="2QV-fc-1Lm" id="1Xp-OU-cVU"/>
+                        <segue destination="lCx-3c-5aL" kind="relationship" relationship="nextPage" id="AjR-4V-RXF"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="528" y="347"/>
+            <point key="canvasLocation" x="535" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

@@ -9,7 +9,7 @@ class PetViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         sceneSetup()
-        petControl.newPet()
+        petControl.writeSharedData()
     }
 
     @IBOutlet weak var PetViewOutlet: SKView!

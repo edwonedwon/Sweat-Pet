@@ -15,6 +15,7 @@
 		B08E073B19D7F9370070E82F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08E073A19D7F9370070E82F /* Images.xcassets */; };
 		B08E074719D7F9370070E82F /* Sweat_PetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E074619D7F9370070E82F /* Sweat_PetTests.swift */; };
 		C7ED81BF0133EB5668A44692 /* libPods-Sweat Pet WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268EBB49A40287F0488BA16 /* libPods-Sweat Pet WatchKit Extension.a */; };
+		EB1BAD901AF4D4CE00A21D50 /* TestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */; };
 		EB23F7181AE6375600E3171C /* VileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7171AE6375600E3171C /* VileInterfaceController.swift */; };
 		EB23F71A1AE637E500E3171C /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */; };
 		EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */; };
@@ -115,6 +116,7 @@
 		B08E074019D7F9370070E82F /* Sweat PetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sweat PetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08E074519D7F9370070E82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08E074619D7F9370070E82F /* Sweat_PetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweat_PetTests.swift; sourceTree = "<group>"; };
+		EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F7171AE6375600E3171C /* VileInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VileInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
 		EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchUtil.swift; sourceTree = "<group>"; };
@@ -350,12 +352,13 @@
 			isa = PBXGroup;
 			children = (
 				EBC030AA1AE1B71000138C27 /* Sweat Pet WatchKit Extension.entitlements */,
+				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
+				EB1BAD8F1AF4D4CE00A21D50 /* TestInterfaceController.swift */,
 				EBBC65F71AE1794200FE7D0D /* PetInterfaceController.swift */,
 				EB23F7171AE6375600E3171C /* VileInterfaceController.swift */,
 				EB23F7191AE637E500E3171C /* StatsInterfaceController.swift */,
 				EBBC65F91AE1794200FE7D0D /* NotificationController.swift */,
 				EBBC65FB1AE1794200FE7D0D /* GlanceController.swift */,
-				EB23F71B1AE63B1F00E3171C /* WatchUtil.swift */,
 				EBBC65FD1AE1794200FE7D0D /* Images.xcassets */,
 				EBBC65F41AE1794200FE7D0D /* Supporting Files */,
 			);
@@ -763,6 +766,7 @@
 				EB23F71C1AE63B1F00E3171C /* WatchUtil.swift in Sources */,
 				EBFB65461AE1DF840017C888 /* MMWormholeTest.swift in Sources */,
 				EBBC65FC1AE1794200FE7D0D /* GlanceController.swift in Sources */,
+				EB1BAD901AF4D4CE00A21D50 /* TestInterfaceController.swift in Sources */,
 				EB23F7181AE6375600E3171C /* VileInterfaceController.swift in Sources */,
 				EB23F71A1AE637E500E3171C /* StatsInterfaceController.swift in Sources */,
 			);
