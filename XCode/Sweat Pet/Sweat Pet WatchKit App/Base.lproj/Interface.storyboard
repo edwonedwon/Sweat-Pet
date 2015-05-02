@@ -17,7 +17,7 @@
                                         <group width="1" alignment="left" verticalAlignment="bottom" id="8TD-iK-CZh" userLabel="Group Bottom Buttons">
                                             <items>
                                                 <button alignment="left" verticalAlignment="bottom" id="JvY-Xt-OR9">
-                                                    <group key="contentGroup" width="0.40000000000000002" alignment="left" contentMode="scaleAspectFit" id="WhN-Jo-9Ge" userLabel="Group Button">
+                                                    <group key="contentGroup" width="0.5" alignment="left" contentMode="scaleAspectFit" id="WhN-Jo-9Ge" userLabel="Group Button">
                                                         <items>
                                                             <imageView width="1" alignment="left" image="vial_pour_0" contentMode="scaleAspectFit" id="V7J-BQ-hqb" userLabel="Image Vial Button"/>
                                                         </items>
