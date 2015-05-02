@@ -4,7 +4,7 @@ import SweatPetUtil
 
 class RunViewController: UIViewController
 {
-    let healthManager = HealthKitHelper()
+    let healthManager = HealthManager()
     @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
     
     override func viewDidLoad()

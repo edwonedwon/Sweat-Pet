@@ -9,7 +9,7 @@
 import Foundation
 import HealthKit
 
-public class HealthKitHelper
+public class HealthManager
 {
     let healthKitStore = HKHealthStore()
     

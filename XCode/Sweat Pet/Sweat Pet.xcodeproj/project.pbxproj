@@ -26,7 +26,7 @@
 		EB4A11BD1AF50549000040FD /* SweatPetUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A11A41AF50549000040FD /* SweatPetUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB64901B1AF50C6400609186 /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64901A1AF50C6400609186 /* PetController.swift */; };
 		EB6817771A9B0938005C3A38 /* petanim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB6817761A9B0938005C3A38 /* petanim.atlas */; };
-		EB7FDFC31AF510C8002287F3 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */; };
+		EB7FDFC31AF510C8002287F3 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FDFC21AF510C8002287F3 /* HealthManager.swift */; };
 		EB810FBE1A9DC48F004FEBFF /* lick_synth.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */; };
 		EB810FBF1A9DC48F004FEBFF /* lick.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB810FBD1A9DC48F004FEBFF /* lick.wav */; };
 		EB9E20AB1ADC433900182CBA /* PetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9E20A91ADC433900182CBA /* PetModel.xcdatamodeld */; };
@@ -166,7 +166,7 @@
 		EB4A11B71AF50549000040FD /* SweatPetUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweatPetUtilTests.swift; sourceTree = "<group>"; };
 		EB64901A1AF50C6400609186 /* PetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
 		EB6817761A9B0938005C3A38 /* petanim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petanim.atlas; sourceTree = "<group>"; };
-		EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		EB7FDFC21AF510C8002287F3 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		EB810FBC1A9DC48F004FEBFF /* lick_synth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick_synth.wav; sourceTree = "<group>"; };
 		EB810FBD1A9DC48F004FEBFF /* lick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lick.wav; sourceTree = "<group>"; };
 		EB9149161ABBA60A00940950 /* HealthKit3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HealthKit3.playground; sourceTree = "<group>"; };
@@ -368,7 +368,7 @@
 				EB4A11A81AF50549000040FD /* SweatPetUtil.h */,
 				EB4A11A61AF50549000040FD /* Supporting Files */,
 				EB64901A1AF50C6400609186 /* PetController.swift */,
-				EB7FDFC21AF510C8002287F3 /* HealthKitHelper.swift */,
+				EB7FDFC21AF510C8002287F3 /* HealthManager.swift */,
 			);
 			path = SweatPetUtil;
 			sourceTree = "<group>";
@@ -929,7 +929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7FDFC31AF510C8002287F3 /* HealthKitHelper.swift in Sources */,
+				EB7FDFC31AF510C8002287F3 /* HealthManager.swift in Sources */,
 				EB64901B1AF50C6400609186 /* PetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

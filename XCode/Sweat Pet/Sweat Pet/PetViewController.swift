@@ -2,7 +2,8 @@ import UIKit
 import SpriteKit
 import SweatPetUtil
 
-class PetViewController: UIViewController {
+class PetViewController: UIViewController
+{
     
     let petControl = PetController()
     
