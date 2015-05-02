@@ -57,6 +57,16 @@ class WatchUtil
         return nil
     }
     
+    func readAgeDaysString () -> String?
+    {
+        let formatter = NSNumberFormatter()
+        formatter.maximumFractionDigits = 0;
+        let age = readAge()!
+        let ageDays = daysFromTimeInterval(age)
+        let ageString = formatter.stringFromNumber(ageDays)
+        return(ageString)
+    }
+    
     func updateAge ()
     {
         if let defaults = NSUserDefaults(suiteName: appGroupID)

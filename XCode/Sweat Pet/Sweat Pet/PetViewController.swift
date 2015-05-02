@@ -5,11 +5,14 @@ class PetViewController: UIViewController {
    
     let petControl = PetController()
     
+    @IBOutlet weak var ageNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ageNumberLabel.text = petControl.readAgeDaysString()
+        ageNumberLabel.sizeToFit() // make the age label resize if the number gets longer
         sceneSetup()
-//        petControl.writeSharedData()
     }
 
     @IBOutlet weak var PetViewOutlet: SKView!

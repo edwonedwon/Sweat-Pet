@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYw-eo-9s7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--RUN View Controller-->
@@ -185,11 +185,33 @@
                                             <action selector="vialButtonAction:" destination="V8j-pU-BKJ" eventType="touchUpInside" id="FWJ-Ih-XZG"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp0-lJ-glk" userLabel="age number label">
+                                        <rect key="frame" x="514" y="487" width="78" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="QRE-2n-2eL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWr-Jf-F2h" userLabel="age title label">
+                                        <rect key="frame" x="453" y="513" width="53" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="QD8-gW-b71"/>
+                                            <constraint firstAttribute="width" constant="53" id="Uja-vZ-BuN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79431029040404044" green="0.79431029040404044" blue="0.79431029040404044" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bp0-lJ-glk" secondAttribute="bottom" constant="8" id="9MK-Oa-4MD"/>
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="leading" secondItem="dwM-Hw-Ysx" secondAttribute="trailing" id="Dr2-A8-DtY"/>
+                                    <constraint firstAttribute="bottom" secondItem="CWr-Jf-F2h" secondAttribute="bottom" constant="2" id="EQe-Bp-z3H"/>
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="width" secondItem="gJg-6A-3J5" secondAttribute="width" id="FHD-Yb-NOC"/>
+                                    <constraint firstItem="Bp0-lJ-glk" firstAttribute="leading" secondItem="CWr-Jf-F2h" secondAttribute="leading" constant="61" id="GWp-YW-KNP"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="trailing" secondItem="ga6-iV-WpR" secondAttribute="trailing" constant="-20" id="GxB-rh-bRP"/>
                                     <constraint firstItem="vtu-1I-UEc" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" id="H7G-bQ-BFD"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="leading" secondItem="pXP-Mb-yC4" secondAttribute="leading" constant="21" id="M0Q-wX-3Y4"/>
@@ -200,6 +222,7 @@
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="39" id="Ykn-zr-gI0"/>
                                     <constraint firstItem="vtu-1I-UEc" firstAttribute="leading" secondItem="pXP-Mb-yC4" secondAttribute="leading" id="a6b-yA-6cy"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="top" secondItem="pXP-Mb-yC4" secondAttribute="top" constant="20" id="cph-4d-aIR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bp0-lJ-glk" secondAttribute="trailing" constant="8" id="dD8-Sc-Cw3"/>
                                     <constraint firstItem="dwM-Hw-Ysx" firstAttribute="centerX" secondItem="gJg-6A-3J5" secondAttribute="centerX" id="eKm-TU-E9p"/>
                                     <constraint firstItem="ece-kS-ZOE" firstAttribute="centerX" secondItem="ga6-iV-WpR" secondAttribute="centerX" id="hhn-R7-0Ig"/>
                                     <constraint firstItem="gJg-6A-3J5" firstAttribute="bottom" secondItem="ga6-iV-WpR" secondAttribute="bottom" constant="-5" id="od4-VQ-Cm4"/>
@@ -227,6 +250,7 @@
                     <tabBarItem key="tabBarItem" title="PET" image="pet icon" id="oie-Jx-1CC"/>
                     <connections>
                         <outlet property="PetViewOutlet" destination="pXP-Mb-yC4" id="a2t-Nu-qUe"/>
+                        <outlet property="ageNumberLabel" destination="Bp0-lJ-glk" id="iMH-ws-Lx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwJ-fg-bed" userLabel="First Responder" sceneMemberID="firstResponder"/>

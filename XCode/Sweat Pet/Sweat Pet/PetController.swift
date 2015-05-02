@@ -54,7 +54,17 @@ class PetController
         return nil
     }
     
-    func updateAge ()
+    func readAgeDaysString () -> String?
+    {
+        let formatter = NSNumberFormatter()
+        formatter.maximumFractionDigits = 0;
+        let age = readAge()!
+        let ageDays = daysFromTimeInterval(age)
+        let ageString = formatter.stringFromNumber(ageDays)
+        return(ageString)
+    }
+    
+    private func updateAge ()
     {
         if let defaults = NSUserDefaults(suiteName: appGroupID)
         {

@@ -65,11 +65,7 @@ class PetInterfaceController: WKInterfaceController
         super.willActivate()
         
         // UPDATE AGE LABEL
-        let formatter = NSNumberFormatter()
-        formatter.maximumFractionDigits = 0;
-        let age = watchUtil.readAge()!
-        let ageDays = watchUtil.daysFromTimeInterval(age)
-        let ageString = formatter.stringFromNumber(ageDays)
+        let ageString = watchUtil.readAgeDaysString()
         self.ageLabel.setText(ageString)
     }
 
