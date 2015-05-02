@@ -19,7 +19,7 @@
                                                 <button alignment="left" verticalAlignment="bottom" id="JvY-Xt-OR9">
                                                     <group key="contentGroup" width="0.40000000000000002" height="1" alignment="left" contentMode="scaleAspectFit" id="WhN-Jo-9Ge" userLabel="Group Button">
                                                         <items>
-                                                            <imageView width="1" height="1" alignment="left" image="pet_drink_34" contentMode="scaleAspectFit" id="V7J-BQ-hqb"/>
+                                                            <imageView width="1" height="1" alignment="left" image="vial_pour_0" contentMode="scaleAspectFit" id="V7J-BQ-hqb" userLabel="Image Vial Button"/>
                                                         </items>
                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </group>
@@ -36,6 +36,7 @@
                     </items>
                     <connections>
                         <outlet property="petImage" destination="goZ-sp-Q0m" id="rVG-4F-zaz"/>
+                        <outlet property="vialImage" destination="V7J-BQ-hqb" id="u8r-A3-Pb2"/>
                         <segue destination="49I-2H-Hc1" kind="relationship" relationship="nextPage" id="RQ0-I8-CW3"/>
                     </connections>
                 </controller>

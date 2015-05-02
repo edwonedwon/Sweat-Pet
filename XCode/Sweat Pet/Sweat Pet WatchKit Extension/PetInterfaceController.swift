@@ -11,12 +11,15 @@ class PetInterfaceController: WKInterfaceController
     
     @IBOutlet weak var petImage: WKInterfaceGroup!
     
+    @IBOutlet weak var vialImage: WKInterfaceImage!
+    
     @IBAction func feedButtonAction()
     {
         if (!isDrinking)
         {
             isDrinking = Bool(true)
             animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
+            animateVial("vial_pour_", length: 65, duration: 2, repeatCount: 1)
             var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
         }
     }
@@ -82,6 +85,14 @@ class PetInterfaceController: WKInterfaceController
         // ANIMATE PET EAT
         idleAnim()
     }
+    
+    func animateVial(animName: String, length: Int, duration:Float, repeatCount:Int)
+    {
+        self.vialImage.setImageNamed(animName)
+        var durationTI = NSTimeInterval(duration)
+        self.vialImage.startAnimatingWithImagesInRange(NSMakeRange(Int(0), length), duration: durationTI, repeatCount: repeatCount)
+    }
+
     
     func animatePet(animName: String, length: Int, duration:Float, repeatCount:Int)
     {
