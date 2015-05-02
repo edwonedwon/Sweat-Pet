@@ -69,4 +69,25 @@ class WatchUtil
             defaults.setValue(age, forKey: "age")
         }
     }
+    
+    func daysFromTimeInterval(interval:NSTimeInterval) -> Int
+    {
+        var ti = NSInteger(interval)
+        return (ti / 86400)
+    }
+    
+    // convert age to something readable
+    func stringFromTimeInterval(interval:NSTimeInterval) -> NSString {
+        
+        var ti = NSInteger(interval)
+        
+        var ms = Int((interval % 1) * 1000)
+        
+        var seconds = ti % 60
+        var minutes = (ti / 60) % 60
+        var hours = (ti / 3600)
+        var days = (ti / 86400)
+        
+        return NSString(format: "D:%0.2d: H:%0.2d: M:%0.2d: S:%0.2d.%0.3d",days,hours,minutes,seconds,ms)
+    }
 }
