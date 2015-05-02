@@ -5,6 +5,7 @@ import SweatPetUtil
 class RunViewController: UIViewController
 {
     let healthManager = HealthManager()
+    
     @IBOutlet weak var activeEnergyBurnedOutlet: UILabel!
     
     override func viewDidLoad()
@@ -22,7 +23,8 @@ class RunViewController: UIViewController
     }
     
     @IBAction func AuthorizeButtonAction(sender: AnyObject) {
-        // AUTHORIZE HEALTH KIT
+        
+//        println("authorize healthkit")
         
         healthManager.authorizeHealthKit { (authorized,  error) -> Void in
             if authorized {
