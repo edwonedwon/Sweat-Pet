@@ -14,7 +14,7 @@
                             <items>
                                 <group width="1" height="1" alignment="left" backgroundImage="pet_idle_0" contentMode="scaleAspectFill" animationDuration="3" layout="vertical" id="goZ-sp-Q0m" userLabel="Group Pet Image">
                                     <items>
-                                        <group width="1" alignment="left" id="8TD-iK-CZh" userLabel="Group Bottom Buttons">
+                                        <group width="1" alignment="left" verticalAlignment="bottom" id="8TD-iK-CZh" userLabel="Group Bottom Buttons">
                                             <items>
                                                 <button alignment="left" verticalAlignment="bottom" id="JvY-Xt-OR9">
                                                     <group key="contentGroup" width="0.5" alignment="left" contentMode="scaleAspectFit" id="WhN-Jo-9Ge" userLabel="Group Button">
