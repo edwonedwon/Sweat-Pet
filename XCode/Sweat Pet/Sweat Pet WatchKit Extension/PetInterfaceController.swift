@@ -20,9 +20,11 @@ class PetInterfaceController: WKInterfaceController
         if (!isDrinking)
         {
             isDrinking = Bool(true)
-            animatePet("pet_drink_begin_", length: 21, duration: 0.9, repeatCount: 1)
+            animatePet("pet_drink_all_", length: 117, duration: 3.5, repeatCount: 1)
             animateVial("vial_pour_", length: 111, duration: 3.5, repeatCount: 1)
-            var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(3.5, target: self, selector: Selector("idleAnim"), userInfo: nil, repeats: false)
+            // begin drink animation sequence
+//            var timer = NSTimer.scheduledTimerWithTimeInterval(0.9, target: self, selector: Selector("drinkAnim1"), userInfo: nil, repeats: false)
         }
     }
     
@@ -40,7 +42,7 @@ class PetInterfaceController: WKInterfaceController
     
     func idleAnim ()
     {
-        petImage.setBackgroundImageNamed("pet_idle_16")
+        petImage.setBackgroundImageNamed("pet_drink_all_0")
 //        animatePet("pet_idle_", length: 50, duration: 1.5, repeatCount: 0)
         isDrinking = Bool(false)
     }
